@@ -1,0 +1,59 @@
+<div *ngFor="let match of matches">
+    <div *ngIf="match.not_done" class="container">
+        <div class="match-container">
+            <div class="match-header">
+                {{match.match_title}}
+            </div>
+            <div class="match-time">
+                {{match.match_time}}
+            </div>
+        </div>
+        <div class="bid-container">
+            <div class="bid-heading">
+                Place your bid
+            </div>
+            <div class="bid-details">
+                <div class="player-desc">
+                    MVP Player
+                </div>
+                <mat-form-field class="bid-player" [style.border]="match.player1_err">
+                    <!-- <mat-label>State</mat-label> -->
+                    <mat-select [(value)]="match.p1">
+                        <!-- <mat-option value="initial">Select College State</mat-option> -->
+                        <mat-option *ngFor='let s of match.sub_team' [value]='s'>{{s.name}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <div class="player-desc">
+                    Second Player
+                </div>
+                <mat-form-field class="bid-player" [style.border]="match.player2_err">
+                    <!-- <mat-label>State</mat-label> -->
+                    <mat-select [(value)]="match.p2">
+                        <!-- <mat-option value="initial">Select College State</mat-option> -->
+                        <mat-option *ngFor='let s of match.sub_team' [value]='s'>{{s.name}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <div class="player-desc">
+                    Third Player
+                </div>
+                <mat-form-field class="bid-player" [style.border]="match.player3_err">
+                    <!-- <mat-label>State</mat-label> -->
+                    <mat-select [(value)]="match.p3">
+                        <!-- <mat-option value="initial">Select College State</mat-option> -->
+                        <mat-option *ngFor='let s of match.sub_team' [value]='s'>{{s.name}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <button class="button" (click)='place_bid(match)'>Submit</button>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="!match.not_done" class="container">
+        <div class="match-container">
+            <div class="match-header">
+                You have placed your bid for the day!
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,154 @@
+<div *ngIf="has_registered" class="container">
+    <h1 *ngIf="has_registered !== 'Verified'"> Mood Indigo Influencer Program</h1>
+    <div *ngIf="has_registered == 'Not Registered'">
+        <h3>Select upto 3 categories of your influence</h3>
+        <h3>Instagram account must be public with a minimum of 1000 followers. No specifications for other social media
+            accounts.</h3>
+        <div class="inner-container">
+            <div class="details-container">
+                <div class="bid-details">
+                    <div class="player-desc">
+                        Category 1
+                    </div>
+                    <mat-form-field class="bid-player" [style.border]="cat1_err">
+                        <!-- <mat-label>State</mat-label> -->
+                        <mat-select [(value)]="cat1">
+                            <mat-option *ngFor='let s of categories' [value]='s'>{{s}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+                    <div class="player-desc">
+                        Category 2
+                    </div>
+                    <mat-form-field class="bid-player" [style.border]="cat2_err">
+                        <!-- <mat-label>State</mat-label> -->
+                        <mat-select [(value)]="cat2">
+                            <mat-option *ngFor='let s of categories' [value]='s'>{{s}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+                    <div class="player-desc">
+                        Category 3
+                    </div>
+                    <mat-form-field class="bid-player" [style.border]="cat3_err">
+                        <!-- <mat-label>State</mat-label> -->
+                        <mat-select [(value)]="cat3">
+                            <mat-option *ngFor='let s of categories' [value]='s'>{{s}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="details-container">
+                <div class="input-div">
+                    <input name="insta_id" [(ngModel)]='fb_id' placeholder="FACEBOOK ID" type="text"
+                        class="contact-input">
+                </div>
+                <div class="input-div">
+                    <input name="insta_id" [(ngModel)]='insta_id' placeholder="INSTAGRAM HANDLE" type="text"
+                        class="contact-input">
+                </div>
+                <div class="input-div">
+                    <input name="insta_id" [(ngModel)]='twitter_id' placeholder="TWITTER ID" type="text"
+                        class="contact-input">
+                </div>
+                <div class="input-div">
+                    <input name="insta_id" [(ngModel)]='linkedin_id' placeholder="LINKEDIN ID" type="text"
+                        class="contact-input">
+                </div>
+                <div class="input-div">
+                    <input name="insta_id" [(ngModel)]='snapchat_id' placeholder="SNAPCHAT HANDLE" type="text"
+                        class="contact-input">
+                </div>
+                <div class="input-div">
+                    <input name="insta_id" [(ngModel)]='youtube_id' placeholder="YOUTUBE HANDLE" type="text"
+                        class="contact-input">
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <button class="button" (click)='place_bid()'>Submit</button>
+        </div>
+    </div>
+    <div *ngIf="has_registered == 'Registered'">
+        <h3>You have successfully registered, please wait for verification of your profile</h3>
+    </div>
+    <div *ngIf="has_registered == 'Verified'">
+
+        <div class="scroll-container">
+            <div class="scroll left">
+                <div class="head first">
+                    MY MOOD INDIGO
+                </div>
+                <div class="info-container">
+                    <img [src]="profile_img" class="avatar">
+                    <div class="info-details">
+                        <div class="user-name">
+                            <!-- name -->
+                            {{name}}
+                        </div>
+                        <div class="info-minum">
+                            Indigo Squad
+                        </div>
+                        <div class="mi-num">
+                            {{mi_number}}
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-text">
+                        {{curr_level}}
+                        <div [style.opacity]="progress_dot[0]" class="progress-dot"></div>
+                        <div [style.opacity]="progress_dot[1]" class="progress-dot"></div>
+                        <div [style.opacity]="progress_dot[2]" class="progress-dot"></div>
+                        <div [style.opacity]="progress_dot[3]" class="progress-dot"></div>
+                        <div [style.opacity]="progress_dot[4]" class="progress-dot"></div>
+                        <div [style.opacity]="progress_dot[5]" class="progress-dot"></div>
+                        <div [style.opacity]="progress_dot[6]" class="progress-dot"></div>
+                        <div [style.opacity]="progress_dot[7]" class="progress-dot"></div>
+                        <div [style.opacity]="progress_dot[8]" class="progress-dot"></div>
+                        <div [style.opacity]="progress_dot[9]" class="progress-dot"></div>
+                        {{next_level}}
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar background"></div>
+                        <div [style.width]="progress + '%'" class="progress-bar"></div>
+                    </div>
+
+                    <div class="points-text">
+                        INFLUENCER POINTS
+                    </div>
+                    <div class="points">
+                        <!-- Points come here --> {{score}}
+                    </div>
+                </div>
+            </div>
+            <div class="scroll right">
+                <div class="assignment-container">
+                    <div class="assignment-text">
+                        ASSIGNMENTS
+                    </div>
+                    <div *ngIf="tasks.length == 0" class="user-name">
+                        There are no more tasks, please check back later for more!
+                    </div>
+                    <div class="assignment-list">
+                        <!-- Assignments come here -->
+                        <div *ngFor="let task of tasks; let i = index" class="assignment-item">
+                            <div class="assignment-head">
+                                New Task!
+                            </div>
+                            <div [innerHTML]="task.question" class="assignment-desc">
+                                <!-- {{task.question}} -->
+                            </div>
+                            <div class="assignment-deadline">
+                                <textarea [(ngModel)]="task.answer" class="assignment-answer"></textarea>
+                            </div>
+                            <div>
+                                <button (click)="post_answer(task)" class="assignment-button">SUBMIT</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

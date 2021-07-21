@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('Gotham-Black.eot');
+    src: url('Gotham-Black.eot?#iefix') format('embedded-opentype'),
+        url('Gotham-Black.woff2') format('woff2'),
+        url('Gotham-Black.woff') format('woff'),
+        url('Gotham-Black.ttf') format('truetype'),
+        url('Gotham-Black.svg#Gotham-Black') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('Gotham-Book.eot');
+    src: url('Gotham-Book.eot?#iefix') format('embedded-opentype'),
+        url('Gotham-Book.woff2') format('woff2'),
+        url('Gotham-Book.woff') format('woff'),
+        url('Gotham-Book.ttf') format('truetype'),
+        url('Gotham-Book.svg#Gotham-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('Avenir-Medium.eot');
+    src: url('Avenir-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Avenir-Medium.woff2') format('woff2'),
+        url('Avenir-Medium.woff') format('woff'),
+        url('Avenir-Medium.ttf') format('truetype'),
+        url('Avenir-Medium.svg#Avenir-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('Avenir-Black.eot');
+    src: url('Avenir-Black.eot?#iefix') format('embedded-opentype'),
+        url('Avenir-Black.woff2') format('woff2'),
+        url('Avenir-Black.woff') format('woff'),
+        url('Avenir-Black.ttf') format('truetype'),
+        url('Avenir-Black.svg#Avenir-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('Avenir-Heavy.eot');
+    src: url('Avenir-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('Avenir-Heavy.woff2') format('woff2'),
+        url('Avenir-Heavy.woff') format('woff'),
+        url('Avenir-Heavy.ttf') format('truetype'),
+        url('Avenir-Heavy.svg#Avenir-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('Gotham-Bold.eot');
+    src: url('Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Gotham-Bold.woff2') format('woff2'),
+        url('Gotham-Bold.woff') format('woff'),
+        url('Gotham-Bold.ttf') format('truetype'),
+        url('Gotham-Bold.svg#Gotham-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

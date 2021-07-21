@@ -1,0 +1,177 @@
+<!-- <div [style.display]="cover" class="black-cover"></div>
+<div (click)="test('outer')" *ngIf="blog_cover" class="black-cover">
+    <div class="blog-upload-container">
+        <div (click)="test('inner')" class="post-form">
+            <div class="blog-post-heading">
+                Submit a blog
+            </div>
+            <input [style.border]="subject_border" [(ngModel)]="upload_obj.topic" name="subject" placeholder="TITLE"
+                type="text" class="contact-input"><br>
+            <textarea [style.border]="content_border" [(ngModel)]="upload_obj.content" name="content"
+                placeholder="CONTENT" type="text" class="contact-content"></textarea>
+
+            <div class="blog-button-container">
+                <div class="file-name">
+                    <label class="blog-button">
+                        <input type="file" class="post-button none" id="image-field" (change)="onFileChange($event)"
+                            onchange="$('#upload-file-info').html(this.files[0].name)">
+                        Choose File
+                    </label>
+                    <div id="upload-file-info"></div>
+                </div>
+                <div (click)="submit_blog()" class="blog-button">Submit</div>
+                <div (click)="test('outer')" class="blog-button">Cancel</div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<div (click)="toggle_navbar()" class="container">
+    <!-- <div class="heading">
+        <div class="head first">
+            MY MOOD INDIGO
+        </div>
+        <div class="head first">
+            MI STORE
+        </div>
+    </div> -->
+    <div class="scroll-container">
+        <div class="scroll left">
+            <div class="head first">
+                MY MOOD INDIGO
+            </div>
+            <div class="info-container">
+                <img [src]="profile_img" class="avatar">
+                <div class="info-details">
+                    <div class="user-name">
+                        <!-- name -->
+                        {{name}}
+                    </div>
+                    <!-- <div class="info-minum">
+                        MI-Number
+                    </div> -->
+                    <div class="mi-num">
+                        {{mi_number}}
+                    </div>
+                </div>
+            </div>
+            <div class="progress-container">
+                <div class="progress-text">
+                    {{curr_level}}
+                    <div [style.opacity]="progress_dot[0]" class="progress-dot"></div>
+                    <div [style.opacity]="progress_dot[1]" class="progress-dot"></div>
+                    <div [style.opacity]="progress_dot[2]" class="progress-dot"></div>
+                    <div [style.opacity]="progress_dot[3]" class="progress-dot"></div>
+                    <div [style.opacity]="progress_dot[4]" class="progress-dot"></div>
+                    <div [style.opacity]="progress_dot[5]" class="progress-dot"></div>
+                    <div [style.opacity]="progress_dot[6]" class="progress-dot"></div>
+                    <div [style.opacity]="progress_dot[7]" class="progress-dot"></div>
+                    <div [style.opacity]="progress_dot[8]" class="progress-dot"></div>
+                    <div [style.opacity]="progress_dot[9]" class="progress-dot"></div>
+                    {{next_level}}
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar background"></div>
+                    <div [style.width]="progress + '%'" class="progress-bar"></div>
+                </div>
+            </div>
+            <div class="assignment-container">
+                <div class="assignment-list">
+                    <div class="refer-target-container">
+                        <div class="target-heading">
+                            Refer and Earn
+                        </div>
+                        <div class="refer-div">
+                            <a class="cg-link"[href]="whatsapp_url" target="_blank"><i class="fa fa-3x fa-whatsapp"></i></a>
+                            <a class="cg-link"[href]="facebook_url" target="_blank"><i class="fa fa-3x fa-facebook"></i></a>
+                            <a class="cg-link"[href]="mail_url" target="_blank"><i class="fa fa-3x fa-envelope"></i></a>
+                            <a class="cg-link"[href]="twitter_url" target="_blank"><i class="fa fa-3x fa-twitter"></i></a>
+                            <a class="cg-link"[href]="linkedin_url" target="_blank"><i class="fa fa-3x fa-linkedin"></i></a>
+                        </div>
+                        <div class="refer-target-head">
+                            100 Points per share
+                        </div>
+                    </div>
+                    <div class="assignment-text">
+                        ASSIGNMENTS
+                    </div>
+                    <div *ngIf="target" class="weekly-target-container">
+                        <div class="target-heading">
+                            Weekly Target
+                        </div>
+                        <div class="weekly-targets">
+                            <div class="target-head">
+                                Social Media Shares
+                            </div>
+                            <div class="target-count">
+                                {{target.post_shares}}
+                            </div>
+                        </div>
+                        <div class="weekly-targets">
+                            <div class="target-head">
+                                Same College Referrals
+                            </div>
+                            <div class="target-count">
+                                {{target.refer_same_college}}
+                            </div>
+                        </div>
+                        <div class="weekly-targets">
+                            <div class="target-head">
+                                Different College Referrals
+                            </div>
+                            <div class="target-count">
+                                {{target.refer_different_college}}
+                            </div>
+                        </div>
+                        <div class="weekly-targets">
+                            <div class="target-head">
+                                Blog posts
+                            </div>
+                            <div class="target-count">
+                                {{target.blog_posts}}
+                            </div>
+                        </div>
+                        <div class="weekly-targets">
+                            <div class="target-head">
+                                Answer Weekly Questions
+                            </div>
+                            <div class="target-count">
+                                {{target.weekly_questions}}
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Assignments come here -->
+                    <div *ngFor="let task of tasks; let i = index" class="assignment-item">
+                        <div class="assignment-head">
+                            Weekly Question
+                        </div>
+                        <div class="assignment-desc">
+                            {{task.question}}
+                        </div>
+                        <div class="assignment-deadline">
+                            <textarea [(ngModel)]="task.answer" class="assignment-answer"></textarea>
+                        </div>
+                        <div>
+                            <button (click)="post_answer(task)" class="assignment-button">SUBMIT</button>
+                        </div>
+                    </div>
+                    <div class="extra-height"></div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="scroll right">
+            <div class="feed-container">
+                <div class="feed-heading">
+                    <div class="feed-text">
+                        MI CORNER
+                    </div>
+                </div>
+                <div class="feed-list">
+                    <div *ngFor="let blog of blogs" class="blogggg">
+                        <app-post [blog]="blog"></app-post>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

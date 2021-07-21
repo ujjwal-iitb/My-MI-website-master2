@@ -1,0 +1,1065 @@
+<div class="loader">
+    <div class="loader-div">
+        <div id="lottie2"></div>
+    </div>
+</div>
+<div class="back">
+    <img class="back-img" src="../../assets/Green Back/new/green6.png">
+</div>
+<div class="main">
+    <div class="my-logo">
+        <img (click)="navigate('')" class="logo" src="../assets/Icon/my_icon.svg">
+    </div>
+    <div class="social-container">
+        <div class="social">
+            <div (click)="goto('ccp')" class="social-logo">
+                CCP
+            </div>
+            <div (click)="goto('iap')" class="social-logo">
+                IAP
+            </div>
+            <div (click)="goto('competitions')" class="social-logo">
+                COMPETITIONS
+            </div>
+            <div (click)="goto('influencer')" class="social-logo">
+                INFLUENCER
+            </div>
+            <div (click)="goto('shop')" class="social-logo">
+                MI SHOP
+            </div>
+        </div>
+    </div>
+    <div class="signin">
+        <button *ngIf="!registered" class="signin-button" (click)="goto('signup')">SIGN UP</button>
+        <button *ngIf="registered" class="signin-button" (click)="goto('dashboard')">DASHBOARD</button>
+
+    </div>
+</div>
+
+<div id="ccp" class="ccp-container">
+    <!-- <img src="../../assets/Tiles and Masks/SVG/3.svg"> -->
+    <div class="head content">
+        <div class="content-head">
+            <div class="text normal">
+                College <br> Connect <br> Program
+            </div>
+            <!-- <div class="text mask">
+                College Connect Program
+            </div> -->
+        </div>
+        <div class="pattern-anim-text">
+            <p>Earn&nbsp;</p>
+            <p>
+                <!-- wisteria
+                    belize
+                    pomegranate
+                    green
+                    midnight -->
+                <span class="word">Rewards.</span>
+                <span class="word">Courses.</span>
+                <span class="word">Internships.</span>
+                <span class="word">Goodies.</span>
+                <span class="word">Certificates.</span>
+            </p>
+        </div>
+    </div>
+    <div class="content-quote">
+        Join the Indigo Squad! <br> Build Connections! <br> Explore opportunities!
+    </div>
+
+    <button *ngIf="!registered" (click)="goto('signup')" class="register">
+        REGISTER
+        <img class="mright-arrow" src="../../assets/svgs/right.svg">
+    </button>
+    <button *ngIf="registered" (click)="goto('dashboard')" class="register">
+        DASHBOARD
+    </button>
+    <!-- <img class="cap" src="../../assets/CAP/CAP.webp"> -->
+    <img class="cap" src="../../assets/WEBSITE-SKATEBOY@2x.png">
+</div>
+
+<div class="about-container">
+    <div class="content">
+        <div class="content-head">
+            <div class="text-about normal">
+                About CCP
+            </div>
+            <!-- <div class="text mask">
+                About CCP
+            </div> -->
+        </div>
+    </div>
+    <div class="content-desc-about">
+        The college connect program is the vanguard of Mood Indigo’s outreach program. Associate with IIT Bombay's Mood
+        Indigo. Join the Indigo Family, be the face of Mood Indigo in your college and city. This is your chance to gain
+        valuable experience, pull off awesome events, and build a strong network with similarly motivated individuals
+        helping you in our future professional endeavours.
+        <!-- <p>
+            As a member of the Indigo Squad, enroll in the <b>Mood Indigo Influencer program</b>. Learn content creation, social media management, and a lot more! The program is going to be full of pleasant surprises for you! So stay tuned to learn more!
+        </p> -->
+    </div>
+    <div class="about-quote">
+        In a world full of <br> college ambassadors, <br> be a member of the <span class="indigo"><b>IndigoSquad.</b> </span>
+    </div>
+    <img class="about-img" src="../../assets/Group 261.png">
+</div>
+
+
+<div class="app-container">
+    <div class="content">
+        <div class="content-head">
+            <div class="text text2 normal">
+                CCP now on mobile!
+            </div>
+            <!-- <div class="text mask">
+                About CCP
+            </div> -->
+        </div>
+    </div>
+    <div class="content-desc-app">
+        Now everything is just one click away with all new MI app. 
+        Get notified and stay updated. Get notified and stay updated 
+        with internship oppurtunities, video courses, workshops and various 
+        other launches of Mood Indigo
+        
+        <!-- <p>
+            As a member of the Indigo Squad, enroll in the <b>Mood Indigo Influencer program</b>. Learn content creation, social media management, and a lot more! The program is going to be full of pleasant surprises for you! So stay tuned to learn more!
+        </p> -->
+    </div>
+    <div class="subhd">
+        Coming Soon! 
+    </div>
+
+    
+    <img class="benefitsApp-img" src="../../assets/Group 262@2x.png">
+</div>
+
+<div class="about-container2">
+    <div class="content">
+        <div class="content-head">
+            <div class="text normal">
+                Why CCP?
+            </div>
+            <!-- <div class="text mask">
+                Why CCP?
+            </div> -->
+        </div>
+    </div>
+    <div class="corousel-container">
+        <div class="arrow-container">
+            <div class="arrow left">
+                <button class="arrow-keys" (click)="change_state('left')"><i class="fa fa-caret-left fa-fw fa-2x"
+                        aria-hidden="true"> </i></button>
+            </div>
+        </div>
+        <div class="c-container">
+
+            <div class="why1" [@why_anim]="states[0]">
+                <img class="why_cap" src="../../assets/CAP Landing Page/Certificate v2.png">
+                <div class="why_cap_text">
+                    <div class="why-heading">
+                        Get certified
+                    </div>
+                    Get an organizational certificate from Mood Indigo, IIT Bombay after completion of tenure.
+                </div>
+            </div>
+            <div class="why1" [@why_anim]="states[1]">
+                <img class="why_cap1" src="../../assets/CAP Landing Page/face v4.png">
+                <div class="why_cap_text">
+                    <div class="why-heading">
+                        Spearhead
+                    </div>
+                    Become the face of Mood Indigo in your college and lead the team.
+                </div>
+            </div>
+            <div class="why2" [@why_anim]="states[2]">
+                <img class="why_cap2" src="../../assets/CAP Landing Page/city-skyline-4.png">
+                <div class="why_cap_text">
+                    <div class="why-heading">
+                        Brainstorm
+                    </div>
+                    Put your thinking cap on and organize events in your city and college.
+                </div>
+            </div>
+            <div class="why1" [@why_anim]="states[3]">
+                <img class="why_cap3" src="../../assets/CAP Landing Page/Coin.png">
+                <div class="why_cap_text">
+                    <div class="why-heading">
+                        Earn MI Coins
+                    </div>
+                    Use MI coins to purchase products and merchandise from our website.
+                </div>
+            </div>
+            <!-- <div class="why1"  [@why_anim]="states[4]">
+                <img class="why_cap4" src="../../assets/CAP Landing Page/Exclusive content v2.png">
+                <div class ="why_cap_text">
+                    <div class="why-heading">
+                        Exclusive Content
+                    </div>
+                    Mood Indigo IIT Bombay is offering exclusive video lectures from renowned Academies and Guests.
+                </div>
+            </div> -->
+            <div class="why1" [@why_anim]="states[4]">
+                <img class="why_cap5" src="../../assets/CAP Landing Page/WebP/Clock v2 copy.webp">
+                <div class="why_cap_text">
+                    <div class="why-heading">
+                        Improve Skills
+                    </div>
+                    Get a chance to improve your public speaking, managerial, leadership and time management skills.
+                </div>
+            </div>
+            <div class="why1" [@why_anim]="states[5]">
+                <img class="why_cap6" src="../../assets/CAP Landing Page/WebP/Influencer.webp">
+                <div class="why_cap_text">
+                    <div class="why-heading">
+                        Influence
+                    </div>
+                    Be a social media influencer and digital brand ambassador of Mood Indigo across your favourite
+                    social media.
+                </div>
+            </div>
+            <div class="why1" [@why_anim]="states[6]">
+                <img class="why_cap6" src="../../assets/CAP Landing Page/WebP/Golden Sapphire.webp">
+                <div class="why_cap_text">
+                    <div class="why-heading">
+                        Golden Sapphire
+                    </div>
+                    Your chance to become a Mood Indigo prime member.
+                </div>
+            </div>
+
+        </div>
+        <div class="arrow-container">
+            <div class="arrow right">
+                <button class="arrow-keys" (click)="change_state('right')"><i class="fa fa-caret-right fa-fw fa-2x"
+                        aria-hidden="true"> </i></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mcontainer">
+    <div class="mcontainer-flex">
+        <div class="marrow-container">
+            <div class="arrow right">
+                <button class="arrow-keys" (click)="change_state('left')"><i class="fa fa-caret-left fa-fw fa-2x"
+                        aria-hidden="true"> </i></button>
+            </div>
+        </div>
+        <div class="mwhy-text-container">
+            <div [@why_anim]="states[0]">
+                <div class="mwhy-internal-container">
+                    <div class="why-heading">
+                        Get certified
+                    </div>
+                    Get an organizational certificate from Mood Indigo, IIT Bombay after completion of tenure.
+                </div>
+            </div>
+            <div [@why_anim]="states[1]">
+                <div class="mwhy-internal-container">
+                    <div class="why-heading">
+                        Spearhead
+                    </div>
+                    Become the face of Mood Indigo in your college and lead the team.
+                </div>
+            </div>
+            <div [@why_anim]="states[2]">
+                <div class="mwhy-internal-container">
+                    <div class="why-heading">
+                        Brainstorm
+                    </div>
+                    Put your thinking cap on and organize events in your city and college.
+                </div>
+            </div>
+            <div [@why_anim]="states[3]">
+                <div class="mwhy-internal-container">
+                    <div class="why-heading">
+                        Earn MI Coins
+                    </div>
+                    Use MI coins to purchase products and merchandise from our website.
+                </div>
+            </div>
+            <div [@why_anim]="states[5]">
+                <div class="mwhy-internal-container">
+                    <div class="why-heading">
+                        Influence
+                    </div>
+                    Be a social media influencer and digital brand ambassador of Mood Indigo across your favourite
+                    social media.
+                </div>
+            </div>
+            <!-- <div [@why_anim]="states[4]">
+                <div class="mwhy-internal-container">
+                    <div class="why-heading">
+                        Exclusive Content
+                    </div>
+                    Mood Indigo IIT Bombay is offering exclusive video lectures from renowned Academies and Guests.
+                </div>
+            </div> -->
+            <div [@why_anim]="states[4]">
+                <div class="mwhy-internal-container">
+                    <div class="why-heading">
+                        Improve Skills
+                    </div>
+                    Get a chance to improve your public speaking, managerial, leadership and time management skills.
+                </div>
+            </div>
+            <div [@why_anim]="states[6]">
+                <div class="mwhy-internal-container">
+                    <div class="why-heading">
+                        Golden Sapphire
+                    </div>
+                    Your chance to become a Mood Indigo prime member.
+                </div>
+            </div>
+        </div>
+        <div class="marrow-container">
+            <div class="arrow right">
+                <button class="arrow-keys" (click)="change_state('right')"><i class="fa fa-caret-right fa-fw fa-2x"
+                        aria-hidden="true"> </i></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="goodies-container">
+    <div class="content">
+        <div class="content-head">
+            <div class="goodies-heading normal">
+                Rewards we have <br> for you
+            </div>
+            <!-- <div class="text mask">
+                Goodies we have for you
+            </div> -->
+        </div>
+        
+        <div class="reward-container">
+            <div class="reward-set">
+                <div class="reward-item">500+ Internship Oppurtunities</div>
+                <div class="reward-item">Video Courses worth 1 million</div>
+                <div class="reward-item">MI Official Merchandise</div>
+            </div>
+            <div class="reward-set">
+                <div class="reward-item">Coupons worth 1 million</div>
+                <div class="reward-item">Free accomodation</div>
+                <div class="reward-item">VIP concert passes</div>
+            </div>
+        </div>
+        <div class="goodies-img">
+            <img src="../../assets/CAP Landing Page/goodies.webp" alt="">
+        </div>
+    </div>
+    
+    <div class="goodies-mcontainer">
+        <div class="mgoodie-div">
+            <div class="mgoodie">
+                Internships
+            </div>
+            <img class="mgoodie-img" src="../../assets/CAP Landing Page/Incentives/internships.webp">
+            <div class="mgoodie">
+                Coupons
+            </div>
+            <img class="mgoodie-img" src="../../assets/CAP Landing Page/Incentives/Coupons.webp">
+            <div class="mgoodie">
+                Certified Courses
+            </div>
+            <img class="mgoodie-img" src="../../assets/CAP Landing Page/Incentives/Courses.webp">
+            <div class="mgoodie">
+                Merchandise
+            </div>
+            <img class="mgoodie-img" src="../../assets/CAP Landing Page/Incentives/Merchandise v2.webp">
+            <div class="mgoodie">
+                VIP Passes
+            </div>
+            <img class="mgoodie-img" src="../../assets/CAP Landing Page/Incentives/VIP passes.webp">
+            <div class="mgoodie">
+                Free Accommodation
+            </div>
+            <img class="mgoodie-img" src="../../assets/CAP Landing Page/Incentives/FreeAccomodation.webp">
+        </div>
+    </div>
+</div>
+
+<div class="ngo-container">
+    <div class="content">
+        <div class="content-head">
+            <div class="text normal">
+                Social Work Internship
+            </div>
+            <!-- <div class="text mask">
+                Social Work Internship
+            </div> -->
+        </div>
+    </div>
+    <div class="bold ngo-heading">
+        It is not enough to be compassionate. you must act.
+    </div>
+    <div class="ngo-text">
+        We feel proud to give you that opportunity to act and serve your community with the help of our partner NGOs.
+    </div>
+    <div class="ngo-list">
+        <a href="https://www.giveindia.org/" target="_blank">
+            <div class="ngo-div">
+                <img class="ngo" src="../../assets/CAP Landing Page/NGO logos/giveindia.svg">
+            </div>
+        </a>
+        <a href="https://www.akshayapatra.org/" target="_blank">
+            <div class="ngo-div">
+                <img class="ngo" src="../../assets/CAP Landing Page/NGO logos/akshay_patra.png">
+            </div>
+        </a>
+        <a href="https://books.katha.org/300m/" target="_blank">
+            <div class="ngo-div">
+                <img class="ngo" src="../../assets/CAP Landing Page/NGO logos/katha.jpg">
+            </div>
+        </a>
+        <!-- <div class="ngo-div">
+                <img class="ngo" src="../../assets/CAP Landing Page/NGO logos/Smile_Foundation_Logo.png">
+        </div> -->
+        <div class="ngo-div">
+            <img class="ngo" src="../../assets/CAP Landing Page/NGO logos/mitti.jpg">
+        </div>
+        <a href="https://www.giveindia.org/" target="_blank">
+            <div class="ngo-div">
+                <img class="ngo" src="../../assets/CAP Landing Page/NGO logos/giveindia.svg">
+            </div>
+        </a>
+        <a href="https://www.akshayapatra.org/" target="_blank">
+            <div class="ngo-div">
+                <img class="ngo" src="../../assets/CAP Landing Page/NGO logos/akshay_patra.png">
+            </div>
+        </a>
+        <a href="https://books.katha.org/300m/" target="_blank">
+            <div class="ngo-div">
+                <img class="ngo" src="../../assets/CAP Landing Page/NGO logos/katha.jpg">
+            </div>
+        </a>
+        <!-- <div class="ngo-div">
+                <img class="ngo" src="../../assets/CAP Landing Page/NGO logos/Smile_Foundation_Logo.png">
+        </div> -->
+        <div class="ngo-div">
+            <img class="ngo" src="../../assets/CAP Landing Page/NGO logos/mitti.jpg">
+        </div>
+        <!-- <div class="ngo-div">
+                <img class="ngo" src="../../assets/CAP Landing Page/NGO logos/ka-logo-red-2.png">
+        </div>
+        <div class="ngo-div">
+                <img class="ngo" src="../../assets/CAP Landing Page/NGO logos/Smile_Foundation_Logo.png">
+        </div> -->
+    </div>
+    <div class="ngo-img"></div>
+</div>
+
+<div class="testimonial-container">
+    <div class="content">
+        <div class="content-head">
+            <div class="text normal">
+                Toasts from our family
+            </div>
+            <!-- <div class="text mask">
+                Toasts from our family
+            </div> -->
+        </div>
+    </div>
+    <div class="testimonial-list">
+        <div class="testimonial-div">
+            <div class="testimonial-img-div">
+                <img class="testimonial-img" src="../../assets/CAP/2020/kunal.jpg">
+            </div>
+            <div class="testimonial-text">
+                <div class="testimonial">
+                    My overall experience at Mood Indigo was excellent. I learned a lot as an Indigo Squad Member, being
+                    involved in all the events organized by Mood Indigo. Mainly, I acquired leadership skills by
+                    conducting various online sessions in school and college and interacted with new people. Hats off to
+                    the Mood Indigo team!
+                </div>
+                <div class="bold person-details">
+                    <p class="testimonial-name">Kunal Naker </p>
+                    <p class="testimonial-rank"> Rank 1 </p>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-div">
+            <div class="testimonial-img-div">
+                <img class="testimonial-img" src="../../assets/CAP/2020/Shivani.jpg">
+            </div>
+            <div class="testimonial-text">
+                <div class="testimonial">
+                    It was a wonderful experience to be an Indigo Squad member of College Connect Member of MOOD INDIGO
+                    organized by IIT Bombay.The efforts made are really commendable as they hold workshops, various
+                    events for everyone. The best among them all was we had the opportunity to share our views via blog
+                    and the best one got featured and I too was lucky to be on the board. Thanks for the opportunity.
+                </div>
+                <div class="person-details">
+                    <p class="testimonial-name">Shivani Chaudhary</p>
+                    <p class="testimonial-rank">Rank 2</p>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-div">
+            <div class="testimonial-img-div">
+                <img class="testimonial-img" src="../../assets/CAP/2020/faizan.jpeg">
+            </div>
+            <div class="testimonial-text">
+                <div class="testimonial">
+                    My experience at Mood Indigo was pretty great.If you want to enjoy a CA program, make new
+                    friends,learn something new through experience and push yourself outside the comfort zone then this
+                    one is the best.I highly recommend you do join their program if you are looking for a Campus
+                    Ambassador internship.
+                </div>
+                <div class="person-details">
+                    <p class="testimonial-name">Faizan Charania</p>
+                    <p class="testimonial-rank">Rank 4</p>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-div">
+            <div class="testimonial-img-div">
+                <img class="testimonial-img" src="../../assets/CAP/2020/Rishab.jpeg">
+            </div>
+            <div class="testimonial-text">
+                <div class="testimonial">
+                    The whole virtual experience was superb, there were lots of activities, workshops and different
+                    tasks lined up throughout the journey which were very interesting and engaging too. I must say the
+                    whole organising team of moodi had done a great job in connecting us from different regions under
+                    one online platform and also solving our queries so nicely.. Looking forward to being a part of CCP
+                    again next time and hoping that Moodi will go on the real floor very soon.
+                </div>
+                <div class="person-details">
+                    <p class="testimonial-name">Rishab Jain</p>
+                    <p class="testimonial-rank">Rank 7</p>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-div">
+            <div class="testimonial-img-div">
+                <img class="testimonial-img" src="../../assets/CAP/2020/Vaibhavi.jpeg">
+            </div>
+            <div class="testimonial-text">
+                <div class="testimonial">
+                    Thank you so much Mood Indigo and IIT Bombay! I am delighted to have been able to participate in the
+                    Mood Indigo’s College Connect Program. You guys do an amazing job supporting talent inside students
+                    and creating opportunities for us to share our work with a larger audience.. Keep going guys, you
+                    all are doing an amazing job. Kudos to you all!
+                </div>
+                <div class="person-details">
+                    <p class="testimonial-name">Vaibhavi Paranjpe</p>
+                    <p class="testimonial-rank">Rank 9</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="ngo-img"></div> -->
+</div>
+
+<div class="about-container2">
+    <div class="content">
+        <div class="content-head">
+            <div class="text normal">
+                How does CCP work?
+            </div>
+            <!-- <div class="text mask">
+                How does CCP work?
+            </div> -->
+        </div>
+    </div>
+    <div class="works-flex-class">
+
+        <div class="works-container">
+
+            <div class="works-row row1">
+                <div class="works-div">
+                    <div class="works-div-top">
+                        <div class="works-heading">
+                            1. Dashboard
+                        </div>
+                        <div class="works-logo logo1"></div>
+                    </div>
+                    <div class="works-content">
+                        Your personalised dashboard will contain all the information to guide you through this journey.
+                    </div>
+                </div>
+                <div class="works-div">
+                    <div class="works-div-top">
+                        <div class="works-heading">
+                            2. Activities
+                        </div>
+                        <div class="works-logo logo2"></div>
+                    </div>
+                    <div class="works-content">
+                        Check all your weekly and monthly tasks here.
+                    </div>
+                </div>
+
+            </div>
+            <div class="works-row row1">
+                <div class="works-div">
+                    <div class="works-div-top">
+                        <div class="works-heading">
+                            3. Leaderboard
+                        </div>
+                        <div class="works-logo logo3"></div>
+                    </div>
+                    <div class="works-content">
+                        Find all the rankings in this section. Top the social leaderboard to win prizes.
+                    </div>
+                </div>
+                <div class="works-div">
+                    <div class="works-div-top">
+                        <div class="works-heading">
+                            4. Notifications
+                        </div>
+                        <div class="works-logo logo4"></div>
+                    </div>
+                    <div class="works-content">
+                        Stay updated and let everyone know about the exciting events.
+                    </div>
+                </div>
+
+            </div>
+            <div class="works-row row1">
+                <div class="works-div">
+                    <div class="works-div-top">
+                        <div class="works-heading">
+                            5. Blogs
+                        </div>
+                        <div class="works-logo logo5"></div>
+                    </div>
+                    <div class="works-content">
+                        Share your story with everyone. Get a chance to showcase your skills.
+                    </div>
+                </div>
+                <div class="works-div">
+                    <div class="works-div-top">
+                        <div class="works-heading">
+                            6. Join us
+                        </div>
+                        <div class="works-logo logo6"></div>
+                    </div>
+                    <div class="works-content">
+                        Be a part of the 50th edition of Mood Indigo. Stay connected and work with us.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="works-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/f4haw4C8gZk"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+        </div>
+    </div>
+</div>
+
+<div class="sponsor-big-container">
+    <div class="content">
+        <div class="content-head">
+            <div class="text normal small-head">
+                Social Sponsors
+            </div>
+            <!-- <div class="text mask">
+                Sponsors
+            </div> -->
+        </div>
+    </div>
+    <div class="sponsor-container">
+
+        <div class="ngo-list">
+            <a href="https://www.giveindia.org/" target="_blank">
+                <div class="ngo-div">
+                    <img class="ngo" src="../../assets/CAP Landing Page/NGO logos/giveindia.svg">
+                </div>
+            </a>
+            <a href="https://www.akshayapatra.org/" target="_blank">
+                <div class="ngo-div">
+                    <img class="ngo" src="../../assets/CAP Landing Page/NGO logos/akshay_patra.png">
+                </div>
+            </a>
+            <a href="https://books.katha.org/300m/" target="_blank">
+                <div class="ngo-div">
+                    <img class="ngo" src="../../assets/CAP Landing Page/NGO logos/katha.jpg">
+                </div>
+            </a>
+            <div class="ngo-div">
+                <img class="ngo" src="../../assets/CAP Landing Page/NGO logos/mitti.jpg">
+            </div>
+            <a href="https://www.giveindia.org/" target="_blank">
+                <div class="ngo-div">
+                    <img class="ngo" src="../../assets/CAP Landing Page/NGO logos/giveindia.svg">
+                </div>
+            </a>
+            <a href="https://www.akshayapatra.org/" target="_blank">
+                <div class="ngo-div">
+                    <img class="ngo" src="../../assets/CAP Landing Page/NGO logos/akshay_patra.png">
+                </div>
+            </a>
+            <a href="https://books.katha.org/300m/" target="_blank">
+                <div class="ngo-div">
+                    <img class="ngo" src="../../assets/CAP Landing Page/NGO logos/katha.jpg">
+                </div>
+            </a>
+            <div class="ngo-div">
+                <img class="ngo" src="../../assets/CAP Landing Page/NGO logos/mitti.jpg">
+            </div>
+            <div class="ngo-div">
+                <img class="ngo" src="../../assets/CAP Landing Page/NGO logos/ka-logo-red-2.png">
+            </div>
+            <div class="ngo-div">
+                <img class="ngo" src="../../assets/CAP Landing Page/NGO logos/Smile_Foundation_Logo.png">
+            </div>
+        </div>
+        <!-- <div class="ngo-img"></div> -->
+
+    </div>
+    <div class="content">
+        <div class="content-head">
+            <div class="text normal small-head">
+                Social Sponsors
+
+            </div>
+            <!-- <div class="text mask">
+            Sponsors
+        </div> -->
+        </div>
+    </div>
+    <div class="sponsor-container">
+
+        <div class="ngo-list">
+            <a href="https://www.giveindia.org/" target="_blank">
+                <div class="ngo-div">
+                    <img class="ngo" src="../../assets/CAP Landing Page/NGO logos/giveindia.svg">
+                </div>
+            </a>
+            <a href="https://www.akshayapatra.org/" target="_blank">
+                <div class="ngo-div">
+                    <img class="ngo" src="../../assets/CAP Landing Page/NGO logos/akshay_patra.png">
+                </div>
+            </a>
+            <a href="https://books.katha.org/300m/" target="_blank">
+                <div class="ngo-div">
+                    <img class="ngo" src="../../assets/CAP Landing Page/NGO logos/katha.jpg">
+                </div>
+            </a>
+            <div class="ngo-div">
+                <img class="ngo" src="../../assets/CAP Landing Page/NGO logos/mitti.jpg">
+            </div>
+            <a href="https://www.giveindia.org/" target="_blank">
+                <div class="ngo-div">
+                    <img class="ngo" src="../../assets/CAP Landing Page/NGO logos/giveindia.svg">
+                </div>
+            </a>
+            <a href="https://www.akshayapatra.org/" target="_blank">
+                <div class="ngo-div">
+                    <img class="ngo" src="../../assets/CAP Landing Page/NGO logos/akshay_patra.png">
+                </div>
+            </a>
+            <a href="https://books.katha.org/300m/" target="_blank">
+                <div class="ngo-div">
+                    <img class="ngo" src="../../assets/CAP Landing Page/NGO logos/katha.jpg">
+                </div>
+            </a>
+            <div class="ngo-div">
+                <img class="ngo" src="../../assets/CAP Landing Page/NGO logos/mitti.jpg">
+            </div>
+            <div class="ngo-div">
+                <img class="ngo" src="../../assets/CAP Landing Page/NGO logos/ka-logo-red-2.png">
+            </div>
+            <div class="ngo-div">
+                <img class="ngo" src="../../assets/CAP Landing Page/NGO logos/Smile_Foundation_Logo.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="media-big-container">
+    <div class="content">
+        <div class="content-head">
+            <div class="text normal">
+                Media Partners
+            </div>
+
+        </div>
+    </div>
+    <div class="sponsor-container">
+        <div class="sponsor-row row1">
+            <div class="media-part-div sponsor-div">
+                <a href="https://www.youtube.com/channel/UCgJ0-khC7vDOCuBMGquwPdg" target="_blank">
+                    <img class="sponsor" src="../../assets/CAP Landing Page/Media/korean.png">
+                </a>
+                <p class="sponsor-text">Online Media Partner</p>
+            </div>
+            <div class="media-part-div sponsor-div">
+                <a href="https://www.brandcard.in/" target="_blank">
+                    <img class="sponsor" src="../../assets/CAP Landing Page/Media/brandcard.png">
+                </a>
+                <p class="sponsor-text">Online Media Partner</p>
+            </div>
+            <div class="media-part-div sponsor-div">
+                <a href="https://youtube.com/c/TrickyMan" target="_blank">
+                    <img class="sponsor" src="../../assets/CAP Landing Page/Media/tricky.jpg">
+                </a>
+                <p class="sponsor-text">Online Media Partner</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<div class="lbv-bold numbers-container">
+    <div class="num1">
+        {{cities + '+'}} <p>Cities</p>
+    </div>
+    <div class="num2">
+        {{colleges+ '+'}}<p>Colleges</p>
+    </div>
+    <div class="num3">
+        {{members+ '+'}}<p>Members</p>
+    </div>
+</div>
+
+<div class="faq-container">
+    <!-- <img class="faq-top" src="../../assets/CAP Landing Page/SVG/Cap3.svg"> -->
+    <div class="content">
+        <div class="content-head">
+            <div class="text normal">
+                FAQs
+            </div>
+            <!-- <div class="text mask">
+                FAQs
+            </div> -->
+        </div>
+    </div>
+    <!-- <div class="faq-flex">
+        <div class="faq-div1">
+            <div class="faq-item">
+                <div class="faq-question">
+                    Who can apply?
+                </div>
+                <div class="faq-answer">
+                    Students from all colleges across the globe are welcome to apply.
+                </div>
+            </div>
+            <div class="faq-hline"></div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    Can there be multiple members from one college?
+                </div>
+                <div class="faq-answer">
+                    Yes, multiple students can join Indigo Squad from one college. As a team you would be required to organize events.
+                </div>
+            </div>
+            <div class="faq-hline"></div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    What is the Influencer program?
+                </div>
+                <div class="faq-answer">
+                    As a member of Indigo squad you can enrol in the Mood Indigo Influencer program to upgrade your social media skills and be the digital brand ambassador of Mood Indigo. As an Influencer, you can get direct access to Mood Indigo Influencer meets where you can learn from the best in the industry about content creation and social media management. All you need is an active Instagram account! Stay tuned for more information.
+                </div>
+            </div>
+            <div class="faq-hline"></div>
+        </div>
+        <div class="faq-div1">
+            <div class="faq-item">
+                <div class="faq-question">
+                    What is my responsibility being a part of the program?
+                </div>
+                <div class="faq-answer">
+                    As a part of the program, you start at level one and complete various tasks such as ideating on and executing innovative events, actively planning for social media publicity, strategizing and driving word of mouth publicity campaigns on campus.
+                </div>
+            </div>
+            <div class="faq-hline"></div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    What are the different levels and how does one go to the next levels?
+                </div>
+                <div class="faq-answer">
+                    There are 4 levels in total. Like in a game, after successful completion of tasks in each level and earning enough points you would get upgraded to the next level.
+                </div>
+            </div>
+            <div class="faq-hline"></div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    How do referrals work?
+                </div>
+                <div class="faq-answer">
+                    You will be given a referral code. You can recommend your friends in your college or city to register on CCP.  Whenever your friend registers using your referral code, you will earn points.
+                </div>
+            </div>
+            <div class="faq-hline"></div>
+        </div>
+        <div class="faq-div1">
+            <div class="faq-item">
+                <div class="faq-question">
+                    Where can I find daily tasks?
+                </div>
+                <div class="faq-answer">
+                    In the activity tab of your dashboard, you can find questions that can be answered to contribute in planning the 50th edition of Mood Indigo.
+                </div>
+            </div>
+            <div class="faq-hline"></div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    What is MI Coin?
+                </div>
+                <div class="faq-answer">
+                    MI Coins can be earned on successful completion of various tasks that you will be allotted as a member of Indigo Squad. These coins can be used to purchase things such as accommodation, merchandise etc as well as other products from the MI Store. Consider MI coins as the digital currency of Mood Indigo.
+                </div>
+            </div>
+            <div class="faq-hline"></div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    How and when can I apply? What happens after I apply?
+                </div>
+                <div class="faq-answer">
+                    You can apply through our website as soon as the selection portal is open. You will be notified after you successfully register. Then you can start contributing and working immediately.
+                </div>
+            </div>
+            <div class="faq-hline"></div>
+        </div>
+    </div>
+    <div class="italic faq-text">
+        <div class="faq-sub-text">
+            For further queries feel free to contact us at:
+        </div>
+        <div class="faq-email-text">
+            <a href="mailto:publicrelations@moodi.org">publicrelations@moodi.org</a>
+        </div>
+    </div> -->
+    <div class="flex-container faq-dropdown-container">
+        <div class="column">
+            <button class="accordion " (click)="open($event,1) ">Who can apply?</button>
+            <div class="panel ">
+                <p>Students from all colleges across the globe are welcome to apply.</p>
+            </div>
+
+            <button class="accordion  " (click)="open($event,1)">Can there be multiple members from one
+                college?</button>
+            <div class="panel ">
+                <p>Yes, multiple students can join Indigo Squad from one college. As a team you would be
+                    required to
+                    organize events.</p>
+            </div>
+
+            <button class="accordion " (click)="open($event,1)">What is the Influencer program?
+            </button>
+            <div class="panel ">
+                <p>As a member of Indigo squad you can enrol in the Mood Indigo Influencer program to
+                    upgrade your social media skills and be the digital brand ambassador of Mood Indigo.
+                    As an Influencer, you can get direct access to Mood Indigo Influencer meets
+                    where you can learn from the best in the industry about content creation and
+                    social media management. All you need is an active Instagram account!
+                    Stay tuned for more information.</p>
+            </div>
+            <button class="accordion " (click)="open($event,1) ">What is my responsibility being a part of the
+                program?</button>
+            <div class="panel ">
+                <p>As a part of the program, you start at level one and complete various tasks such as ideating
+                    on and
+                    executing innovative events, actively planning for social media publicity, strategizing and
+                    driving
+                    word of mouth publicity campaigns on campus.</p>
+            </div>
+        </div>
+        <div class="column">
+            <button class="accordion " (click)="open($event,1) ">What are the different levels and how does one
+                go to
+                the next levels?</button>
+            <div class="panel ">
+                <p>There are 4 levels in total. Like in a game, after successful completion of tasks in each
+                    level and
+                    earning enough points you would get upgraded to the next level.
+                </p>
+            </div>
+            <button class="accordion " (click)="open($event,1) ">How do referrals work?</button>
+            <div class="panel ">
+                <p>You will be given a referral code. You can recommend your friends in your college or city to
+                    register
+                    on CCP. Whenever your friend registers using your referral code, you will earn points.</p>
+            </div>
+            <button class="accordion " (click)="open($event,1) ">What is MI Coin?</button>
+            <div class="panel ">
+                <p>MI Coins can be earned on successful completion of various tasks that you will be allotted as
+                    a
+                    member of Indigo Squad. These coins can be used to purchase things such as accommodation,
+                    merchandise etc as well as other products from the MI Store. Consider MI coins as the
+                    digital
+                    currency of Mood Indigo.
+                </p>
+            </div>
+            <button class="accordion " (click)="open($event,1) ">How and when can I apply? What happens after I
+                apply?</button>
+            <div class="panel ">
+                <p>You can apply through our website as soon as the selection portal is open. You will be
+                    notified after
+                    you successfully register. Then you can start contributing and working immediately.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="contact-us">
+
+        <div class="faq-text">
+            <div class="faq-sub-text">
+                For further queries feel free to contact us at:
+            </div>
+            <div class="faq-email-text">
+                <a href="mailto:publicrelations@moodi.org">publicrelations@moodi.org</a>
+            </div>
+        </div>
+        <div class="cg-flex">
+            <div class="cg-info">
+                <div class="cg-img-container cg1">
+                    <!-- <img class="cg-img" src="../../assets/cg-images/Image 2.png"> -->
+                </div>
+                <div class="cg-details">
+                    <div class="cg-name">
+                        Anshuman Singh Rathore
+                    </div>
+                    <div class="cg-pos">
+                        Hospitality and PR Head <br> +91 96021 92953
+                    </div>
+                    <div class="cg-social">
+                        <a class="cg-link" href="https://www.instagram.com/anshuman__rathore/"><i
+                                class="fa fa-3x fa-instagram"></i></a>
+                        <a class="cg-link" href="https://www.facebook.com/rathore.rathore.anshuman"><i
+                                class="fa fa-3x fa-facebook"></i></a>
+                        <a class="cg-link" href="9602192953"><i class="fa fa-3x fa-whatsapp"></i></a>
+                        <a class="cg-link" href="https://twitter.com/Anshuma14441895"><i
+                                class="fa fa-3x fa-twitter"></i></a>
+                        <a class="cg-link" href="https://www.linkedin.com/in/anshuman-singh-rathore-57a36b186"><i
+                                class="fa fa-3x fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="cg-info">
+                <div class="cg-img-container cg2">
+                    <!-- <img class="cg-img" src="../../assets/cg-images/Image 2.png"> -->
+                </div>
+                <div class="cg-details">
+                    <div class="cg-name">
+                        Akshat Choudhary
+                    </div>
+                    <div class="cg-pos">
+                        Hospitality and PR Head <br> +91 78690 13233
+                    </div>
+                    <div class="cg-social">
+                        <a class="cg-link" href="https://www.instagram.com/akshat__12_/"><i
+                                class="fa fa-3x fa-instagram"></i></a>
+                        <a class="cg-link" href="https://www.facebook.com/akshat12b/"><i
+                                class="fa fa-3x fa-facebook"></i></a>
+                        <a class="cg-link" href="7869013233"><i class="fa fa-3x fa-whatsapp"></i></a>
+                        <a class="cg-link" href="https://twitter.com/356c213091ed412"><i
+                                class="fa fa-3x fa-twitter"></i></a>
+                        <a class="cg-link" href="https://www.linkedin.com/in/akshat-choudhary-203270170/"><i
+                                class="fa fa-3x fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

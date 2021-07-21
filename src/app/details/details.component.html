@@ -1,0 +1,136 @@
+<!-- <div class="loader">
+    <div class="loader-div">
+        <div id="lottie2"></div>
+    </div>
+</div> -->
+<div class="bgr">
+
+    <div class="container">
+        <!-- <img class="background" src="../../assets/Form/Form_1.webp"> -->
+        <div class="logo">
+            <img (click)="navigate('')" src="../../assets/Icon/my_icon.svg">
+        </div>
+        <div class="desc">
+            <div class="heading">
+                Tell us about yourself
+            </div>
+            <p class="note">If you have passed 12th in 2020 and are still not enrolled in any college, then select your
+                Home City/State
+                under 'City'/'State' tabs and select the option "12th Class" under 'College' and 'Year of Study' tabs
+            </p>
+            <a href="international">
+                <p class="note">International student? Click here.</p>
+            </a>
+            <!-- <mat-form-field class="date">
+            <input matInput [matDatepicker] = "picker" placeholder = "Choose a date">
+            <mat-datepicker-toggle matSuffix [for] = "picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+         </mat-form-field> -->
+            <mat-form-field [style.border]="state_err" appearance="fill">
+
+                <!-- <mat-label>State</mat-label> -->
+                <mat-select (selectionChange)='get_cities($event)' [(value)]="state">
+                    <mat-option [disabled]='true' value="initial">Select College State</mat-option>
+                    <mat-option *ngFor='let s of state_list' [value]='s'>{{s}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <!-- <div [style.display]='state_err' class="error">
+            Please fill out this field properly
+        </div> -->
+            <br>
+            <mat-form-field [style.border]="city_err" appearance="fill">
+
+                <!-- <mat-label>State</mat-label> -->
+                <mat-select [disabled]='city_disabled' (selectionChange)='get_colleges($event)' [(value)]="city">
+                    <mat-option [disabled]='true' value="initial">Select College City</mat-option>
+                    <mat-option *ngFor='let s of city_list' [value]='s'>{{s}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <!-- <div [style.display]='city_err' class="error">
+            Please fill out this field properly
+        </div> -->
+            <br>
+            <mat-form-field [style.border]="college_err" class="college">
+                <input [disabled]='college_disabled' placeholder="Select College" (input)="test()"
+                    [(ngModel)]="college_query" name="college" type="text" matInput [matAutocomplete]="auto">
+                <mat-autocomplete #auto="matAutocomplete">
+                    <mat-option *ngFor="let pf of college_query_list" [value]="pf.name">{{pf.name}}</mat-option>
+                </mat-autocomplete>
+            </mat-form-field>
+            <!-- <br>
+        <mat-form-field [style.border]="college_err" appearance="fill">
+            <mat-select [disabled]='college_disabled' [(value)]="college">
+                <mat-option [disabled]='true' value="initial">Select College</mat-option>
+                <mat-option *ngFor='let s of college_list' [value]='s.id'>{{s.name}}</mat-option>
+            </mat-select>
+        </mat-form-field> -->
+            <!-- <div [style.display]='college_err' class="error">
+            Please fill out this field properly
+        </div> -->
+            <br>
+            <mat-form-field [style.border]="dob_err" appearance="fill">
+                <input [(ngModel)]="dob" style="padding-bottom: 15px;" placeholder="Date of birth" matInput
+                    [matDatepicker]="picker">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+            <!-- <div [style.display]='dob_err' class="error">
+            Please fill out this field properly
+        </div> -->
+            <br>
+            <mat-form-field [style.font-family]="font" [style.border]="gender_err" appearance="fill">
+
+                <!-- <mat-label>State</mat-label> -->
+                <mat-select [(value)]="gender">
+                    <mat-option [disabled]='true' value="initial">Select Gender</mat-option>
+                    <mat-option value="Female">Female</mat-option>
+                    <mat-option value="Male">Male</mat-option>
+                    <mat-option value="Other">Other</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <!-- <div [style.display]='gender_err' class="error">
+            Please fill out this field properly
+        </div> -->
+            <br>
+            <mat-form-field [style.border]="yos_err" appearance="fill">
+
+                <!-- <mat-label>State</mat-label> -->
+                <mat-select [(value)]="year_of_study">
+                    <mat-option [disabled]='true' value="initial">Select Year of study</mat-option>
+                    <mat-option value="12th Class">12th class</mat-option>
+                    <mat-option value="First">1st year</mat-option>
+                    <mat-option value="Second">2nd year</mat-option>
+                    <mat-option value="Third">3rd year</mat-option>
+                    <mat-option value="Fourth">4th year</mat-option>
+                    <mat-option value="Fifth">5th year</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <!-- <div [style.display]='yos_err' class="error">
+            Please fill out this field properly
+        </div> -->
+            <br>
+            <mat-form-field [style.border]="mob_err" appearance="fill">
+
+                <!-- <mat-label>Mobile Number</mat-label> -->
+                <input [(ngModel)]="mob" type="tel" maxlength="10" placeholder="Mobile Number" matInput>
+            </mat-form-field>
+
+            <br>
+            <mat-form-field [style.border]="ref_err" appearance="fill">
+
+                <!-- <mat-label>Mobile Number</mat-label> -->
+                <input [(ngModel)]="ref" type="tel" maxlength="10" placeholder="Referral Code" value="user.referred_by"
+                    matInput>
+            </mat-form-field>
+            <!-- <div [style.display]='mob_err' class="error">
+            Please fill out this field properly
+        </div> -->
+            <br>
+
+
+        </div>
+        <button (click)='submit()' class="login">REGISTER</button>
+    </div>
+
+
+</div>

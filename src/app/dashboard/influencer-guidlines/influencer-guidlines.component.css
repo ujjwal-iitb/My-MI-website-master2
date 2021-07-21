@@ -1,0 +1,54 @@
+.container {
+    margin-left: 20vw;
+    padding-left: 3vw;
+    padding-top: 6vw;
+    /* padding-top: 5vw; */
+    height: auto;
+    background-color: #29B6F6;
+    width: 80vw;
+    padding-bottom: 3vw;
+    position: relative;
+}
+
+li {
+    font-size: 1.5vw;
+}
+
+.main {
+    width: 70vw;
+}
+
+th, td {
+    border: solid white;
+    padding: 0.5vw;
+}
+
+a {
+    color: unset;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        margin-left: 5vw;
+        padding-left: 0;
+        margin-top: 5vw;
+        /* padding-top: 5vw; */
+        height: auto;
+        background-color: #29B6F6;
+        width: 100%;
+        padding-bottom: 3vw;
+        position: relative;
+    }
+    li {
+        font-size: 5.5vw;
+    }
+    tr {
+        font-size: 4.5vw;
+    }
+    h1 {
+        margin-left: 10vw;
+    }
+    .main{
+        width: 85vw;
+    }
+}

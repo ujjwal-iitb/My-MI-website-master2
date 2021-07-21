@@ -1,0 +1,70 @@
+.container {
+    padding: 1vw;
+    border: solid;
+    border-radius: 2vw;
+}
+
+.table-heading {
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.table-content {
+    font-size: 1vw;
+    margin-bottom: 1vw;
+    margin-top: 0.5vw;
+}
+
+.table-row {
+    display: flex;
+    align-items: center;
+    font-size: 1vw;
+}
+
+.item-name {
+    margin-right: 1vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 20vw;
+    text-overflow: ellipsis;
+}
+
+.line {
+    flex-grow: 1;
+    border: solid;
+    height: 0vw;
+}
+
+.score {
+    font-size: 1.5vw;
+    margin-left: 1vw;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .table-row {
+        padding: 2vw;
+        font-size: 3vw;
+    }
+    .score {
+        font-size: 3.5vw;
+    }
+    .item-name {
+        margin-right: 1vw;
+        font-size: 3.5vw;
+        max-width: 50vw;
+    }
+    .table-heading {
+        font-size: 4vw;
+    }
+    .table-content {
+        font-size: 3vw;
+    }
+    .line {    
+        border: 1px solid;
+        height: 0px;
+        background-color: white;
+    }
+}

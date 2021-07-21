@@ -1,0 +1,382 @@
+<!-- <div class="loader">
+    <div class="loader-div">
+        <div id="lottie2"></div>
+    </div>
+</div> -->
+<div class="signin1">
+    <button *ngIf="!registered" [style.display]="signup_display" (click)="navigate('signup')" class="above-all">SIGN
+        UP</button>
+    <button *ngIf="registered" [style.display]="signup_display" (click)="navigate('dashboard')" class="above-all">
+        DASHBOARD
+    </button>
+</div>
+<div class="back">
+</div>
+<!-- <div class="main">
+    <div class="my-logo">
+        <img (click)="navigate('')" class="logo" src="../assets/Icon/my_icon.svg">
+    </div>
+    <div class="social-container">
+        <div class="social">
+            <div (click)="navigate('ccp')" class="social-logo">
+                CCP
+            </div>
+            <div (click)="navigate('iap')" class="social-logo">
+                IAP
+            </div>
+            <div (click)="navigate('competitions')" class="social-logo">
+                COMPETITIONS
+            </div>
+            <div (click)="navigate('influencer')" class="social-logo">
+                INFLUENCER
+            </div>
+            <div (click)="navigate('shop')" class="social-logo">
+                MI SHOP
+            </div>
+        </div>
+    </div>
+    <div *ngIf="!registered" class="signin">
+        <button class="signin-button" (click)="navigate('signup')">SIGN UP</button>
+    </div>
+    <div *ngIf="registered" class="signin">
+        <button class="signin-button" (click)="navigate('dashboard')">DASHBOARD</button>
+    </div>
+</div> -->
+<div class="topnav" id="myTopnav">
+    <div class="my-logo">
+        <img (click)="navigate('')" class="logo" src="../assets/Icon/my_icon.svg">
+    </div>
+    <a>&nbsp;</a>
+    <a style="padding: 0;margin: 0;font-size: 0;">&nbsp;</a>  
+    <div (click)="expand()" class="dropdown">
+      <div class="dropbtn">CCP 
+        <i class="fa fa-caret-down" style="padding-left: 0.2vw;"></i>
+      </div>
+      <div class="dropdown-content" id="drpdown">
+        <a href="/ccp">Register</a>
+        <a href="#">About CCP</a>
+        <a href="#">Why CCP</a>
+        <a href="#">Internship</a>
+        <a href="#">How it Works</a>
+        <a href="#">FAQs</a>
+      </div>
+    </div> 
+    <a (click)="navigate('iap')">IAP</a>
+    <a (click)="navigate('competitions')">COMPETITIONS</a>
+    <a (click)="navigate('influencer')">INFLUENCER</a>
+    <a (click)="navigate('shop')">MI SHOP</a>
+    <a href="javascript:void(0);" style="font-size:28px;" class="icon" (click)="navbar()">&#9776;</a>
+    <div *ngIf="!registered" class="signin">
+        <button class="signin-button" (click)="navigate('signup')">SIGN UP</button>
+    </div>
+    <div *ngIf="registered" class="signin">
+        <button class="signin-button" (click)="navigate('dashboard')">DASHBOARD</button>
+    </div>
+</div>
+<div class="container">
+    <div class="top-section">
+        <div class="logo-div-shadow">
+            <div class="logo-div">
+                <div class="top-container">
+                    <div class="heading">
+                        <div class="heading-top italic">
+                            Your one stop shop for everything.
+                        </div>
+                        <!-- <div class="heading-bottom">
+                            <div class="text normal">
+                                Indigo.
+                            </div>
+                            <div class="text mask">
+                                Indigo.
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sleeping">
+            <div [style.transform]="sleeping_transform" id="lottie"></div>
+        </div>
+        <div class="umbrella">
+            <img class="umb-img" [style.transform]="sleeping_transform" src="../../assets/Main Graphic/umbrella.webp">
+        </div>
+        <div class="flag">
+            <!-- <img class="flag-img" src="../../assets/Final/" -->
+        </div>
+        <div class="cloud-top">
+            <img class="cloud-top-img" src="../../assets/Clouds/cloud_1.webp">
+            <img class="moodi-flag" src="../../assets/Flag animation/Flag-Animation.gif">
+        </div>
+        <div class="guitar">
+            <img [style.transform]="transform" class="guitar-img-mask"
+                src="../../assets/Main Graphic/guitar_vector.webp">
+        </div>
+        <div class="guitar">
+            <img [style.transform]="transform" class="guitar-img-mask2"
+                src="../../assets/Main Graphic/guitar_pattern.webp">
+        </div>
+        <div class="section2">
+            <div class="buildings">
+                <div style="transform: rotateZ(180deg);" class="build l1">
+                    <img src="../../assets/Buildings/building_1.webp">
+                </div>
+                <div style="transform: rotateZ(180deg);" class="build l2">
+                    <img src="../../assets/Buildings/building_2.webp">
+                </div>
+                <div style="transform: rotateZ(180deg);" class="build l3">
+                    <img src="../../assets/Buildings/building_3.webp">
+                </div>
+            </div>
+            <div>
+                <img [style.transform]="logo_transform" class="tear-patch"
+                    src="../../assets/Mood Indigo Graphic/mi_patch.webp">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="intro-container">
+        <div class="tear-content">
+            <div class="heading-top">
+                What is
+            </div>
+            <div class="mi heading-bottom">
+                <div class="text normal">
+                    Mood Indigo?
+                </div>
+                <div class="text mask">
+                    Mood Indigo?
+                </div>
+            </div>
+            <div class="intro description">
+                <div class="sub-heading">
+                    Best four days of your life!
+                </div>
+                <div class="sub-desc">
+                    <p>
+                        Mood Indigo annually entertains a footfall of more than 1,46,000 students from over 1700
+                        colleges spanning across India.
+                        <br>
+                        Started in 1971, it has attracted people from all over the globe. Mood Indigo has lived through
+                        decades of musical and cultural changes, not only keeping up with the times but also setting new
+                        standards for cultural fests each year, and this time they are back with the 50th edition.
+                        <br>
+                        From bonfire nights, games, standups and performances by some of the biggest artists, to street
+                        competitions, workshops, and exhibitions, you will never be able to see it all, but what you do
+                        see will last a lifetime!
+                        <br>
+                        Find yourself lost in the magic of Mood Indigo, each day better than the last, surprises at
+                        every turn and towards the end, your only wish would be to experience the best 4 days of your
+                        life all over again.
+                    </p>
+                </div>
+                <div class="heading-quote">
+                    Here’s to nights that turn into mornings, and friends that turn into family.
+                </div>
+            </div>
+        </div>
+        <div class="tear-div">
+            <img class="tear-img" src="../../assets/Mood Indigo Graphic/flag_background.webp">
+            <img [style.transform]="logo_transform" class="tear-logo"
+                src="../../assets/Mood Indigo Graphic/mi_vector.webp">
+        </div>
+        <img [style.transform]="logo_transform" class="tear-mpatch"
+            src="../../assets/Mood Indigo Graphic/mi_patch.webp">
+    </div>
+
+
+    <div id="ccp" class="ccp-container">
+        <!-- <img src="../../assets/Tiles and Masks/SVG/3.svg"> -->
+        <div class="content">
+            <div class="content-head">
+                <div class="text normal">
+                    College Connect Program
+                </div>
+                <div class="text mask">
+                    College Connect Program
+                </div>
+            </div>
+        </div>
+        <div class="content-desc">
+            <div class="blank"></div>
+            <div class="heading-bottom ccp-description">
+                <div class="prog-desc">
+                    <p>The college connect program is the vanguard of Mood Indigo’s outreach program; creating and
+                        developing a strong link between Mood Indigo and students all over India. This is your chance to
+                        gain valuable experience, pull off awesome events, and build a strong network with similarly
+                        motivated individuals. Be the face of Mood Indigo in your college and city. This is your
+                        opportunity to make a major breakthrough in your professional life and gain invaluable
+                        experience and skills. In a world full of college ambassadors, be a member of Indigo Squad.</p>
+                    <!-- <p>
+                        As a member of the Indigo Squad, enroll in the <b>Mood Indigo Influencer program</b>. Learn
+                        content creation, social media management, and a lot more! The program is going to be full of
+                        pleasant surprises for you! So stay tuned to learn more!
+                    </p> -->
+                </div>
+                <!-- <div class="quote">
+                    Influencer Program Launching soon.
+                </div> -->
+                <div class="space quote">
+                    Sometimes opportunity is staring right at you. All you have to do is open your eyes.
+                </div>
+                <button class="ccp-button" (click)="navigate('ccp')">KNOW MORE</button>
+            </div>
+
+            <!-- <div class="signin">
+            </div> -->
+        </div>
+        <img [style.transform]="ccp_transform" class="cap" src="../../assets/CAP/CAP.webp">
+    </div>
+
+    <div id="iap" class="iap-container">
+        <!-- <img src="../../assets/Tiles and Masks/SVG/3.svg"> -->
+        <div class="content">
+            <div class="content-head">
+                <div class="text normal">
+                    Indigo Art Project
+                </div>
+                <div class="text mask">
+                    Indigo Art Project
+                </div>
+            </div>
+        </div>
+        <div class="content-desc">
+            <!-- <div class="blank"></div> -->
+            <div class="iap-desc heading-bottom sub-description">
+                <div class="prog-desc">
+                    <p>Get ready to take your creativity to another dimension and give voice to your ideas! This is an
+                        opportunity for you to sharpen your artskills, present your art to the world and work alongside
+                        artists from around the world. You will get to learn and improve your creative skills with
+                        various workshops and present your work in Mood Indigo. Get a chance to showcase your Art to the
+                        world! Anyone can join in! Click below to Pre- Register Now!
+                    </p>
+                </div>
+                <button class="ccp-button" (click)="navigate('iap')">KNOW MORE</button>
+            </div>
+        </div>
+        <div [style.transform]="iap_transform" class="iap">
+        </div>
+    </div>
+
+    <div id="multicity" class="multicity-container">
+        <!-- <img src="../../assets/Tiles and Masks/SVG/3.svg"> -->
+        <div class="content">
+            <div class="content-head">
+                <div class="text normal">
+                    Competitions
+                </div>
+                <div class="text mask">
+                    Competitions
+                </div>
+            </div>
+        </div>
+        <div class="content-desc">
+            <!-- <div class="blank"></div> -->
+            <div class="heading-bottom sub-description">
+                <div class="prog-desc">
+                    <p>The Competitions at Mood Indigo witness the best quality of participation from 1700+ colleges all
+                        over India and are widely considered as the hotbed of budding talent.
+                        Grab this chance and participate in this year's Competitions to compete with the best in the
+                        nation!</p>
+                </div>
+                <!-- <div class="coming-soon"> -->
+                <button class="ccp-button" (click)="navigate('competitions')">KNOW MORE</button>
+                <!-- </div> -->
+            </div>
+        </div>
+        <div [style.transform]="multi_transform" class="multi"></div>
+    </div>
+
+    <div class="top-cover"></div>
+    <div id="influencer" class="multicity-container influencer-container">
+        <!-- <img src="../../assets/Tiles and Masks/SVG/3.svg"> -->
+        <div class="content">
+            <div class="content-head">
+                <div class="text normal">
+                    Influencer Program
+                </div>
+                <div class="text mask">
+                    Influencer Program
+                </div>
+            </div>
+        </div>
+        <div class="content-desc">
+            <!-- <div class="blank"></div> -->
+            <div class="heading-bottom sub-description">
+                <div class="prog-desc">
+                    <p>Mood Indigo's Influencer program is a one of it's kind Influencer Program in the world. Built
+                        with a motive to
+                        empower upcoming nano and micro-Influencers, the program caters to Influencers across various
+                        platforms and
+                        fields. Become a part of the Influencer program to accelerate your ventures into the world of
+                        social media, ace
+                        your Influencer-marketing skills and grow your online audience. Build an influential network and
+                        earn exciting
+                        Mood Indigo privileges from media access to goodies to passes.
+                    </p>
+                </div>
+                <!-- <div class="coming-soon"> -->
+                <button class="ccp-button" (click)="navigate('influencer')">KNOW MORE</button>
+                <!-- </div> -->
+            </div>
+        </div>
+        <div class="multi influencer"></div>
+    </div>
+
+
+
+    <div class="contact-container">
+        <!-- <img src="../../assets/Tiles and Masks/SVG/3.svg"> -->
+        <!-- <div class="content">
+            <div class="content-head">
+                <div class="text normal">
+                    Multicity Eliminations
+                </div>
+                <div class="text mask">
+                    Multicity Eliminations
+                </div>
+            </div>
+        </div> -->
+        <div class="contact-desc">
+            <div class="contact">
+                Welcome to the MI family!
+            </div>
+            <div class="contact">
+                Let's sign you up and get you started.
+            </div>
+            <button *ngIf="!registered" (click)="navigate('signup')" class="signup">
+                SIGN UP
+                <img class="right-arrow" src="../../assets/svgs/right.svg">
+            </button>
+            <button *ngIf="registered" (click)="navigate('dashboard')" class="signup">
+                DASHBOARD
+            </button>
+            <div class="contact">
+                Contact us for any queries.
+            </div>
+            <form class="form">
+                <input [style.border]="name_border" [(ngModel)]="query_obj.name" name="name" placeholder="NAME"
+                    type="text" class="contact-input"><br>
+                <input [style.border]="email_border" [(ngModel)]="query_obj.email" name="email" placeholder="E-MAIL ID"
+                    type="email" class="contact-input"><br>
+                <input [style.border]="subject_border" [(ngModel)]="query_obj.subject" name="subject"
+                    placeholder="SUBJECT" type="text" class="contact-input"><br>
+                <textarea [style.border]="content_border" [(ngModel)]="query_obj.content" name="content"
+                    placeholder="CONTENT" type="text" class="contact-content"></textarea><br>
+                <button (click)="query()" class="signup">
+                    SEND
+                    <img class="right-arrow" src="../../assets/svgs/right.svg">
+                </button>
+                <p style="color: white; font-size: larger;" *ngIf="query_success">The message was successfully sent, we
+                    will contact you shortly!</p>
+                <p style="color: red; font-size: larger;" *ngIf="query_failure">There was some error, please try again
+                    later.</p>
+            </form>
+            <div class="clouds-form">
+                <img class="bottom-clouds cloud1" src="../../assets/Clouds/cloud_1.webp">
+                <img class="bottom-clouds cloud2" src="../../assets/Clouds/cloud_2.webp">
+            </div>
+        </div>
+        <!-- <img class="multi" src="../../assets/Multicity/Multicity.jpg"> -->
+    </div>
+</div>

@@ -1,0 +1,41 @@
+<div class="background">
+    <div class="clouds">
+        <!-- <img class="cloud-img" src="../../assets/Clouds/cloud_1.webp"> -->
+    </div>
+</div>
+
+<div class="main">
+    <div class="logo">
+        <img (click)="navigate('')" class="logo-img" src="../../assets/Icon/my_icon.svg">
+    </div>
+    <!-- <div class="heading">
+        Which boat do you want to board?
+    </div>
+    <div class="sub-heading">
+        We'll just need some additional details to get you started.
+    </div> -->
+    <div class="img-container">
+        <img class="iap-img" src="../../assets/IAP/FreeAccomodation.webp">
+    </div>
+    <div class="iap">
+        <div class="prog-heading">
+            Indigo Art Project
+            <button (click)="register('iap')" class="register">
+                {{iap_text}}
+                <!-- <img class="right-arrow" [src]="iap_registered"> -->
+            </button>
+        </div>
+        <div class="pre-desc">
+            We'll go live in some time with this particular intiative. For the time being, you can pre-register for the program and we'll contact you and notify you when it goes live. Sorry for the delay!
+        </div>
+        <button (click)="register('iap')" class="mregister">
+            {{iap_text}}
+            <!-- <img class="mright-arrow" [src]="iap_registered"> -->
+        </button>
+    </div>
+    
+    <!-- <button (click)="next()" class="mregister">
+        I'm done
+        <img class="mright-arrow" src="../../assets/svgs/right.svg">
+    </button> -->
+</div>

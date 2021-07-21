@@ -1,0 +1,214 @@
+.container {
+    margin-left: 20vw;
+    padding-left: 7vw;
+    margin-top: 3vw;
+    /* padding-top: 5vw; */
+    height: 100vh;
+    /* background-color: #29B6F6; */
+    background-image: linear-gradient(to right, #B721FF, #21D4FD);
+    width: 75vw;
+    padding-bottom: 3vw;
+    position: fixed;
+}
+
+.row {
+    height: 95vh;
+    overflow-y: scroll;
+    padding-top: 5vw;
+}
+
+.fa-3x {
+    font-size: 2em;
+}
+
+.dept-cards {
+    display: flex;
+    justify-content: left;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.heading {
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.cg-flex {
+    display: flex;
+    width: 80vw;
+    /* height: 50vw; */
+    margin-left: 9vw;
+    justify-content: space-between;
+    margin-top: 4vw;
+}
+
+.cg-info {
+    width: 32vw;
+    background-color: #2A0645;
+    border-radius: 2vw;
+    display: flex;
+    margin-right: 2vw;
+}
+
+.cg-img-container {
+    height: 25vw;
+    width: 15vw;
+    overflow: hidden;
+    border-radius: 2vw;
+    flex: 0 0 13vw;
+}
+
+.cg1 {
+    background-image: url("../../../assets/cg-images/Image 1.png");
+    background-position: right center;
+    background-size: 25vw;
+}
+
+.cg2 {
+    background-image: url("../../../assets/cg-images/Image 2.png");
+    background-position: center bottom;
+    background-size: 25vw;
+}
+
+.cg3 {
+    background-image: url("../../../assets/cg-images/divyansh.jpeg");
+    background-position: center bottom;
+    background-size: 25vw;
+    background-size: cover;
+}
+
+.cg4 {
+    background-image: url("../../../assets/Compi/ujjwal.jpg");
+    background-position: center;
+    background-size: 25vw;
+    background-size: cover;
+}
+
+.cg5 {
+    background-image: url("../../../assets/Compi/harmeet.jpeg");
+    background-position: center bottom;
+    background-size: 25vw;
+    background-size: cover;
+}
+
+.cg6 {
+    background-image: url("../../../assets/Influencer/shubh.jpeg");
+    background-position: center bottom;
+    background-size: 25vw;
+    background-size: cover;
+}
+
+.cg7 {
+    background-image: url("../../../assets/Influencer/gargee.jpeg");
+    background-position: center bottom;
+    background-size: 25vw;
+    background-size: cover;
+}
+
+.cg8 {
+    background-image: url("../../../assets/cg-images/Zeel.PNG");
+    background-position: center bottom;
+    background-size: 25vw;
+    background-size: cover;
+}
+
+.cg-img {
+    height: 100%;
+}
+
+.cg-details {
+    color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2vw;
+    flex-grow: 1;
+}
+
+.cg-link {
+    color: unset;
+}
+
+.cg-name {
+    font-size: 2vw;
+}
+
+.cg-pos {
+    font-size: 1.3vw;
+}
+
+.cg-social {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 2vw;
+}
+
+.space {
+    height: 5vw;
+}
+@media only screen and (max-width: 600px)
+{
+    .container {
+        margin-left: 10vw;
+        padding-left: 0;
+        margin-top: 12vw;
+        /* padding-top: 5vw; */
+        height: 100vh;
+        background-color: #29B6F6;
+        width: 100%;
+        padding-bottom: 3vw;
+        position: fixed;
+    }
+    .dept-cards {
+        display: block;
+        justify-content: center;
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+    }
+    .cg-info {
+        width: 80vw; 
+        background-color: white;
+        border-radius: 4vw;
+        display: flex;
+        margin-right: 2vw;
+        margin-bottom:10vw;
+    }
+    .fa{
+        font-size: 7vw;
+    }
+    .cg-img-container{
+        height: auto;
+        width: 35vw;
+        overflow: hidden;
+        border-radius: 2vw;
+        flex: 0 0 auto;
+    }
+    
+    .cg1 {
+        background-image: url("../../../assets/cg-images/Image 1.png");
+        background-position: right center;
+        background-size: 45vw;
+    }
+
+    .cg2 {
+        background-image: url("../../../assets/CAP/CCP AKSHAT.jpeg");
+        background-position: center bottom;
+        background-size: 45vw;
+    }
+    .heading{
+        font-size: 7.5vw;
+    }
+    .cg-name {
+        font-size: 6vw;
+        font-weight: bolder;
+        height: 20vw;
+    }   
+    .cg-pos {
+        font-size: 4.3vw;
+        font-weight: bold;
+    }
+    .cg-link {
+        padding-right: 2vw;
+    }
+}

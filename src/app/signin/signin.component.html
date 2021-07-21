@@ -1,0 +1,41 @@
+<div class="bgr">
+    <div class="container">
+        <!-- <img class="background" src="../../assets/Google Doodle/google_doodle.webp"> -->
+        <div class="logo">
+            <img (click)="navigate('')" src="../../assets/Icon/my_icon.svg">
+        </div>
+        <div class="desc">
+            <div class="heading">
+                Just a single tap.
+            </div>
+            <div class="text">
+                <br>
+                We'll just need your Google Login to set-up everything for you!
+            </div>
+        </div>
+        <button class="login" #loginRef>LOGIN<i class="fa fa-caret-right fa-fw" aria-hidden="true"> </i>
+        </button><br>
+        <div class="error" *ngIf="error">
+            <br>
+            There was some error processing your request, try again or continue with UserID and Name.
+        </div>
+        <div class="error">
+            <br>
+            <a style="cursor: pointer;" (click)="showForm()">Sign in with UserID and Name</a>
+        </div>
+
+        <div *ngIf="showbox">
+
+            <input [style.border]="email_border" [(ngModel)]="error_email" name="email" placeholder="E-MAIL ID"
+                type="email" class="contact-input"><br>
+            <input [style.border]="name_border" [(ngModel)]="error_name" name="name" placeholder="NAME" type="text"
+                class="contact-input"><br>
+            <button (click)="error_submit()" class="login">SUBMIT<i class="fa fa-caret-right fa-fw" aria-hidden="true">
+                </i>
+            </button><br>
+        </div>
+        <div style="height: 10vw;"></div>
+    </div>
+
+
+</div>

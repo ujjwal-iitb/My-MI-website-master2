@@ -1,0 +1,578 @@
+<div class="loader">
+    <div class="loader-div">
+        <div id="lottie2"></div>
+    </div>
+</div>
+<div class="back">
+    <img class="back-img" src="../../assets/Green Back/green_1.png">
+</div>
+<div class="main">
+    <div class="my-logo">
+        <img (click)="navigate('')" class="logo" src="../assets/Icon/my_icon.svg">
+    </div>
+    <div class="social-container">    
+        <div class="social">
+            <div (click)="navigate('ccp')" class="social-logo">
+                CCP
+            </div>
+            <div (click)="navigate('iap')" class="social-logo">
+                IAP
+            </div>
+            <div (click)="navigate('competitions')" class="social-logo">
+                COMPETITIONS
+            </div>
+            <div (click)="navigate('influencer')" class="social-logo">
+                INFLUENCER
+            </div>
+            <div (click)="navigate('shop')" class="social-logo">
+                MI SHOP
+            </div>
+        </div>
+    </div>
+    <div class="signin">
+        <button *ngIf="!registered" class="signin-button" (click)="navigate('signup')">SIGN UP</button>
+        <button *ngIf="registered" class="signin-button" (click)="navigate('dashboard')">DASHBOARD</button>
+
+    </div>
+</div> 
+
+<div id="ccp" class="ccp-container">
+    <!-- <img src="../../assets/Tiles and Masks/SVG/3.svg"> -->
+    <div class="head content">
+        <div class="content-head">
+            <div class="text normal">
+                Online Competitions
+            </div>
+            <!-- <div class="text mask">
+                Online Competitions
+            </div> -->
+        </div>
+    </div>
+    <div *ngIf="!registered" class="content-quote">
+        Sign up and Register below to get the details of each competition!
+    </div>
+    <div *ngIf="registered" class="content-quote">
+        Check out the Dashboard to know the rules of each competition!
+    </div>
+    <button *ngIf="!registered" (click)="navigate('signup')" class="register">
+        REGISTER
+        <img class="mright-arrow" src="../../assets/svgs/right.svg">
+    </button>
+    <button *ngIf="registered" (click)="navigate('dashboard')" class="register">
+        DASHBOARD
+    </button>
+    <img class="cap" src="../../assets/Compi/trophy.webp">
+</div>
+
+<div class="about-container">
+    <div class="content">
+        <!-- <div class="content-head">
+            <div class="text normal">
+                There are no Multicity Eliminations this year!
+            </div>
+            <div class="text mask">
+                There are no Multicity Eliminations this year!
+            </div>
+        </div> -->
+    </div>
+    <div class="content-desc desc2 no-heading">
+        This is your only chance to be a part of Mood Indigo's Competitions.
+        <p>
+            There will be no Multicity Eliminations this year.
+        </p>
+    </div>
+    <div class="about-quote">
+        Group Competitions launched!
+    </div>
+    <img class="about-img" src="../../assets/Compi/mumabi tiny planer.webp">
+</div>
+
+<div class="about-container small-container">
+    <div class="content">
+        <div class="content-head">
+            <div class="text normal">
+                Leaderboards
+            </div>
+            <div class="text mask">
+                Leaderboards
+            </div>
+        </div>
+    </div>
+    <div class="coming-soon">
+        <div class="leaderboard-container">
+            <div *ngIf="overall" class="leaderboard-list">
+                <app-table2 [table]="overall"></app-table2>
+            </div>
+        </div>
+    </div>
+    <img class="about-img leaderboard-img" src="../../assets/Compi/Leaderboard.webp">
+</div>
+
+<div class="about-container">
+    <div class="content">
+        <div class="content-head">
+            <div class="text normal">
+                Selections
+            </div>
+            <div class="text mask">
+                Selections
+            </div>
+        </div>
+    </div>
+    <div class="content-desc desc2">
+        Top entries of all the competitions will be selected for the higher rounds at Mood Indigo.
+        <p>
+            Apart from the top entries, best participants from all the zones will also be given wild card entries to higher rounds
+        </p>
+    </div>
+    <div class="compi-zone">
+        <div class="zone-heading">
+            North Zone
+        </div>
+        <div class="zone-location">
+            Jammu and Kashmir, Himachal Pradesh, Punjab, Uttarakhand, Haryana, Uttar Pradesh, Delhi
+        </div>
+    </div>
+    <div class="compi-zone">
+        <div class="zone-heading">
+            West Zone
+        </div>
+        <div class="zone-location">
+            Rajasthan, Gujarat, Maharashtra, Goa
+        </div>
+    </div>
+    <div class="compi-zone">
+        <div class="zone-heading">
+            Central Zone
+        </div>
+        <div class="zone-location">
+            Madhya Pradesh, Chattisgarh, Bihar, Jharkhand, Orissa
+        </div>
+    </div>
+    <div class="compi-zone">
+        <div class="zone-heading">
+            East Zone
+        </div>
+        <div class="zone-location">
+            West Bengal, Sikkim, Arunachal Pradesh, Meghalaya, Assam, Nagaland, Manipur, Mizoram, Tripura
+        </div>
+    </div>
+    <div class="compi-zone">
+        <div class="zone-heading">
+            South Zone
+        </div>
+        <div class="zone-location">
+            Karnataka, Andhra Pradesh, Telangana, Tamil Nadu, Kerala, Puducherry
+        </div>
+    </div>
+    <img class="about-img third-img" src="../../assets/Compi/map.webp">
+</div>
+
+<div class="about-container">
+    <div class="content content2">
+        <div class="content-head">
+            <div class="text normal">
+                How do Competitions work?
+            </div>
+            <div class="text mask">
+                How do Competitions work?
+            </div>
+        </div>
+    </div>
+    <div class="works-container">
+        <div class="works-row row1">
+            <div class="works-div">
+                <div class="works-div-top">
+                    <div class="italic works-heading">
+                        Dashboard
+                    </div>
+                    <div class="works-logo logo1"></div>
+                </div>
+                <div class="works-content">
+                    Your personalized dashboard will contain all the information to guide you through the competitions
+                </div>
+            </div>
+            <div class="works-div">
+                <div class="works-div-top">
+                    <div class="italic works-heading">
+                        Leaderboard
+                    </div>
+                    <div class="works-logo logo3"></div>
+                </div>
+                <div class="works-content">
+                    Find all the rankings in this section. Lead your college to glory!
+                </div>
+            </div>
+        </div>
+        <div class="works-row row1">
+            <div class="works-div">
+                <div class="works-div-top">
+                    <div class="italic works-heading">
+                        Notifications
+                    </div>
+                    <div class="works-logo logo4"></div>
+                </div>
+                <div class="works-content">
+                    Stay updated about deadlines and incentives
+                </div>
+            </div>
+            <div class="works-div">
+                <div class="works-div-top">
+                    <div class="italic works-heading">
+                        Blogs
+                    </div>
+                    <div class="works-logo logo5"></div>
+                </div>
+                <div class="works-content">
+                    Get a chance to showcase your skills
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="testimonial-container">
+    <div class="content">
+        <div class="content-head">
+            <div class="text normal">
+                Toasts from our family
+            </div>
+            <div class="text mask">
+                Toasts from our family
+            </div>
+        </div>
+    </div>
+    <div class="testimonial-list">
+        <div class="testimonial-div">
+            <div class="testimonial-img-div">
+                <img class="testimonial-img" src="../../assets/Compi/testimonials/Tulika_Nrityanjali.jpeg">
+            </div>
+            <div class="testimonial-text">
+                <div class="testimonial">
+                    My experience as a participant and winner in Nrityanjali - Mood Indigo 2019 was breathtaking. It was an exciting, challenging and blissful episode of my life. The management of the organising team, the ambience and the level of competition were fantabulous. The judges were from different domains of Indian Classical Dance forms like Kathak, Bharatnatyam, Odissi, making the competition unbiased. Winning Nrityanjali after competing with the finest classical dancers from across the length and breadth of India is a matter of utmost pride and delight for me.
+Thanks a lot Mood Indigo for conducting such amazing competitions to encourage talented artists
+
+                </div>
+                <div class="bold person-details">
+                    <p>Tulika Tripathy,</p>
+                    <p> Winner, Nrityanjali: Solo Classical Dance Competition</p>
+                    <p>Mood Indigo 2019</p>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-div">
+            <div class="testimonial-img-div">
+                <img class="testimonial-img" src="../../assets/Compi/testimonials/Nirvana_Director_s Cut.jpeg">
+            </div>
+            <div class="testimonial-text">
+                <div class="testimonial">
+                    Mood Indigo 2019 gave us an opportunity to showcase and discover our talent. It indeed gave us confidence to pursue our dreams forward. Every budding artist should look forward to this event, not just for the sake of winning but for the myriad experiences it offers.
+                </div>
+                <div class="person-details">
+                    <p>Team Nirvana</p>
+                    <p>Winners, Director’s Cut: Short-Film Making Competition</p>
+                    <p>Mood Indigo 2019</p>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-div">
+            <div class="testimonial-img-div">
+                <img class="testimonial-img" src="../../assets/Compi/testimonials/Rahul_MI-gician.jpeg">
+            </div>
+            <div class="testimonial-text">
+                <div class="testimonial">
+                    Mood Indigo gave us a platform that's so very rare in India. The magic competition was such an amazing experience. Magic as an art form and as a community has a lot of growing to do in our Indian context and this is a wonderful medium for the same. I will definitely come again if I get the chance, it was a very wholesome experience.
+                </div>
+                <div class="person-details">
+                    <p>Rahul Menon</p>
+                    <p>Winner, MI-gician: Magic Competition</p>
+                    <p>Mood Indigo 2019</p>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-div">
+            <div class="testimonial-img-div">
+                <img class="testimonial-img" src="../../assets/Compi/testimonials/LSR_Desi Beats.jpeg">
+            </div>
+            <div class="testimonial-text">
+                <div class="testimonial">
+                    Mood Indigo, just like each year, held it's standards of fun and excitement higher than ever. The food, the music, the dancing, everything was amazing. There was just so much to engage with. I don't think I will ever forget my experience of Mood Indigo 2019!
+                </div>
+                <div class="person-details">
+                    <p>Lady Shri Ram Dance Society</p>
+                    <p>Finalists, Desi Beats: Group Bollywood Dance Competition</p>
+                    <p>Mood Indigo 2019</p>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-div">
+            <div class="testimonial-img-div">
+                <img class="testimonial-img" src="../../assets/Compi/testimonials/Bhavika_Chef_s Corner.jpeg">
+            </div>
+            <div class="testimonial-text">
+                <div class="testimonial">
+                    It’s one thing to cook in your own comfort kitchen, for your own self, and daydreaming about MasterChef, and it’s another when you’re actually in a professional kitchen and cooking in limited time and resources. Mood Indigo gave me that experience, the thrill of working under pressure, and competing against students of HM and professional chefs. I’m grateful to Mood Indigo for making me realise the importance of food in my life, and making me believe in my skill. I would like to add that the entire competition was so well arranged, kudos to the organisers, they were very accommodating and helpful since the day I registered for the competition to the day I received my certificate.
+                </div>
+                <div class="person-details">
+                    <p>Bhavika Mehta</p>
+                    <p>Winner, Chef’s Corner: Cooking Competition</p>
+                    <p>Mood Indigo 2019</p>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-div">
+            <div class="testimonial-img-div">
+                <img class="testimonial-img" src="../../assets/Compi/testimonials/Natyamanch_Third Bell.jpeg">
+            </div>
+            <div class="testimonial-text">
+                <div class="testimonial">
+                    Mood Indigo completely lived up to and justified the subtitle given to it as it does every time. Vast experiences, the joy it brings you, the energy it carries, the cultural festivities, meeting new people and enjoying the time with your close ones, all of this absolutely makes it worth your while travelling from any part of the country to Powai to witness the largest fest in Asia. Mood Indigo's organization in itself is a great feat. It was surprising to see how such a big event such as this ran smoothly over the course of 4 days. All the necessities, for the attendees, were taken care of. Everything was very convenient for the teams who had to practice for their respective events, be it the mess or the accommodation. Not to mention how well all the events were organized, without any delays and clashes. Overall it was a great experience, and a well planned fest. Looking forward to being at Mood Indigo soon!
+                </div>
+                <div class="person-details">
+                    <p>Natyamanch</p>
+                    <p>Winners, Third bell: Stage Play Competition</p>
+                    <p>Mood Indigo 2019</p>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-div">
+            <div class="testimonial-img-div">
+                <img class="testimonial-img" src="../../assets/Compi/testimonials/Surabhi_MI Idol.jpeg">
+            </div>
+            <div class="testimonial-text">
+                <div class="testimonial">
+                    I was the 2nd runner up of the MI idol, and I must say the whole experience of participating in this competition was enthralling. It was a 4 day learning experience, fun, and what not. Unforgettable memories! Thankful to IIT Bombay.
+                </div>
+                <div class="person-details">
+                    <p>Surabhi Bharadwaj</p>
+                    <p>Runner up, MI Idol: Hindi Solo Singing Competition</p>
+                    <p>Mood Indigo 2019</p>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-div">
+            <div class="testimonial-img-div">
+                <img class="testimonial-img" src="../../assets/Compi/testimonials/HUES_Trashion.jpg">
+            </div>
+            <div class="testimonial-text">
+                <div class="testimonial">
+                    Trashion- The Costume designing competition organised at MOODI was a fun event. The costume designed by our team was inspired by the current political issues going on and the suppression of freedom of speech. We chose this because we believe "Art is a form of resistance" and we were glad to see the judges looked into this very part with great interest along with focusing on all the other main aspects of judging a costume. Moreover, the 'Auction' thing made the competition more fun and challenging because we had limited materials for the making of the costume we had in our minds.  Altogether it was great to compete with 15 other good societies from every corner of the country and winning over them.
+                </div>
+                <div class="person-details">
+                    <p>HUES (The Fine Arts Society, Gargi College)</p>
+                    <p>Winners, Trashion: Fashion with Trash Competition</p>
+                    <p>Mood Indigo 2019</p>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-div">
+            <div class="testimonial-img-div">
+                <img class="testimonial-img" src="../../assets/Compi/testimonials/Kuku_MI_nem.jpeg">
+            </div>
+            <div class="testimonial-text">
+                <div class="testimonial">
+                    Mood Indigo has become one of the memories that I'll cherish always whenever I will look back to my college life. It is a great experience and I don't think anywhere else in India can college students get such a fest; it pumps with youth's energy.I hope this fest keeps getting bigger and better.
+                </div>
+                <div class="person-details">
+                    <p>Kuku Dwivedi</p>
+                    <p>Runner up, MI’nem: Solo Rap Battle Competition</p>
+                    <p>Mood Indigo 2019</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="ngo-img"></div> -->
+</div>
+
+
+<div class="sponsor-big-container">
+    <div class="content">
+        <div class="content-head extra-top">
+            <div class="text normal">
+                Partners
+            </div>
+            <div class="text mask">
+                Partners
+            </div>
+        </div>
+    </div>
+    <div class="sponsor-container">
+        <div class="sponsor-row row1">
+            <div class="ngo-div sponsor-div">
+                <a href="https://www.celebrityschool.in/" target="_blank">
+                    <img class="sponsor" src="../../assets/Compi/CelebritySchool small colour icon.jpeg">
+                </a>
+                    <p class="sponsor-text">LYP Partner</p>
+            </div>
+            <div class="ngo-div sponsor-div">
+                <a href="http://www.indiaartfestival.com/" target="_blank">
+                    <img class="sponsor" src="../../assets/Compi/IAF.jpg">
+                </a>
+                <p class="sponsor-text">LYP Partner</p>
+            </div>
+        </div>
+        <div class="sponsor-row row1">
+            <div class="ngo-div sponsor-div">
+                <a href="" target="_blank">
+                    <img class="sponsor" src="../../assets/Compi/effervescence.png">
+                </a>
+                    <p class="sponsor-text">Talent Search Partner</p>
+            </div>
+            <div class="ngo-div sponsor-div">
+                <a href="" target="_blank">
+                    <img class="sponsor" src="../../assets/Compi/PECFestLogo2.PNG">
+                </a>
+                    <p class="sponsor-text">Talent Search Partner</p>
+            </div>
+        </div>
+        <div class="sponsor-row row1">
+            <div class="ngo-div sponsor-div">
+                <a href="http://www.artistaloud.com/" target="_blank">
+                    <img class="sponsor" src="../../assets/Compi/hungama.png">
+                </a>
+                    <p class="sponsor-text">LYP Partner</p>
+            </div>
+            <div class="ngo-div sponsor-div">
+                <a href="https://www.youtube.com/c/humaramovie" target="_blank">
+                    <img class="sponsor" src="../../assets/Compi/Humaramovie.jpg">
+                </a>
+                    <p class="sponsor-text">LYP Partner</p>
+            </div>
+        </div>
+        <div class="sponsor-row row1">
+            <div class="ngo-div sponsor-div">
+                <a href="https://www.womansera.com/" target="_blank">
+                    <img class="sponsor" src="../../assets/Compi/Women's era logo.png">
+                </a>
+                    <p class="sponsor-text">LYP Partner</p>
+            </div>
+            <div class="ngo-div sponsor-div">
+                <a href="http://www.jiffindia.org/" target="_blank">
+                    <img class="sponsor" src="../../assets/Compi/logo_jiff_png.png">
+                </a>
+                <p class="sponsor-text">LYP Partner</p>
+            </div>
+        </div>
+        <div class="sponsor-row row1">
+            <div class="ngo-div sponsor-div">
+                <a href="" target="_blank">
+                    <img class="sponsor" src="../../assets/Compi/Manish Joshi-0.jpg">
+                </a>
+                    <p class="sponsor-text">LYP Partner</p>
+            </div>
+            <div class="ngo-div sponsor-div">
+                <a href="https://www.dancewithmadhuri.com/index.php" target="_blank">
+                    <img class="sponsor" src="../../assets/Compi/DWM Logos/DWM-Horizontal-Black.png">
+                </a>
+                    <p class="sponsor-text">LYP Partner</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="faq-container">
+    <img class="faq-top" src="../../assets/CAP Landing Page/SVG/Cap3.svg">
+    <div class="content">
+        <div class="content-head">
+            <div class="text normal">
+                FAQs
+            </div>
+            <div class="text mask">
+                FAQs
+            </div>
+        </div>
+    </div>
+    <div class="faq-flex">
+        <div class="faq-div1">
+            <div class="faq-item">
+                <div class="faq-question">
+                    How do I register for Competitions at Mood Indigo?
+                </div>
+                <div class="faq-answer">
+                    If you do not have an MI Number, go to the 'Register' tab and fill in your details there to get an MI Number. Then go to your Dashboard > Competitions > Genre and register in the required competition. If you already have an MI Number then directly register for the competition by going to Dashboard > Competitions > Genre and register in the required competition.
+                </div>
+            </div>
+            <div class="faq-hline"></div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    Who can participate in these competitions? Is there any fee involved for registration?
+                </div>
+                <div class="faq-answer">
+                    Any college student can take part in these competitions. There is no registration fee for participation.
+                </div>
+            </div>
+            <div class="faq-hline"></div>
+        </div>
+        <div class="faq-div1">
+            <div class="faq-item">
+                <div class="faq-question">
+                    Will I get a certificate for participation in Mood Indigo competitions?
+                </div>
+                <div class="faq-answer">
+                    Winners and finalists of all the competitions shall get a digital certificate after Mood Indigo.
+                </div>
+            </div>
+            <div class="faq-hline"></div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    What is an LYP?
+                </div>
+                <div class="faq-answer">
+                    LYP stands for Live Your Passion. This is an initiative taken up by Mood Indigo in order to promote and showcase the talent of winners of competitions. Wherever applicable, they have been mentioned in the competition details itself under the Prizes & LYP tab.
+                </div>
+            </div>
+            <div class="faq-hline"></div>
+        </div>
+    </div>
+    <div class="italic faq-text">
+        <div class="faq-sub-text">
+            For further queries feel free to contact us at:
+        </div>
+        <div class="faq-email-text">
+            <a href="mailto:competitions@moodi.org">competitions@moodi.org</a>
+        </div>
+    </div>
+    <div class="cg-flex">
+        <div class="cg-info">
+            <div class="cg-img-container cg1">
+                <!-- <img class="cg-img" src="../../assets/cg-images/Image 2.png"> -->
+            </div>
+            <div class="cg-details">
+                <div class="cg-name">
+                    Ujjwal Soni
+                </div>
+                <div class="cg-pos">
+                    Competitions and LYP Head <br> +91 99299 19437
+                </div>
+                <div class="cg-social">
+                    <a class="cg-link" href="https://www.instagram.com/ujjwal18_/"><i class="fa fa-3x fa-instagram"></i></a>
+                    <a class="cg-link" href="https://www.facebook.com/profile.php?id=100007865385033"><i class="fa fa-3x fa-facebook"></i></a>
+                    <a class="cg-link" href="https://api.whatsapp.com/send?phone=+919929919437"><i class="fa fa-3x fa-whatsapp"></i></a>
+                    <!-- <a class="cg-link" href="https://twitter.com/Anshuma14441895"><i class="fa fa-3x fa-twitter"></i></a> -->
+                    <a class="cg-link" href="https://www.linkedin.com/in/ujjwal-soni-9ba4b0169/"><i class="fa fa-3x fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="cg-info">
+            <div class="cg-img-container cg2">
+                <!-- <img class="cg-img" src="../../assets/cg-images/Image 2.png"> -->
+            </div>
+            <div class="cg-details">
+                <div class="cg-name">
+                    Harmeet Singh
+                </div>
+                <div class="cg-pos">
+                    Competitions and LYP Head <br> +91 76772 94007
+                </div>
+                <div class="cg-social">
+                    <a class="cg-link" href="https://www.instagram.com/harmeet____/"><i class="fa fa-3x fa-instagram"></i></a>
+                    <a class="cg-link" href="https://www.facebook.com/harmeet.saluja.16"><i class="fa fa-3x fa-facebook"></i></a>
+                    <a class="cg-link" href="https://api.whatsapp.com/send?phone=+917677294007"><i class="fa fa-3x fa-whatsapp"></i></a>
+                    <!-- <a class="cg-link" href="https://twitter.com/356c213091ed412"><i class="fa fa-3x fa-twitter"></i></a> -->
+                    <a class="cg-link" href="https://www.linkedin.com/in/harmeet-singh-saluja-1b79a116b/"><i class="fa fa-3x fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

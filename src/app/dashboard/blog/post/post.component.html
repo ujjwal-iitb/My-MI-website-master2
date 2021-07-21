@@ -1,0 +1,28 @@
+<!-- <div class="blog-container">
+    {{blog.title}}<br>
+    {{blog.pic_url}}<br>
+    {{blog.content}}<br>
+    {{blog.blogger}}<br>
+    {{blog.fb_link}}<br>
+</div> -->
+<div class="blog-border">
+    <div class="post">
+        <img loading="lazy" class="blog-image" [src]="blog.pic_url">
+    </div>
+    <div class="refresh">
+        <p class="blog head">{{blog.title}}</p>
+    </div>
+    <p class="blog desc" [innerHTML]="blog.content"></p>
+    <div class="refresh">
+        <p class="blog head">{{blog.blogger}}</p>
+        <p class="blog desc">{{blog.blogger_title}}</p>
+        <p class="blog desc">{{blog.blogger_college}}</p>
+    </div>
+    <div class="social-links">
+        <p *ngIf="blog.insta_link !== ''" class="blog date"><a target="_blank" [href]="blog.insta_link" class="fa fa-2x fa-instagram right"></a></p>
+        <p *ngIf="blog.fb_link !== ''" class="blog date"><a target="_blank" [href]="blog.fb_link" class="fa fa-2x fa-facebook right"></a></p>
+        <p *ngIf="blog.twitter_link !== ''" class="blog date"><a target="_blank" [href]="blog.twitter_link" class="fa fa-2x fa-twitter right"></a></p>
+        <p *ngIf="blog.linkedin_link !== ''" class="blog date"><a target="_blank" [href]="blog.linkedin_link" class="fa fa-2x fa-linkedin right"></a></p>
+        <p *ngIf="blog.youtube_link !== ''" class="blog date"><a target="_blank" [href]="blog.youtube_link" class="fa fa-2x fa-youtube-play right"></a></p>
+    </div>
+</div>

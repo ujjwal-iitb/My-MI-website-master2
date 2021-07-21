@@ -1,0 +1,506 @@
+<div class="loader">
+    <div class="loader-div">
+        <div id="lottie2"></div>
+    </div>
+</div>
+<div class="back">
+    <img class="back-img" src="../../assets/Green Back/green_1.png">
+</div>
+<div class="main">
+    <div class="my-logo">
+        <img (click)="navigate('')" class="logo" src="../assets/Icon/my_icon.svg">
+    </div>
+    <div class="social-container">
+        <div class="social">
+            <div (click)="goto('ccp')" class="social-logo">
+                CCP
+            </div>
+            <div (click)="goto('iap')" class="social-logo">
+                IAP
+            </div>
+            <div (click)="goto('competitions')" class="social-logo">
+                COMPETITIONS
+            </div>
+            <div (click)="goto('influencer')" class="social-logo">
+                INFLUENCER
+            </div>
+            <div (click)="goto('shop')" class="social-logo">
+                MI SHOP
+            </div>
+        </div>
+    </div>
+    <div class="signin">
+        <button *ngIf="!registered" class="signin-button" (click)="goto('signup')">SIGN UP</button>
+        <button *ngIf="registered" class="signin-button" (click)="goto('dashboard/influencer')">DASHBOARD</button>
+
+    </div>
+</div>
+
+<div id="ccp" class="ccp-container">
+    <!-- <img src="../../assets/Tiles and Masks/SVG/3.svg"> -->
+    <div class="head content">
+        <div class="content-head">
+            <div class="text normal">
+                Influencer Program
+            </div>
+            <!-- <div class="text mask">
+                Influencer Program
+            </div> -->
+        </div>
+    </div>
+    <div class="content-desc head-desc">
+        Mood Indigo's Influencer program is a one of it's kind Influencer Program in the world. Built with a motive to
+        empower upcoming nano and micro-Influencers, the program caters to Influencers across various platforms and
+        fields. Become a part of the Influencer program to accelerate your ventures into the world of social media, ace
+        your Influencer-marketing skills and grow your online audience. Build an influential network and earn exciting
+        Mood Indigo privileges from media access to goodies to passes.
+    </div>
+    <button *ngIf="!registered" (click)="goto('signup')" class="register">
+        REGISTER
+        <img class="mright-arrow" src="../../assets/svgs/right.svg">
+    </button>
+    <button *ngIf="registered" (click)="goto('dashboard/influencer')" class="register">
+        DASHBOARD
+    </button>
+    <img class="cap" src="../../assets/Influencer/WEBP/Main element.webp">
+</div>
+
+<div class="about-container small-container">
+    <div class="content">
+        <div class="content-head">
+            <div class="text normal">
+                Who is an Influencer?
+            </div>
+            <div class="text mask">
+                Who is an Influencer?
+            </div>
+        </div>
+    </div>
+    <div class="content-desc desc1">
+        An influencer is an individual who has garnered a certain following in a specific niche they actively engage
+        with. The reason behind their influence is the fact that their work and opinions for that particular niche are
+        valued by and prove to have an impact on their followers. Influencers are viewed as friends whose audiences feel
+        a connect with, want to emulate and buy into.
+    </div>
+    <img class="about-img" src="../../assets/Influencer/WEBP/Hashtag.webp">
+</div>
+
+<div class="sponsor-big-container not-so-big">
+    <div class="content">
+        <div class="content-head">
+            <div class="text normal">
+                What it means to be an influencer with MI?
+            </div>
+            <div class="text mask">
+                What it means to be an influencer with MI?
+            </div>
+        </div>
+    </div>
+    <div class="content-quote">
+        What will you do?
+    </div>
+    <div class="content-desc desc3">
+        <p>The program will take you through a step-by-step process to make you the Influencer of you aspire to be. Be
+            it fashion or lifestyle, food or art, dance or music, journalism or photography the program has
+            opportunities for people in all kind of fields.</p>
+        <p>Once you register, you will be given social media tasks every week. Each task will earn you points and help
+            you reach subsequent levels in the program while developing your skills. </p>
+    </div>
+    <div class="content-quote quote2">
+        As a member of the Mood Indigo Influencer program
+    </div>
+    <div class="content-desc desc3">
+        <p>
+            1. You will create avant-garde content for your social media accounts
+        </p>
+        <p>
+            2. Engage with your audience and Mood Indigo
+        </p>
+        <p>
+            3. Learn professional social media hacks
+        </p>
+        <p>
+            We will help you achieve this with our exclusive workshops with Mega Influencers, weekly learnings and
+            articles.
+        </p>
+    </div>
+    <img class="about-img" src="../../assets/Influencer/WEBP/Phone insta.webp">
+</div>
+
+<div class="about-container">
+    <div class="content">
+        <div class="content-head">
+            <div class="text normal">
+                Incentives
+            </div>
+            <div class="text mask">
+                Incentives
+            </div>
+        </div>
+    </div>
+    <div class="works-container">
+        <div class="works-row row1">
+            <div class="works-div">
+                <div class="works-div-top">
+                    <div class="italic works-heading">
+                        Get Certified
+                    </div>
+                    <div class="works-logo logo1"></div>
+                </div>
+                <div class="works-content">
+                    Get a certificate after the completion of minimal requirements
+                </div>
+            </div>
+            <div class="works-div">
+                <div class="works-div-top">
+                    <div class="italic works-heading">
+                        Workshops
+                    </div>
+                    <div class="works-logo logo2"></div>
+                </div>
+                <div class="works-content">
+                    Attend workshops from master Influencers
+                </div>
+            </div>
+            <div class="works-div">
+                <div class="works-div-top">
+                    <div class="italic works-heading">
+                        Free Courses
+                    </div>
+                    <div class="works-logo logo3"></div>
+                </div>
+                <div class="works-content">
+                    Get access to specialised digital marketing and social media marketing courses
+                </div>
+            </div>
+        </div>
+        <div class="works-row row1">
+            <div class="works-div">
+                <div class="works-div-top">
+                    <div class="italic works-heading">
+                        MI Coins
+                    </div>
+                    <div class="works-logo logo4"></div>
+                </div>
+                <div class="works-content">
+                    Earn MI coins that can be used to purchase products and merchandise from our website
+                </div>
+            </div>
+            <div class="works-div">
+                <div class="works-div-top">
+                    <div class="italic works-heading">
+                        Industry Experience
+                    </div>
+                    <div class="works-logo logo5"></div>
+                </div>
+                <div class="works-content">
+                    Be a real-world Influencer with our partners and work with different Brands
+                </div>
+            </div>
+            <div class="works-div">
+                <div class="works-div-top">
+                    <div class="italic works-heading">
+                        The Influencer Meet
+                    </div>
+                    <div class="works-logo logo6"></div>
+                </div>
+                <div class="works-content">
+                    Attend the virtual Influencer meet 2020 with exclusive panelists. Network, grow and stay updated
+                    with the trends!
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="about-container small-container">
+    <div class="content">
+        <div class="content-head">
+            <div class="text normal">
+                Influencer Meet 2019
+            </div>
+            <div class="text mask">
+                Influencer Meet 2019
+            </div>
+        </div>
+    </div>
+    <div class="content-desc desc2">
+        <p>The Influencer Meet 2019, held during Mood Indigo 2019 was led by Sumedh Chaphekar, a graduate of the New
+            York Film Academy and CEO and Co-founder of the NO-FILTR group, the world’s first social media label.
+            Sumedh’s revolutionary ideology has innovative methods, ideas and vision that define how the influencer
+            marketing ecosystem is today and what’s likely to come next.</p>
+        <p>The meet was attended by all of our Influencers who gained an interesting perspective of the industry.</p>
+        <p>The discussions were about uniqueness in this vast field, being loyal to followers and how to integrate with
+            brands among several other topics.</p>
+    </div>
+    <img class="about-img" src="../../assets/Influencer/WEBP/Meet photos.webp">
+</div>
+
+<div class="testimonial-container">
+    <div class="content">
+        <div class="content-head">
+            <div class="text normal">
+                Toasts from our family
+            </div>
+            <div class="text mask">
+                Toasts from our family
+            </div>
+        </div>
+    </div>
+    <div class="testimonial-list">
+        <div class="testimonial-div">
+            <div class="testimonial-img-div">
+                <img class="testimonial-img" src="../../assets/Influencer/testimonials/1.png">
+            </div>
+            <div class="testimonial-text">
+                <div class="testimonial">
+                    I had registered for Mood Indigo's Influencer Program after I came across the post on their
+                    Instagram. To my delight, attending the Influencer Meet was indeed one of the most amazing
+                    experiences I have ever had. It provided me with the much-needed exposure and the opportunity to
+                    meet the experts as well as influencers in the social media domain. The program allowed me to
+                    gradually grow my social media presence with useful content. While I came alone to the festival, by
+                    Day 4, I had made new friends and meet some many people; like never before. So, while I learnt a
+                    lot, I also had a blast at the festival.
+                </div>
+                <div class="bold person-details">
+                    <p>Khush Patel</p>
+                    <!-- <p> Ramanujan College Delhi University, </p> -->
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-div">
+            <div class="testimonial-img-div">
+                <img class="testimonial-img" src="../../assets/Influencer/testimonials/2.jpg">
+            </div>
+            <div class="testimonial-text">
+                <div class="testimonial">
+                    It was truly a knowledge -enriching experience to be a part of this program. Over the course of the
+                    program, I did not only learn a lot about various social media platforms but it also helped me grow
+                    my audience substantially. The Influencers' meet allowed me to network with the experts in the
+                    domain. The team was very considerate of us and everything went very smoothly and on time during the
+                    meet. Apart from the meet, I could attend the festival and concerts free of cost! I had a great time
+                    and also got great content for my social media :P
+                </div>
+                <div class="person-details">
+                    <p>Namrata Parmar</p>
+                    <!-- <p>JECRC University, Jaipur</p> -->
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-div">
+            <div class="testimonial-img-div">
+                <img class="testimonial-img" src="../../assets/Influencer/testimonials/3.jpg">
+            </div>
+            <div class="testimonial-text">
+                <div class="testimonial">
+                    Mood Indigo is definitely the best fest I have been associated with and what anyone can experience.
+                    Being a part of the Mood Indigo's Influencer Program was an incredible opportunity for me. It gave
+                    me a chance to be a part of interesting activities which spanned over a few months and an influencer
+                    meet where I could connect with different people. This also allowed me to attend and enjoy the 4-day
+                    extravaganza. I surely made memories for a lifetime with a lot of good content to post as well xD
+                </div>
+                <div class="person-details">
+                    <p>Ipsa Gupta</p>
+                    <!-- <p>Manav Rachna University, Faridabad</p> -->
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-div">
+            <div class="testimonial-img-div">
+                <img class="testimonial-img" src="../../assets/Influencer/testimonials/4.png">
+            </div>
+            <div class="testimonial-text">
+                <div class="testimonial">
+                    Being an Influencer at Mood Indigo 2019 was an experience unlike any. We met many new people and
+                    caught up with old ones. We were presented with so many opportunities to discover new realms of
+                    skills (the Influencer program is one such opportunity) and have fun at the same time, it was an
+                    honour to be a part of something that inspires so much confidence and joy.
+                </div>
+                <div class="person-details">
+                    <p>Tejaswi Dixit</p>
+                    <!-- <p>Maheshwari College, Indore </p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="ngo-img"></div> -->
+</div>
+
+
+<div class="about-container mkc">
+    <div class="content">
+        <div class="content-head">
+            <div class="text normal">
+                Partners
+            </div>
+            <div class="text mask">
+                Partners
+            </div>
+        </div>
+    </div>
+    <div class="sponsor-container">
+        <div class="sponsor-row row1">
+            <div class="media-part-div sponsor-div">
+                <a href="https://www.instagram.com/_desiwanderer/" target="_blank">
+                    <img class="sponsor" src="../../assets/media/IMG_20180213_065551_098.jpg">
+                </a>
+                    <!-- <p class="sponsor-text">Online Media Partner</p> -->
+            </div>
+            <div class="media-part-div sponsor-div">
+                <a href="https://www.quirkywanderer.com/" target="_blank">
+                    <img class="sponsor" src="../../assets/media/IMG_5908.PNG">
+                </a>
+                    <!-- <p class="sponsor-text">Online Media Partner</p> -->
+            </div>
+        </div>
+        <div class="sponsor-row row1">
+            <div class="media-part-div sponsor-div">
+                <a href="https://www.instagram.com/shubham.mansingka/" target="_blank">
+                    <img class="sponsor" src="../../assets/media/aad.jpeg">
+                </a>
+                    <!-- <p class="sponsor-text">Online Media Partner</p> -->
+            </div>
+            <div class="media-part-div sponsor-div">
+                <a href="https://www.instagram.com/socialmediadissect/" target="_blank">
+                    <img class="sponsor" src="../../assets/media/smd final logo ( png ).png">
+                </a>
+                    <!-- <p class="sponsor-text">Online Media Partner</p> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="faq-container">
+    <img class="faq-top" src="../../assets/CAP Landing Page/SVG/Cap3.svg">
+    <div class="content">
+        <div class="content-head">
+            <div class="text normal">
+                FAQs
+            </div>
+            <div class="text mask">
+                FAQs
+            </div>
+        </div>
+    </div>
+    <div class="faq-flex">
+        <div class="faq-div1">
+            <div class="faq-item">
+                <div class="faq-question">
+                    Who can register?
+                </div>
+                <div class="faq-answer">
+                    Any college student with a public Instagram account and 1000+ Instagram followers can register.
+                </div>
+            </div>
+            <div class="faq-hline"></div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    Is the program for other social media platforms as well?
+                </div>
+                <div class="faq-answer">
+                    Yes, the Influencer program is for all the major social media platforms including Instagram,
+                    Facebook, LinkedIn, Twitter and Snapchat. You can register all of your social media accounts,
+                    ALTHOUGH an active Instagram public account with 1000+ followers is the qualification criteria.
+                </div>
+            </div>
+            <div class="faq-hline"></div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    How is this program different from the Indigo Squad/College Connect Program?
+                </div>
+                <div class="faq-answer">
+                    The Influencer program is focused on developing your social media and content creation skills. For a
+                    more holistic program focused on building essential soft skills register for the College Connect
+                    Program at <a href="/ccp">my.moodi.org/ccp</a>.
+                </div>
+            </div>
+            <div class="faq-hline"></div>
+        </div>
+        <div class="faq-div1">
+            <div class="faq-item">
+                <div class="faq-question">
+                    Can I be a part of both CCP and the Influencer Program?
+                </div>
+                <div class="faq-answer">
+                    Yes, you can register for both the programs.
+                    *To register for Influencer program you must have a qualifying Instagram account
+                </div>
+            </div>
+            <div class="faq-hline"></div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    How do referrals work?
+                </div>
+                <div class="faq-answer">
+                    TYou will be given a referral code. You can recommend your friends to register for the Influencer
+                    Program. Whenever your friend registers using your referral code, you will earn points.
+                </div>
+            </div>
+            <div class="faq-hline"></div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    What kind of social media tasks will be given?
+                </div>
+                <div class="faq-answer">
+                    A topic/base would be given to you. Based on that you will be creating your own post or video,
+                    writing your tweet, making a shoutout video, sharing a story etc. The types and details of the posts
+                    will be given to you. A base creative from the Mood Indigo team will be provided as well to help
+                    beginners who can’t create their own content.
+                </div>
+            </div>
+            <div class="faq-hline"></div>
+        </div>
+    </div>
+    <div class="italic faq-text">
+        <div class="faq-sub-text">
+            For further queries feel free to contact us at:
+        </div>
+        <div class="faq-email-text">
+            <a href="mailto:influencer@moodi.org">influencer@moodi.org</a>
+        </div>
+    </div>
+    <div class="cg-flex">
+        <div class="cg-info">
+            <div class="cg-img-container cg1">
+                <!-- <img class="cg-img" src="../../assets/cg-images/Image 2.png"> -->
+            </div>
+            <div class="cg-details">
+                <div class="cg-name">
+                    Shubh Shah
+                </div>
+                <div class="cg-pos">
+                    Media Head <br> +91 91069 47473
+                </div>
+                <div class="cg-social">
+                    <a class="cg-link" href="https://instagram.com/the.shubh_shah"><i
+                            class="fa fa-3x fa-instagram"></i></a>
+                    <a class="cg-link" href="https://api.whatsapp.com/send?phone=+919106947473"><i class="fa fa-3x fa-whatsapp"></i></a>
+                    <a class="cg-link" href="mailto:shubh@moodi.org"><i class="fa fa-3x fa-envelope"></i></a>
+                    <a class="cg-link" href="https://www.linkedin.com/in/shubh-shah-51a83a171"><i
+                            class="fa fa-3x fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="cg-info">
+            <div class="cg-img-container cg2">
+                <!-- <img class="cg-img" src="../../assets/cg-images/Image 2.png"> -->
+            </div>
+            <div class="cg-details">
+                <div class="cg-name">
+                    Gargee Barke
+                </div>
+                <div class="cg-pos">
+                    Media Head <br> 91 97690 43571
+                </div>
+                <div class="cg-social">
+                    <a class="cg-link" href="https://instagram.com/gargee_barke"><i
+                            class="fa fa-3x fa-instagram"></i></a>
+                    <a class="cg-link" href="https://api.whatsapp.com/send?phone=+919769043571"><i class="fa fa-3x fa-whatsapp"></i></a>
+                    <a class="cg-link" href="mailto:gargee@moodi.org"><i class="fa fa-3x fa-envelope"></i></a>
+                    <a class="cg-link" href="https://www.linkedin.com/in/gargee-barke-5a9175170"><i
+                            class="fa fa-3x fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

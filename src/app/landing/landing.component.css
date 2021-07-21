@@ -1,0 +1,1319 @@
+.loader {
+    position: fixed;
+    width: 107vw;
+    height: 107vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    top: 0vw;
+    left: 0vw;
+}
+
+.loader-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+#lottie2 {
+    width: 512px;
+}
+
+/* .mimg {
+
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -o-perspective: 1000px;
+    perspective: 1000px;
+    z-index: 3;
+} */
+
+.back {
+    background-image: url("../../assets/Green Back/green_1.png");
+    width: 107%;
+    height: 107%;
+    background-size: cover;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -2;
+}
+
+.back-img {
+    width: 100vw;
+    /* z-index: -1; */
+    height: 105%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat repeat;
+    background-size: cover;
+}
+
+.container {
+    /* background-image: url("../../assets/Green Back/green_1.png"); */
+    background-size: cover;
+    /* margin-top: -50px; */
+    /* z-index: -5; */
+    position: relative;
+    /* height: auto; */
+}
+
+.top-section {
+    position: relative;
+    height: 41.6vw;
+}
+
+.logo-div {
+    mask-image: url("../../assets/Tiles and Masks (Updated)/SVG/1.svg");
+    background-color: #29B6F6;
+    /* mask-type: alpha; */
+    /* mask-size: cover; */
+    /* z-index: -500; */
+    mask-size: 76vw;
+    mask-position: 20px 20px;
+    mask-repeat: no-repeat;
+    height: 57.6vw;
+    width: 77.6vw;
+    position: absolute;
+    /* box-shadow:0 16px 32px 0 rgba(128,128,128,0.5); */
+    /* transform: scale(1.03); */
+    /* transition: 0.3s; */
+    /* z-index: 2; */
+    /* background-image: url("../../assets/Tiles and Masks/SVG/1.svg");
+    background-size: left 500px top 500px; */
+}
+
+.logo-div-shadow {
+    width: 77.6vw;
+    height: 57.6vw;
+    position: absolute;
+    /* -webkit-filter: drop-shadow(5px 11px 0px rgba(0, 0, 0, 0.3));
+    -moz-filter: drop-shadow(5px 11px 0px rgba(0, 0, 0, 0.3));
+    -ms-filter: drop-shadow(5px 11px 0px rgba(0, 0, 0, 0.3));
+    -o-filter: drop-shadow(5px 11px 0px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(5px 11px 0px rgba(0, 0, 0, 0.3)); */
+}
+
+.section2 {
+    mask-image: url("../../assets/Tiles and Masks (Updated)/SVG/2.svg");
+    background-color: #29B6F6;
+    width: 107vw;
+    height: 199.27vw;
+    margin-right: 0px;
+    mask-repeat: no-repeat;
+    margin-left: -1.7vw;
+    mask-position: 0px -35px;
+    mask-size: 106vw;
+    position: relative;
+    z-index: 3;
+    /* mask-repeat: no-repeat; */
+    /* mask-size: cover; */
+    /* float: right; */
+    /* z-index: -10; */
+}
+
+.main {
+    position: fixed;
+    z-index: 20;
+    display: flex;
+    flex-direction: row;
+    width: 102%;
+    background-color: rgba(41, 182, 246, 1);
+    justify-content: space-around;
+    top: -1vw;
+}
+
+button {
+    width: 9.4vw;
+    height: 2.8vw;
+    margin-top: 1.8vw;
+    border-radius: 2.6vw;
+    background-color: white;
+    color: #29B6F6;
+    font-size: 1vw;
+    z-index: 1;
+    position: relative;
+}
+
+.above-all {
+    width: 35.4vw;
+    height: 8.8vw;
+    margin-top: 1.8vw;
+    border-radius: 2.6vw;
+    background-color: white;
+    color: #29B6F6;
+    font-size: 4vw;
+}
+
+.signin {
+    justify-content: center;
+    display: flex;
+}
+
+.signin1 {
+    justify-content: center;
+    position: fixed;
+    bottom: 10vw;
+    right: 30%;
+    z-index: 5;
+    display: none;
+}
+
+.logo {
+    width: 2vw;
+    height: 3vw;
+    margin-top: 1.2vw;
+    margin-left: 9vw;
+    /* float: left; */
+}
+
+.signin-button {
+    width: auto;
+    height: 2vw;
+    font-weight: bold;
+}
+
+.my-logo {
+    /* display: inline; */
+    float: left;
+}
+
+.social-container {
+    /* margin-top: 50px; */
+    display: flex;
+    /* justify-content: flex-start; */
+    /* width: 80%; */
+    /* float: right; */
+}
+
+.social {
+    flex-grow: 1;
+    display: flex;
+    /* width: 100%; */
+    justify-content: center;
+}
+
+.social-logo {
+    width: max-content;
+    height: 2.7vw;
+    margin-left: 1.3vw;
+    margin-right: 1.3vw;
+    margin-top: 1.5vw;
+    font-size: 1.8vw;
+    color: white;
+    font-weight: bold;
+    /* flex-grow: 1; */
+}
+
+.italic {
+    font-style: italic;
+}
+
+.mi {
+    line-height: 0.9;
+}
+
+.heading-top {
+    font-size: 5vw;
+    margin-left: 9vw;
+    /* margin-top: 200px; */
+    color: white;
+    font-family: Libre Baskerville;
+    width: 60%;
+}
+
+.heading-bottom {
+    font-size: 13vw;
+    margin-left: 9vw;
+    width: 50%;
+    color: white;
+    position: relative;
+    font-family: Libre Baskerville;
+    font-weight: 900;
+}
+
+.intro {
+    font-size: 10vw;
+    margin-left: 9vw;
+    width: 40%;
+    color: white;
+    position: relative;
+}
+
+.heading {
+    float: left;
+}
+
+.description {
+    position: relative;
+    margin-top: 28vw;
+    /* font-size: 20px; */
+}
+
+.sub-description {
+    position: relative;
+    width: 80%;
+    margin-top: 10.6vw;
+}
+
+.prog-desc {
+    font-size: 1vw;
+    z-index: 1;
+    position: relative;
+    font-family: Raleway;
+    font-weight: normal;
+}
+
+.quote {
+    font-size: 1.4vw;
+    position: relative;
+    z-index: 2;
+}
+
+.big {
+    font-size: 3vw;
+    margin-bottom: 2vw;
+}
+
+.ccp-button {
+    top: -8vw;
+}
+
+.ccp-description {
+    position: relative;
+    width: 80%;
+    margin-top: 18.5vw;
+}
+
+.sub-heading {
+    font-size: 2.5vw;
+    text-align: justify;
+    font-weight: bold;
+    font-family: Libre Baskerville;
+}
+
+.iap-desc {
+    width: 66%;
+    margin-top: 18vw;
+}
+
+.heading-quote {
+    font-size: 2vw;
+    font-weight: bold;
+    font-family: Libre Baskerville;
+}
+
+.sub-desc {
+    font-size: 1vw;
+    z-index: 1;
+    position: relative;
+}
+
+.text {
+    position: absolute;
+    top: 0;
+    line-height: 1;
+}
+
+.mask {
+    /* top: -5px; */
+    left: 0.3vw;
+    mask-image: url("../../assets/Litho Lines/1x/Lines.png");
+    mask-repeat: repeat;
+    /* background-color: black; */
+    mask-position: center;
+}
+
+.top-container {
+    display: flex;
+    margin-top: 10.5vw;
+}
+
+.guitar {
+    /* float: right; */
+    /* display: inline; */
+    position: absolute;
+    /* margin-top: 200px; */
+    /* right: -200px; */
+    left: 13.3vw;
+    top: 10.4vw;
+    width: 100%;
+    height: auto;
+    /* margin-top: 200px; */
+    z-index: 4;
+}
+
+.guitar-img-mask2 {
+    mask-image: url("../../assets/Tiles and Masks (Updated)/SVG/1.svg"), url("../../assets/Tiles and Masks (Updated)/SVG/2.svg");
+    mask-position: -14.6vw -12vw, -15.4vw -11.4vw;
+    mask-repeat: no-repeat, no-repeat;
+    mask-size: 80.47vw, 106.1vw;
+    max-width: 100vw;
+    mask-composite: add;
+    /* background-color: black; */
+    z-index: 2;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -o-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.guitar-img-mask {
+    max-width: 100vw;
+    margin-top: 3.5vw;
+    margin-left: 15vw;
+    z-index: 2;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -o-perspective: 1000px;
+    perspective: 1000px;
+    width: 90vw;
+}
+
+.buildings {
+    position: relative;
+    /* float: right; */
+}
+
+.build {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    transform: rotateZ(180deg);
+    margin-top: 51.3vw;
+    /* object-fit: cover; */
+    /* -webkit-transform:rotate(10deg);
+   -moz-transform:rotate(10deg);
+   -o-transform:rotate(10deg);  */
+}
+
+.l1 {
+    z-index: 3;
+}
+
+.l2 {
+    z-index: 2;
+}
+
+.l3 {
+    z-index: 1;
+}
+
+.tear-patch {
+    margin-top: 107.2vw;
+    right: -4vw;
+    position: absolute;
+    width: 63vw;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -o-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.tear-mpatch {
+    display: none;
+}
+
+.build img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.intro-container {
+    position: relative;
+    margin-top: 46.46vw;
+    display: inline-block;
+}
+
+.maskimg {
+    position: absolute;
+    float: left;
+    mask-image: url("../../assets/instagram.svg");
+    mask-position: top 2.81vw left 15.625vw;
+    /* mask-border-slice: initial; */
+    mask-composite: unset;
+}
+
+.tear-content {
+    /* display: inline-block; */
+    float: left;
+    /* display: inline; */
+    margin-top: 13vw;
+    position: relative;
+    z-index: 4;
+}
+
+.tear-div {
+    /* display: inline-block; */
+    /* float: right; */
+    /* display: inline; */
+    right: 0px;
+    z-index: 0;
+    position: absolute;
+}
+
+.tear-img {
+    float: right;
+    height: 95vw;
+    right: -63vw;
+    position: relative;
+    /* width: 500px; */
+    /* position: absolute; */
+}
+
+.sleeping {
+    position: absolute;
+    left: 28.3vw;
+    top: 22vw;
+    z-index: 5;
+    /* width: 25vw; */
+    display: inline;
+    /* -webkit-filter: drop-shadow(5px 11px 0px rgba(0, 0, 0, 0.3));
+    -moz-filter: drop-shadow(5px 11px 0px rgba(0, 0, 0, 0.3));
+    -ms-filter: drop-shadow(5px 11px 0px rgba(0, 0, 0, 0.3));
+    -o-filter: drop-shadow(5px 11px 0px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(5px 11px 0px rgba(0, 0, 0, 0.3)); */
+}
+
+#lottie {
+    width: 25vw;
+}
+
+.umbrella {
+    position: absolute;
+    left: 38.3vw;
+    top: 20vw;
+    margin-left: -2vw;
+    display: inline;
+    z-index: 2;
+}
+
+.umb-img {
+    width: 17vw;
+}
+
+.cloud-top {
+    position: absolute;
+    right: -5vw;
+    top: 4vw;
+    z-index: 4;
+    width: 20vw;
+}
+
+.moodi-flag {
+    top: 5vw;
+    position: absolute;
+    right: 8vw;
+}
+
+.tear-logo {
+    position: absolute;
+    z-index: 40;
+    right: 7vw;
+    margin-top: 26.5vw;
+    width: 30.5vw;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -o-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.ccp-container {
+    mask-image: url("../../assets/Tiles and Masks (Updated)/SVG/3.svg");
+    height: 79.69vw;
+    background-color: #29B6F6;
+    width: 106.77vw;
+    mask-position: 0px 0px;
+    mask-size: 106vw;
+    mask-repeat: no-repeat;
+    /* width: 2000px; */
+    margin-top: 17vw;
+    margin-left: -28px;
+    position: relative;
+    overflow: hidden;
+}
+
+.iap-container {
+    mask-image: url("../../assets/Tiles and Masks (Updated)/SVG/4.svg");
+    height: 76vw;
+    background-color: #29B6F6;
+    width: 104.6vw;
+    mask-size: 104.6vw;
+    mask-position: 0px top;
+    /* width: 2000px; */
+    /* margin-top: 500px; */
+    mask-repeat: no-repeat;
+    margin-left: -28px;
+    position: relative;
+    overflow: hidden;
+}
+
+.multicity-container {
+    mask-image: url("../../assets/Tiles and Masks (Updated)/SVG/5.svg");
+    height: 74.22vw;
+    background-color: #29B6F6;
+    width: 104.6vw;
+    mask-size: 104.6vw;
+    mask-position: 0px top;
+    /* width: 2000px; */
+    /* margin-top: 500px; */
+    mask-repeat: no-repeat;
+    margin-left: -28px;
+    position: relative;
+    overflow: hidden;
+}
+
+.influencer-container {
+    margin-top: 2vw;
+}
+
+.contact-container {
+    mask-image: url("../../assets/Tiles and Masks (Updated)/SVG/6.svg");
+    height: 60vw;
+    background-color: #29B6F6;
+    width: 104.6vw;
+    mask-size: 104.6vw;
+    mask-position: 0px top;
+    /* width: 2000px; */
+    /* margin-top: 500px; */
+    mask-repeat: no-repeat;
+    margin-left: -28px;
+    position: relative;
+    overflow: hidden;
+}
+
+.iap {
+    background-image: url("../../assets/IAP/IAP.webp");
+    float: right;
+    top: -10vw;
+    right: 0px;
+    margin-top: 10.56vw;
+    position: absolute;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -o-perspective: 1000px;
+    perspective: 1000px;
+    width: 64vw;
+    height: 75vw;
+    background-position: -54vw center;
+    background-size: cover;
+}
+
+.multi {
+    background-image: url("../../assets/Multicity/Multicity.webp");
+    float: right;
+    top: 0vw;
+    right: 0px;
+    /* margin-top: 318px; */
+    position: absolute;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -o-perspective: 1000px;
+    perspective: 1000px;
+    width: 100vw;
+    height: 64vw;
+    background-position: 106vw center;
+    background-size: cover;
+}
+
+.influencer {
+    background-image: url("../../assets/Influencer/WEBP/Main element.webp");
+    width: 59vw;
+    background-position: 3vw center;
+    background-repeat: no-repeat;
+}
+
+.top-cover {
+    width: 100%;
+    height: 20vw;
+    background-image: url("../../assets/CAP Landing Page/1x/cap.svg");
+    position: absolute;
+    background-size: 102vw;
+}
+
+.content {
+    height: 5.21vw;
+    z-index: 2;
+}
+
+.content-head {
+    font-size: 6.5vw;
+    margin-left: 12vw;
+    margin-top: 15vw;
+    width: 25%;
+    /* height: 500px; */
+    color: white;
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    font-family: Libre Baskerville;
+    /* padding-top: 5000px; */
+}
+
+.blank {
+    height: 3px;
+}
+
+.content-desc {
+    margin-left: 50px;
+    /* margin-top: px; */
+    width: 41.5vw;
+}
+
+.cap {
+    float: right;
+    top: 0px;
+    right: -10.42vw;
+    margin-top: 24.48vw;
+    /* z-index: 0; */
+    position: absolute;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -o-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.contact-desc {
+    margin-top: 5.21vw;
+    margin-left: 10vw;
+}
+
+.contact {
+    font-size: 2.5vw;
+    color: white;
+    font-family: Libre Baskerville;
+    font-weight: bold;
+}
+
+.signup {
+    width: 18vw;
+    height: 3.6vw;
+    background-color: white;
+    color: #29B6F6;
+    margin-top: 3vw;
+    margin-bottom: 8vw;
+    font-size: 1.5vw;
+    border-radius: 1vw;
+    padding-left: 3vw;
+}
+
+.contact-input {
+    width: 37vw;
+    height: 2.2vw;
+    margin-top: 0.78vw;
+    border-radius: 1vw;
+    font-size: 1vw;
+    padding: 10px;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding-left: 1vw;
+    color: white;
+}
+
+.space {
+    margin-top: 1vw !important;
+}
+
+.contact-content {
+    width: 37vw;
+    height: 7.81vw;
+    margin-top: 0.78vw;
+    border-radius: 0.52vw;
+    font-size: 1vw;
+    padding: 10px;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding-left: 1vw;
+    color: white;
+}
+
+.clouds-form {
+    position: absolute;
+    right: -6vw;
+    top: 3vw;
+    width: 50vw;
+}
+
+.bottom-clouds {
+    position: absolute;
+    width: 50vw;
+}
+
+.cloud2 {
+    top: 10vw;
+}
+
+.right-arrow {
+    display: inline;
+    margin-left: 3vw;
+    width: 1vw;
+}
+
+.coming-soon {
+    margin-top: 2vw;
+    font-size: 2.1vw;
+    text-align: justify;
+    z-index: 1;
+    position: relative;
+}
+
+button {
+    border: none;
+}
+
+input {
+    border: none;
+    color: white;
+    font-family: Raleway;
+}
+
+textarea {
+    border: none;
+    color: white;
+    font-family: Raleway;
+}
+
+@media screen and (min-width:2000px) {
+    .text {
+        margin-left: 2vw;
+    }
+    .guitar-img-mask2 {
+        mask-position: -23.6vw -15vw, -21vw -17.4vw;
+    }
+    .guitar {
+        left: 19.3vw;
+        top: 15.4vw;
+    }
+    .guitar-img-mask {
+        margin-top: 3.3vw;
+        margin-left: 13.7vw;
+        width: 80vw;
+    }
+    .cloud-top {
+        top: 6vw;
+    }
+    .umbrella {
+        top: 22vw;
+    }
+    .sleeping {
+        top: 24vw;
+    }
+    .cap {
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width:1810px) and (max-width:2000px) {
+    .guitar-img {
+        mask-position: -15.2vw -12vw, -15.8vw -12.24vw;
+    }
+    .guitar-img-mask {
+        margin-top: 3.6vw;
+    }
+}
+
+@media screen and (min-width:1680px) and (max-width:1809px) {
+    .guitar-img {
+        mask-position: -15vw -12vw, -16vw -12.24vw;
+    }
+    .guitar-img-mask {
+        margin-top: 3.55vw;
+    }
+    .tear-patch {
+        right: -4.2vw;
+    }
+}
+
+@media screen and (min-width:1440px) and (max-width:1679px) {
+    .guitar-img {
+        mask-position: -14.8vw -12vw, -16.2vw -12.24vw;
+    }
+    .guitar-img-mask {
+        margin-top: 3.6vw;
+    }
+    .tear-patch {
+        right: -4.5vw;
+    }
+}
+
+@media screen and (min-width:1200px) and (max-width:1439px) {
+    .guitar-img {
+        mask-position: -14.8vw -12vw, -16.2vw -12.24vw;
+    }
+    .guitar-img-mask {
+        margin-top: 3.5vw;
+    }
+    .tear-patch {
+        right: -5vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .social {
+        flex-wrap: wrap;
+        margin-top: 2vw;
+    }
+    .main {
+        position: fixed;
+        z-index: 20;
+        display: flex;
+        flex-direction: row;
+        width: 106%;
+        background-image: none;
+    }
+    .logo {
+        width: 9vw;
+        height: auto;
+        margin-top: 5vw;
+        margin-left: 10vw;
+    }
+    .social-logo {
+        margin-left: 2vw;
+        margin-right: 2vw;
+        font-size: 5vw;
+    }
+    .signin {
+        display: none;
+    }
+    .signin1 {
+        display: block;
+    }
+    .cloud-top {
+        right: -13vw;
+        width: 55vw;
+        top: 40vw;
+    }
+    .moodi-flag {
+        display: none;
+    }
+    .heading-top {
+        font-size: 10vw;
+        margin-left: 5vw;
+    }
+    .italic {
+        margin-left: 12vw !important;
+    }
+    .heading-bottom {
+        font-size: 16vw;
+        margin-left: 7vw;
+        margin-top: 2vw;
+        width: 50%;
+        position: relative;
+    }
+    .intro {
+        mask-image: url("../../assets/Tiles and Masks/SVG/3m.svg");
+        mask-size: 102vw;
+        mask-repeat: no-repeat;
+        background-color: #29B6F6;
+        height: 170vw;
+        font-size: 16vw;
+        margin-left: -1vw;
+        margin-top: 60vw;
+        width: 101vw;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 7vw;
+        padding-right: 10vw;
+    }
+    .clouds-form {
+        display: none;
+    }
+    .mask {
+        /* display: none; */
+        left: 0.5vw;
+        z-index: 5;
+    }
+    .guitar {
+        position: absolute;
+        left: 13.3vw;
+        top: 100.4vw;
+    }
+    .guitar-img-mask {
+        max-width: 160vw;
+        margin-top: -16vw;
+        margin-left: -13vw;
+        width: unset;
+    }
+    .guitar-img-mask2 {
+        mask-image: url("../../assets/Tiles and Masks/SVG/2m.svg"), url("../../assets/Tiles and Masks/SVG/1m.svg");
+        mask-position: 33vw 44vw, 33vw -72vw;
+        mask-size: 100vw, 101vw;
+        mask-repeat: no-repeat, no-repeat;
+        mask-composite: add;
+        max-width: 180vw;
+        margin-top: -23vw;
+        margin-left: -41vw;
+    }
+    /*graphics for mobile*/
+    .sleeping {
+        position: absolute;
+        left: -22.3vw;
+        top: 44.5vw;
+        z-index: 5;
+        /* width: 25vw; */
+        display: inline;
+    }
+    .build {
+        margin-top: 150vw;
+        width: 145%;
+        left: -20vw;
+    }
+    .tear-content {
+        margin-top: 50vw;
+        left: 5vw;
+        position: relative;
+        z-index: 2;
+    }
+    .sub-desc {
+        font-size: 4vw;
+        z-index: 1;
+        position: relative;
+        width: 87vw;
+    }
+    .sub-heading {
+        font-size: 8vw;
+        text-align: left;
+        width: 90vw;
+    }
+    .heading-quote {
+        font-size: 4.2vw;
+        width: 90vw;
+    }
+    .quote {
+        font-size: 3.8vw;
+        width: 80vw;
+    }
+    .big {
+        font-size: 6vw;
+        margin-bottom: 6vw;
+    }
+    .right-arrow {
+        display: none;
+    }
+    .tear-img {
+        height: unset;
+        right: 0;
+        top: 90vw
+    }
+    .tear-logo {
+        right: unset;
+        width: 45vw;
+        left: 17vw;
+        margin-top: 100vw;
+    }
+    .tear-div {
+        z-index: 0;
+    }
+    .tear-patch {
+        display: none;
+    }
+    .tear-mpatch {
+        mask-image: url("../../assets/Tiles and Masks/SVG/2m.svg"), url("../../assets/Tiles and Masks/SVG/3m.svg");
+        mask-position: 16vw -146vw, 16vw 33.5vw;
+        mask-size: 100vw, 101vw;
+        mask-repeat: no-repeat, no-repeat;
+        mask-composite: add;
+        display: unset;
+        right: unset;
+        width: 94vw;
+        left: -10.5vw;
+        margin-top: 88.5vw;
+        position: absolute;
+        z-index: 2;
+    }
+    .top-section {
+        position: relative;
+        height: 30.6vw;
+        z-index: 2;
+    }
+    .intro-container {
+        position: relative;
+        margin-top: 156.46vw;
+        display: inline-block;
+    }
+    #lottie {
+        width: 133vw;
+    }
+    .umbrella {
+        position: absolute;
+        left: 22.3vw;
+        top: 40vw;
+        margin-left: -2vw;
+        display: inline;
+        z-index: 2;
+    }
+    .umb-img {
+        width: 87vw;
+    }
+    .tear-patch {
+        margin-top: 107.2vw;
+        right: 7.25vw;
+        position: absolute;
+        width: 63vw;
+    }
+    .section2 {
+        mask-image: url("../../assets/Tiles and Masks/SVG/2m.svg");
+        height: 319.27vw;
+        margin-left: 0vw;
+        mask-position: 0px 120vw;
+    }
+    .container {
+        /* background-image: url("../../assets/Green Back/green_1.png"); */
+        background-size: cover;
+        /* margin-top: -50px; */
+        /* z-index: -5; */
+        position: relative;
+        /* height: auto; */
+    }
+    .logo-div {
+        mask-image: url("../../assets/Tiles and Masks/SVG/1m.svg");
+        mask-size: 105vw;
+        mask-position: 2vw 0vw;
+        mask-repeat: no-repeat;
+        height: 160.6vw;
+        width: 300vw;
+    }
+    .iap-container {
+        mask-image: url("../../assets/Tiles and Masks/1x/4m.png");
+        height: 226vw;
+        width: 106.6vw;
+        mask-size: 106.6vw;
+        margin-left: 0vw;
+    }
+    .coming-soon {
+        width: 80vw;
+        font-size: 6vw;
+    }
+    .ccp-container {
+        mask-image: url("../../assets/Tiles and Masks/1x/4m.png");
+        height: 224vw;
+        margin-left: 0px;
+        margin-top: 0vw;
+        mask-size: 105vw auto;
+    }
+    .cap {
+        margin-top: 0vw;
+        right: 0vw;
+    }
+    .prog-desc {
+        margin-top: 45vw;
+        font-size: 4vw;
+        width: 84vw;
+    }
+    button {
+        width: 16vw;
+        height: 5vw;
+        display: block;
+        margin-left: 25vw;
+    }
+    .iap {
+        background-image: url("../../assets/IAP/IAP.webp");
+        margin-top: 0vw;
+    }
+    .multicity-container {
+        mask-image: url("../../assets/Tiles and Masks/1x/4m-multi.png");
+        height: 144vw;
+        margin-left: 0vw;
+        width: 106.6vw;
+        mask-size: 106.6vw;
+    }
+    .contact-container {
+        mask-image: url("../../assets/Tiles and Masks/SVG/5m.svg");
+        margin-left: 10px;
+        height: 105vw;
+    }
+    .contact {
+        font-size: 4.5vw;
+    }
+    .contact-input {
+        font-size: 3vw;
+        width: 80vw;
+    }
+    .contact-content {
+        font-size: 3vw;
+        width: 80vw;
+    }
+    .contact-desc {
+        padding-top: 10vw;
+        margin-left: 10vw;
+    }
+    .content-head {
+        font-size: 10vw;
+        margin-left: 5vw;
+        margin-top: 15.6vw;
+    }
+    .content-desc {
+        width: 85vw;
+        margin-left: 5vw;
+    }
+    .content {
+        margin-left: 5vw;
+    }
+    .ccp-button {
+        top: 5vw;
+        font-size: 3vw;
+        width: 33vw;
+        height: 8vw;
+    }
+    .signup {
+        margin-left: 0vw;
+        font-size: 4vw;
+        width: 35.4vw;
+        height: 8.8vw;
+        border-radius: 3vw;
+    }
+    .top-container {
+        margin-top: 37vw;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Navbar*/
+
+.topnav {
+    position: fixed;
+    z-index: 20;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 102%;
+    background-color: #2A0645;
+    top: 0;
+    left: 0;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.8vw;
+    color: white;
+    font-weight: bold;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+ 
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    z-index: 21;
+  }
+  
+  .dropdown .dropbtn {  
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-size: 1.8vw;
+    opacity: 0.8;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 1.6vw;
+  }
+  
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    opacity: 1;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .dropdown{
+        margin-top: 15px;
+    }
+    .my-logo {
+        display: flex;
+        justify-content: space-around;
+    }
+    .topnav{
+        display: block;
+    }
+    .topnav a, .dropdown  .dropbtn {
+      display: none;
+      font-size: 5.5vw
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .dropdown:hover .dropdown-content {
+        display: none;
+      }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+      font-size: 5.5vw;
+
+    }
+    .topnav.responsive .dropdown {
+        float: none;
+        display: block;
+      text-align: left;
+      font-size: 5.5vw;
+    }
+    .topnav.responsive .dropdown-content {
+        position: relative;
+        font-size: 5vw;
+    }
+    .topnav.responsive .dropdown .dropbtn {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+    
+  }

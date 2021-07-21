@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="table-heading">
+        {{table.heading}}
+    </div>
+    <div *ngFor="let position of table.data" class="table-item">
+        <div class="table-row">
+            <div class="item-name">{{position.name}}</div>
+            <!-- <div class="line"></div>
+            <div class="score">{{position.points}}</div> -->
+        </div>
+    </div>
+</div>

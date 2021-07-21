@@ -1,0 +1,117 @@
+<div (click)="toggle_navbar()" class="container">
+    <div class="row">
+        <div class="column">
+            <!-- <div class="heading">
+                <div class="head first">
+                    MY MOOD INDIGO
+                </div>
+            </div> -->
+            <div class="scroll-container">
+                <div class="scroll">
+                    <div class="head first">
+                        MY MOOD INDIGO
+                    </div>
+                    <div class="info-container">
+                        <img [src]="profile_img" class="avatar">
+                        <div class="info-details">
+                            <div class="user-name">
+                                <!-- name -->
+                                {{name}}
+                            </div>
+                            <div class="info-minum">
+                                Indigo Squad
+                            </div>
+                            <div class="mi-num">
+                                {{mi_number}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-text">
+                            {{curr_level}}
+                            <div [style.opacity]="progress_dot[0]" class="progress-dot"></div>
+                            <div [style.opacity]="progress_dot[1]" class="progress-dot"></div>
+                            <div [style.opacity]="progress_dot[2]" class="progress-dot"></div>
+                            <div [style.opacity]="progress_dot[3]" class="progress-dot"></div>
+                            <div [style.opacity]="progress_dot[4]" class="progress-dot"></div>
+                            <div [style.opacity]="progress_dot[5]" class="progress-dot"></div>
+                            <div [style.opacity]="progress_dot[6]" class="progress-dot"></div>
+                            <div [style.opacity]="progress_dot[7]" class="progress-dot"></div>
+                            <div [style.opacity]="progress_dot[8]" class="progress-dot"></div>
+                            <div [style.opacity]="progress_dot[9]" class="progress-dot"></div>
+                            {{next_level}}
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar background"></div>
+                            <div [style.width]="progress + '%'" class="progress-bar"></div>
+                        </div>
+                    </div>
+                    <div class="basic-profile-container">
+                        <div class="profile-item">
+                            <div class="profile-heading">
+                                College
+                            </div>
+                            <div class="profile-detail">
+                                {{college}}
+                            </div>
+                        </div>
+                        <div class="profile-item">
+                            <div class="profile-heading">
+                                City
+                            </div>
+                            <div class="profile-detail">
+                                {{city}}
+                            </div>
+                        </div>
+                        <div class="profile-item">
+                            <div class="profile-heading">
+                                State
+                            </div>
+                            <div class="profile-detail">
+                                {{state}}
+                            </div>
+                        </div>
+                        <div class="profile-item">
+                            <div class="profile-heading">
+                                Contact Number
+                            </div>
+                            <div class="profile-detail">
+                                {{contact_number}}
+                            </div>
+                        </div>
+                        <div class="profile-item">
+                            <div class="profile-heading">
+                                E-Mail ID
+                            </div>
+                            <div class="profile-detail">
+                                {{email}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll">
+                    <div class="heading">
+                        Social Media Links
+                    </div>
+                    <div class="input-div">
+                        <input (focusout)="validate('fb')" name="insta_id" [(ngModel)]='fb_id'
+                            placeholder="FACEBOOK ID(EX-https://www.facebook.com/akshat12b)" type="text" class="contact-input">
+                    </div>
+                    <div class="input-div">
+                        <input (focusout)="validate('insta')" name="insta_id" [(ngModel)]='insta_id'
+                            placeholder="INSTAGRAM ID(EX-https://www.instagram.com/akshat__12_/)" type="text" class="contact-input">
+                    </div>
+                    <div class="input-div">
+                        <input (focusout)="validate('twitter')" name="insta_id" [(ngModel)]='twitter_id'
+                            placeholder="TWITTER ID(EX-https://twitter.com/356c213091ed412)" type="text" class="contact-input">
+                    </div>
+                    <div class="input-div">
+                        <input (focusout)="validate('linkedin')" name="insta_id" [(ngModel)]='linkedin_id'
+                            placeholder="LINKEDIN ID(EX-https://www.linkedin.com/in/akshat-choudhary-203270170/)" type="text" class="contact-input">
+                    </div>
+                    <button (click)="post()" class="post-button">Update Social Profile</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

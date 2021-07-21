@@ -1,0 +1,370 @@
+.container{
+    margin-left: 20vw;
+    padding-left: 7vw;
+    margin-top: 3vw;
+    padding-top: 2vw;
+    height: 100vh;
+    /* background-color: #29B6F6; */
+    background-image: linear-gradient(to right, #B721FF, #21D4FD);
+    width: 75vw;
+    padding-bottom: 3vw;
+    position: fixed;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    width: 68vw;
+}
+.head{
+    font-size: 2.5vw;
+    font-family: 'Gotham';
+    font-weight: bold;
+    margin-bottom: 1vw;
+}
+.scroll-container{
+    display: flex;
+    width: 68vw;
+    justify-content: space-between;
+    margin-top: 1vw;
+}
+.scroll{
+    flex: 0 0 30vw;
+}
+.info-container{
+    display: flex;
+}
+.avatar{
+    width: 4vw;
+    height: 4vw;
+    border-radius: 100%;
+    border: solid 5px;
+}
+.info-details{
+    margin-left: 2vw;
+}
+.user-name{
+    font-size: 1.5vw;
+    font-family: 'Gotham';
+}
+.info-minum{
+    font-size: 0.8vw;
+}
+.mi-num{
+    font-size: 1.8vw;
+}
+.progress-text{
+    display: flex;
+    align-items: center;
+    margin-top: 1vw;
+    font-size: 1vw;
+    justify-content: space-evenly;
+}
+.progress-dot{
+    width: 0.5vw;
+    height: 0.5vw;
+    background-color: white;
+    border-radius: 1vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+
+.progress-bar-container{
+    position: relative;
+    height: 2vw;
+    margin-top: 1vw;
+}
+.progress-bar{
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    border-radius: 10vw;
+    height: 100%;
+}
+.background{
+    opacity: 0.4;
+}
+.foreground{
+    width: 50%;
+}
+
+.assignment-list{
+    height: 56vh;
+    overflow-y: scroll;
+}
+
+.weekly-target-container{
+    border: solid;
+    border-radius: 2vw;
+    display: flex;
+    padding: 1vw;
+    flex-direction: column;
+    margin-top: 2vw;
+    background-color: #2A0645;
+}
+.refer-target-container{
+    border: solid;
+    border-radius: 2vw;
+    display: flex;
+    padding: 1vw;
+    flex-direction: column;
+    margin-top: 2vw;
+    background-color: #2A0645;
+}
+.target-heading{
+    font-size: 2.5vw;
+    margin-bottom: 1vw;
+}
+.weekly-targets{
+    display: flex;
+    font-size: 1.5vw;
+    justify-content: space-between;
+}
+.refer-div{
+    display: flex;
+    justify-content: space-evenly;
+}
+.assignment-text{
+    font-size: 2vw;
+    margin-top: 3vw;
+}
+/* .assignment-list{
+    min-height: 46vh;
+    border: solid;
+    border-radius: 1vw;
+    margin-top: 2vw;
+} */
+.feed-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.feed-text{
+    font-size: 2.5vw;
+    font-family: 'Gotham';
+    font-weight: bold;
+}
+.feed-container{
+    height: 100%;
+    width: 35vw;
+}
+.feed-list{
+    height: 87vh;
+    overflow-y: scroll;
+}
+.assignment-item{
+    margin-top: 2vw;
+    border: solid;
+    border-radius: 2vw;
+    padding: 1vw;
+    background-color: #2A0645;
+}
+.assignment-head{
+    font-size: 2.5vw;
+}
+.assignment-desc{
+    font-size: 1.5vw;
+    margin-top: 1vw;
+}
+.assignment-button{
+    margin-top: 1vw;
+    padding: 0.8vw;
+    font-size: 1.2vw;
+    border-radius: 2vw;
+    background: white;
+    color: #29B6F6;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+.assignment-answer{
+    width: 80%;
+    height: 5vw;
+    border-radius: 1vw;
+    padding: 1vw;
+    font-size: 1vw;
+    color: #29B6F6;
+    margin-top: 2vw;
+}
+.cg-link{
+    color: unset;
+}
+.refer-target-head{
+    font-size: 1.5vw;
+    /* margin-bottom: 1vw; */
+    margin-top: 1vw;
+
+}
+
+.extra-height{
+    height: 20vw;
+}
+
+@media screen and (max-width: 768px)
+{
+    .assignment-head{
+        font-size: 5vw;
+    }
+    .assignment-desc{
+        font-size: 4vw;
+    }
+    .assignment-answer{
+        width: 90%;
+        height: 21vw;
+        border-radius: 2vw;
+        padding: 2vw;
+        font-size: 4vw;
+    }
+    .assignment-button{
+        font-size: 4.5vw;
+    }
+    .container {
+        margin-top: 0vh;
+        width: 100vw;
+        margin-left: 0vw;
+        padding-left: 7vw;
+        padding-top: 5vw;
+        padding-bottom: 3vw;
+        position: relative;
+        height: auto;
+    }
+
+    .heading{
+        justify-content: space-around;
+        width: 100vw;
+        margin-top: 3vh;
+    }
+
+    .head {
+        font-size: 5vw;
+        margin-top: 5vw;
+        margin-left: 25vw;
+    }
+
+    .scroll-container {
+        display: block;
+    }
+    
+    .scroll{
+        flex: 0 0 100vw;
+    }
+
+    .info-container{
+        margin-left: 12vw;
+        margin-top: 5vw;
+        width: 80vw;
+    }
+    .avatar{
+        width: 15vw;
+        height: 15vw;
+    }
+    .info-details{
+        margin-left: 7vw;
+        width: 50vw;
+    }
+    .user-name{
+        font-size: 6vw;
+    }
+    .info-minum{
+        font-size: 3vw;
+    }
+    .mi-num{
+        font-size: 4vw;
+    }
+
+    .progress-container {
+        margin-left: 10vw;
+        margin-top: 3vw;
+        width: 70vw;
+    }
+    
+    .progress-text{
+        display: flex;
+        align-items: center;
+        margin-top: 1vw;
+        font-size: 3.5vw;
+        justify-content: space-evenly;
+    }
+    .progress-dot{
+        width: 1.25vw;
+        height: 1.25vw;
+        background-color: white;
+        border-radius: 1vw;
+        margin-left: 0.75vw;
+        margin-right: 0.75vw;
+    }
+    
+    .progress-bar-container{
+        position: relative;
+        height: 3.5vw;
+        margin-top: 1vw;
+    }
+    .progress-bar{
+        position: absolute;
+        width: 100%;
+        background-color: white;
+        border-radius: 10vw;
+        height: 100%;
+    }
+    .background{
+        opacity: 0.4;
+    }
+    .foreground{
+        width: 50%;
+    }
+    
+    .assignment-container {
+        margin-left: 8vw;
+        width: 80vw;
+    }
+
+    .assignment-text {
+        font-size: 6vw;
+    }
+    .target-heading{
+        font-size: 5vw;
+    }
+    .target-head{
+        font-size: 4vw;
+    }
+    .target-count{
+        font-size: 4vw;
+    }
+    .fa-3x{
+        font-size: 2em;
+    }
+
+    .assignment-list {
+        height: auto;
+    }
+
+    .feed-container {
+        margin-top: 5vw;
+        margin-left: 8vw;
+        width: 80vw;
+    }
+
+    .feed-text {
+        font-size: 6vw;
+    }
+
+    .feed-list {
+        height: auto;
+    }
+
+    .post-button{
+        color: #29B6F6;
+        width: 15vw;
+        height: 5vw;
+        border-radius: 2vw;
+    }
+
+    .refer-target-container{
+        margin-left: 8vw;
+        width: 76vw;
+    }
+    .refer-target-head{
+        font-size: 3.5vw;
+        /* margin-bottom: 1vw; */
+        margin-top: 2vw;
+    
+    }
+}

@@ -1,0 +1,39 @@
+.container {
+    margin-top: 4vw;
+    width: 76vw;
+}
+.heading {
+    font-size: 3vw;
+    text-align: center;
+}
+.sub-heading{
+    font-size: 2.5vw;
+    text-align: center;
+}
+.main {
+    font-size: 1vw;
+}
+.type{
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        margin-top: 14vw;
+        width: 100vw;
+    }
+    .heading{
+        font-size: 4vw;
+    }
+    .sub-heading{
+        font-size: 6vw;
+    }
+    .main{
+        font-size: 3vw;
+    }
+    .type{
+        font-size: 4.5vw;
+        margin-left: 9vw;
+    }
+}

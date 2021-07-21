@@ -1,0 +1,178 @@
+.loader {
+    position: fixed;
+    width: 107vw;
+    height: 107vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    top: 0vw;
+    left: 0vw;
+}
+
+.loader-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+#lottie2{
+    width: 512px;
+}
+.bgr{
+    background-image: linear-gradient(to right, #B721FF, #21D4FD);
+}
+.container {
+    background-image: url("../../assets/Form/Form _2.webp");
+    /* background-color: #29B6F6; */
+    overflow: auto;
+    /* height: 500px; */
+    background-repeat: no-repeat;
+    background-position: right -11vw;
+    background-size: 70%;
+    height: 104vh;
+}
+
+.background {
+    position: absolute;
+    display: block;
+    float: right;
+    top: 0px;
+    right: 0px;
+    z-index: 0;
+}
+
+.logo {
+    height: 3vw;
+    width: 3vw;
+    top: 3vw;
+    left: 3vw;
+    position: absolute;
+    float: right;
+    z-index: 1;
+}
+
+.desc {
+    margin-top: 10vw;
+    margin-left: 5vw;
+    z-index: 1;
+    position: relative;
+    color: white;
+    /* width: 400px; */
+}
+
+.heading {
+    font-size: 2.5vw;
+    font-family: Libre Baskerville;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.login {
+    width: 10vw;
+    height: 2.5vw;
+    z-index: 1;
+    position: relative;
+    margin-left: 11vw;
+    margin-top: 2.5vw;
+    background-color: white;
+    border-radius: 6vw;
+    color: #29B6F6;
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+.note{
+    width: 25vw;
+}
+
+/* .error {
+    display: inline;
+    color: red;
+    font-size: small;
+    margin-left: 10px;
+} */
+
+
+/* mat-form-field {
+    margin-top: 50px;
+    color: white;
+    width: 200px;
+    height: 20px;
+} */
+
+.mat-select-value-text {
+    /* border: solid black 50px; */
+    /* height: 500px; */
+    color: white;
+}
+
+.mat-select-arrow {
+    margin-right: 50px;
+}
+
+mat-form-field{
+    background-color: white;
+    width: 25vw;
+    height: 3vw;
+    margin-top: 1vw;
+    font-size: 1vw;
+    color: #29B6F6;
+    font-family: Raleway !important;
+}
+
+
+* {
+    font-family: Raleway;
+}
+
+
+.college{
+    padding-top: 1vw;
+    padding-left: 0.8vw;
+    height: 1.8vw;
+    width: 24.2vw;
+}
+input{
+    color: #29B6F6;
+}
+
+@media only screen and (max-width:600px){
+    .note{
+        width: 80vw;
+    }
+    .college{
+        padding-top: 5vw;
+        padding-left: 2.8vw;
+        height: 8.8vw;
+        width: 77.2vw;
+    }
+    .desc{
+        margin-left: 12vw;
+    }
+    .heading{
+        font-size: 6.5vw;
+        margin-top: 25vw;
+    }
+    .logo{
+        width: 10vw;
+    }
+    mat-form-field{
+        width: 80vw;
+        height: 15vw;
+        margin-top: 3vw;
+        font-size: 4vw;
+    }
+    .login{
+        margin-left: 13vw;
+        margin-top: 5vw;
+        width: 80vw;
+        height: 14vw;
+        font-size: 6vw;
+    }
+    .container{
+        background-position: -16vw 55vw;
+        background-size: 158%;
+    }
+}

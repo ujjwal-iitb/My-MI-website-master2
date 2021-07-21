@@ -1,0 +1,175 @@
+
+
+.loader {
+    position: fixed;
+    width: 107vw;
+    height: 107vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    top: 0vw;
+    left: 0vw;
+}
+
+.loader-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+#lottie2{
+    width: 512px;
+}
+.container {
+    background-image: url("../../assets/Google Doodle/iitbGate.png");
+    background-size: cover;
+    /* background-color: #29B6F6; */
+    /* background-image: linear-gradient(to right, #B721FF, #21D4FD); */
+    height: auto;
+    min-height: 105vh;
+    position: relative;
+    display: flow-root;
+    background-position: 11vw -12vw;
+    background-repeat: no-repeat;
+}
+.bgr{
+    background-image: linear-gradient(to right, #B721FF, #21D4FD);
+}
+.background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1 ;
+}
+
+.logo {
+    height: 3vw;
+    width: 3vw;
+    top: 3vw;
+    right: 3vw;
+    position: absolute;
+    float: right;
+    z-index: 1;
+}
+
+.desc {
+    margin-top: 24vw;
+    margin-left: 10vw;
+    z-index: 1;
+    position: relative;
+    color: white;
+    width: 100vw;
+}
+
+.heading {
+    font-size: 3.5vw;
+    font-family: Gotham;
+    font-weight: bold;
+    /* font-style: italic; */
+}
+
+.text {
+    font-size: 2vw;
+    width: 25vw;
+    /* font-weight: bold; */
+}
+
+.error{
+    font-size: 1.5vw;
+    margin-left: 10vw;
+}
+
+.login {
+    width: 11vw;
+    height: 3vw;
+    z-index: 1;
+    position: relative;
+    margin-left: 10vw;
+    margin-top: 3vw;
+    border-radius: 3vw;
+    background-color: white;
+    font-size: 1.2vw;
+    color: #29B6F6;
+}
+
+.contact-input {
+    width: 37vw;
+    height: 2.2vw;
+    margin-top: 0.78vw;
+    border-radius: 1vw;
+    font-size: 1vw;
+    padding: 10px;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding-left: 1vw;
+    color: white;
+    margin-left: 10vw;
+}
+
+
+@media only screen and (max-width: 600px)
+{
+    .contact-input{
+        font-size: 3vw;
+        width: 80vw;
+    }
+    .logo
+    {
+        display: none;
+    }
+    .desc{
+        margin-left: 15vw;
+        margin-top: 50vw;
+        padding-top: 20vw;
+    }
+    .heading{
+        font-size: 8vw;
+        position: relative;
+    }
+    .text{
+        padding-top: 10vw;
+        width: 75vw;
+        padding-bottom: 0vw;
+        font-size: 4vw;
+    }
+    .login{
+        margin-left: 15vw;
+        width:30vw;
+        height: 10vw;
+        border-radius: 3vw;
+        font-size: 4vw;
+    }
+    .background {
+        position: absolute;
+        top: 0vw;
+        left: -5vw;
+        max-width: 130vw;
+
+}
+}
+@media (min-width: 600px) and (max-width: 950px)     /*tablet view*/
+{    
+     .desc{
+        margin-left: 11vw;
+        margin-top: 30vw;
+        padding-top: 50vw;
+    }
+     .heading{
+        font-size: 6vw;
+        margin-top: -25vw;
+    }
+    .text{
+        padding-top: 1vw;
+        width: 50vw;
+        font-size: 3.5vw;
+    } 
+    .login{
+        margin-left: 11vw;
+        width:20vw;
+        height: 7vw;
+        border-radius: 2vw;
+        font-size: 3vw;
+    }
+}

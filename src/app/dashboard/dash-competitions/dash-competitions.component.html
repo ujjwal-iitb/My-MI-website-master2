@@ -1,0 +1,142 @@
+<div (click)="toggle_navbar()" class="container">
+    <div class="scroll-container">
+        <div class="scroll left">
+            <div class="head first">
+                MY MOOD INDIGO
+            </div>
+            <div class="info-container">
+                <img [src]="profile_img" class="avatar">
+                <div class="info-details">
+                    <div class="user-name">
+                        <!-- name -->
+                        {{name}}
+                    </div>
+                    <div class="info-minum">
+                        Indigo Squad
+                    </div>
+                    <div class="mi-num">
+                        {{mi_number}}
+                    </div>
+                </div>
+            </div>
+            <div class="progress-container">
+                <div class="progress-text">
+                    {{curr_level}}
+                    <div [style.opacity]="progress_dot[0]" class="progress-dot"></div>
+                    <div [style.opacity]="progress_dot[1]" class="progress-dot"></div>
+                    <div [style.opacity]="progress_dot[2]" class="progress-dot"></div>
+                    <div [style.opacity]="progress_dot[3]" class="progress-dot"></div>
+                    <div [style.opacity]="progress_dot[4]" class="progress-dot"></div>
+                    <div [style.opacity]="progress_dot[5]" class="progress-dot"></div>
+                    <div [style.opacity]="progress_dot[6]" class="progress-dot"></div>
+                    <div [style.opacity]="progress_dot[7]" class="progress-dot"></div>
+                    <div [style.opacity]="progress_dot[8]" class="progress-dot"></div>
+                    <div [style.opacity]="progress_dot[9]" class="progress-dot"></div>
+                    {{next_level}}
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar background"></div>
+                    <div [style.width]="progress + '%'" class="progress-bar"></div>
+                </div>
+            </div>
+            <div class="assignment-container">
+                <div class="main-text">
+                    Your Zone
+                </div>
+                <div class="zone-text">
+                    {{zone}}
+                </div>
+                <div class="genre-heading">
+                    {{genre.name}}
+                </div>
+                <div class="genre-list">
+                    <div *ngFor="let g of genres">
+                        <div (click)="change_genre(g)"
+                            [className]="genre.code == g.code ? 'genre-container selected': 'genre-container'">
+                            <img [src]="genre.code == g.code ? g.selected : g.unselected" class="genre-icon">
+                            <div class="genre-name">
+                                {{g.name}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll right">
+            <div class="feed-container">
+                <div class="feed-heading">
+                    <div class="feed-text">
+                        {{genre.name}}
+                    </div>
+                </div>
+                <div class="feed-list">
+                    <div [className]="genre.img"></div>
+                    <div class="compi-tabs-container">
+                        <div (click)="change_compi(c)" *ngFor="let c of compis" class="compi-tab">
+                            {{c.name}}
+                            <div class="subs">
+                                {{c.subtitles}}
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="compi-queries-heading">
+                        CHECK OUT ANY QUERIES UNDER THE <a href="dashboard/championship-guidelines">QUERIES</a> TAB.
+                    </div>
+                    <div class="compi-name">
+                        {{selected_compi.name}}
+                        <div (click)="register()" *ngIf="!selected_compi.registered" class="reg-button">
+                            REGISTER
+                        </div>
+                        <div *ngIf="selected_compi.registered" class="reg-button registered">
+                            REGISTERED
+                        </div>
+                    </div>
+                    <div class="compi-subs">
+                        {{selected_compi.subtitles}}
+                    </div>
+                    <div class="compi-rules-heading">
+                        RULES AND REGULATIONS
+                    </div>
+                    <div [innerHTML]="selected_compi.rules" class="compi-rules">
+                    </div>
+                    <div class="leaderboard-text">
+                        Check out how your college is doing on the {{get_genre_name(genre.name)}} leaderboard <a href="dashboard/compi-leaderboard">here</a>
+                    </div>
+                    <div class="compi-rules-heading">
+                        PRIZES AND LYP
+                    </div>
+                    <div [innerHTML]="selected_compi.prizes_lyp" class="compi-rules">
+                    </div>
+                    <div (click)="register()" *ngIf="!selected_compi.registered" class="reg-button-long">
+                        REGISTER FOR COMPETITION
+                    </div>
+                    <div *ngIf="selected_compi.registered" class="reg-button-long registered">
+                        REGISTERED SUCCESSFULLY!
+                    </div>
+                    <div class="compi-rules-heading">
+                        PREVIOUS WINNERS
+                    </div>
+                    <div [innerHTML]="selected_compi.previous_winners" class="compi-rules">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div *ngIf="details" (click)="test('outer')" class="black-cover">
+    <div class="blog-upload-container">
+        <div (click)="test('inner')" class="post-form">
+            <div class="blog-post-heading">
+                Please provide details about your college cultural clubs
+            </div>
+            <input [(ngModel)]="insta_link" name="subject" placeholder="INSTAGRAM LINK" type="text" class="contact-input"><br>
+            <input [(ngModel)]="fb_link" name="subject" placeholder="FACEBOOK LINK" type="text" class="contact-input"><br>
+
+            <div class="blog-button-container">
+                <div (click)="submit_details()" class="blog-button">Submit</div>
+                <div (click)="skip_details()" class="blog-button">Skip</div>
+            </div>
+        </div>
+    </div>
+</div> -->

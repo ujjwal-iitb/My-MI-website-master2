@@ -1,0 +1,219 @@
+
+
+.loader {
+    position: fixed;
+    width: 107vw;
+    height: 107vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    top: 0vw;
+    left: 0vw;
+}
+
+.loader-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+#lottie2{
+    width: 512px;
+}
+
+.img-container{
+    display: flex;
+    position: absolute;
+    float: right;
+    right: 0vw;
+    top: 0vw;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.iap-img{
+    /* position: absolute; */
+    /* heigh */
+    height: 110vh;
+}
+.background{
+    position: fixed;
+    width: 105vw;
+    height: 105%;
+    /* background-color: #29B6F6; */
+    background-image: linear-gradient(to right, #B721FF, #21D4FD);
+    z-index: -1;
+}
+
+.main {
+    margin-left: 10vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    width: 75vw;
+}
+
+.logo{
+    width: 3vw;
+}
+
+p {
+    font-size: 1.5vw;
+}
+
+.heading{
+    font-size: 4.5vw;
+    margin-top: 2vw;
+    font-family: Libre Baskerville;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.sub-heading{
+    font-size: 2.3vw;
+    margin-bottom: 1vw;
+    font-family: Libre Baskerville;
+    font-style: italic;
+}
+
+.prog-heading{
+    font-size: 3vw;
+    margin-top: 2vw;
+    font-family: Libre Baskerville;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.register{
+    margin-right: 20vw;
+    float: right;
+    height: 3vw;
+    width: 15vw;
+}
+
+.done{
+    height: 3vw;
+    width: 15vw;
+    margin-top: 3vw;
+}
+
+.input-div{
+    display: flex;
+}
+
+.contact-input {
+    width: 37vw;
+    height: 2.2vw;
+    margin-top: 0.78vw;
+    border-radius: 1vw;
+    font-size: 1vw;
+    padding: 10px;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 1);
+    padding-left: 1vw;
+    color: #29B6F6;
+}
+
+.validation{
+    border-radius: 100%;
+    margin-top: 1.2vw;
+    background-color: white;
+    width: 3vw;
+    height: 3vw;
+    margin-left: 2vw;
+    display: flex;
+    justify-content: center;
+}
+
+.valid-img{
+    width: 3.5vw;
+}
+
+.pre-desc{
+    width: 30vw;
+    font-size: 1vw;
+    margin-top: 1vw;
+}
+
+button {
+    width: 9.4vw;
+    height: 2.8vw;
+    border-radius: 1vw;
+    background-color: white;
+    color: #29B6F6;
+    font-size: 1.5vw;
+    z-index: 1;
+    position: relative;
+}
+
+.right-arrow{
+    display: inline;
+    width: 0.8vw;
+    margin-left: 1vw;
+}
+
+.mregister{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .img-container{
+        display: none;
+    }
+    .logo{
+        width: 10vw;
+        margin-top: 5vw;
+    }
+    .main{
+        margin-left: 15vw;
+    }
+    .background{
+        width: 107vw;
+        height: 107%;
+    }
+    .heading{
+        font-size: 10.5vw;
+    }
+    .sub-heading{
+        font-size: 5vw;
+    }
+    .prog-heading{
+        font-size: 8vw;
+        margin-top: 20vw;
+    }
+    .contact-input{
+        font-size: 4vw;
+        width: 85vw;
+    }
+    .valid-img{
+        width: 2.5vw;
+    }
+    .validation{
+        width: 6vw;
+        height: 6vw;
+    }
+    .pre-desc{
+        width: 90vw;
+        font-size: 5vw;
+    }
+    .register{
+        display: none;
+    }
+    .done{
+        display: none;
+    }
+    .mregister{
+        display: flex;
+        width: 50vw;
+        height: 11vw;
+        font-size: 5vw;
+        justify-content: space-around;
+        padding: 2vw;
+        border-radius: 20vw;
+        margin-top: 2vw;
+    }
+    .mright-arrow{
+        width: 5vw;
+    }
+}

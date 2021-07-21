@@ -1,0 +1,263 @@
+.container {
+    margin-left: 20vw;
+    padding-left: 7vw;
+    margin-top: 3vw;
+    padding-top: 2vw;
+    height: 100vh;
+    /* background-color: #29B6F6; */
+    background-image: linear-gradient(to right, #B721FF, #21D4FD);
+    width: 75vw;
+    padding-bottom: 3vw;
+    position: fixed;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    width: 68vw;
+}
+
+.head {
+    font-size: 2.5vw;
+}
+
+.scroll-container {
+    display: flex;
+    width: 68vw;
+    justify-content: space-between;
+    margin-top: 1vw;
+}
+
+.scroll {
+    flex: 0 0 30vw;
+    margin-right: 6vw;
+}
+
+.info-container {
+    display: flex;
+}
+
+.avatar {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 100%;
+    border: solid 5px;
+}
+
+.info-details {
+    margin-left: 2vw;
+}
+
+.user-name {
+    font-size: 1.5vw;
+}
+
+.info-minum {
+    font-size: 0.8vw;
+}
+
+.mi-num {
+    font-size: 1.8vw;
+}
+
+.progress-text {
+    display: flex;
+    align-items: center;
+    margin-top: 1vw;
+    font-size: 1vw;
+    justify-content: space-evenly;
+}
+
+.progress-dot {
+    width: 0.5vw;
+    height: 0.5vw;
+    background-color: white;
+    border-radius: 1vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+
+.progress-bar-container {
+    position: relative;
+    height: 2vw;
+    margin-top: 1vw;
+}
+
+.progress-bar {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    border-radius: 10vw;
+    height: 100%;
+}
+.background{
+    opacity: 0.4;
+}
+
+.basic-profile-container {
+    margin-top: 2vw;
+}
+
+.profile-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid;
+    border-radius: 1vw;
+    padding: 0.5vw;
+    margin: 0.5vw;
+}
+
+.profile-heading {
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.profile-detail {
+    font-size: 1vw;
+}
+.heading{
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+
+.contact-input {
+    width: 30vw;
+    height: 2.2vw;
+    margin-top: 0.78vw;
+    border-radius: 1vw;
+    font-size: 1vw;
+    padding: 10px;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 1);
+    padding-left: 1vw;
+    color: #29B6F6;
+}
+.post-button{
+    padding: 1vw;
+    background-color: white;
+    color: #2A0645;
+    border-radius: 1vw;
+    font-size: 1vw;
+    margin-top: 2vw;
+}
+
+
+
+@media screen and (max-width: 768px)
+{
+    .container {
+        margin-top: 1.5em;
+        width: 100%;
+        margin-left: 0vw;
+        padding-top: 10vw;
+        padding-bottom: 3vw;
+        position: relative;
+        height: auto;
+        min-height: 100vh;
+    }
+    .basic-profile-container{
+        width: 73vw;
+        display: flex;
+        flex-direction: column;
+        margin-left: 8vw;   
+    }
+    .profile-detail{
+        font-size: 2.5vw;
+    }
+    .profile-heading{
+        font-size: 4vw;
+    }
+
+    .heading{
+        justify-content: space-around;
+        width: 100vw;
+        margin-top: 3vh;
+        font-size: 5vw;
+    }
+
+    .contact-input{
+        width: 68vw;
+        margin-left: 8vw;
+        font-size: 3vw;
+    }
+
+    .post-button{
+        font-size: 3vw;
+        margin-left: 8vw;
+    }
+
+    .head {
+        font-size: 5vw;
+        margin-top: 5vw;
+        margin-left: 25vw;
+    }
+
+    .scroll-container {
+        display: block;
+        width: auto;
+    }
+    
+    .scroll{
+        flex: 0 0 100vw;
+        height: auto;
+    }
+
+    .info-container{
+        margin-left: 8vw;
+        margin-top: 5vw;
+        width: 80vw;
+    }
+    .avatar{
+        width: 15vw;
+        height: 15vw;
+    }
+    .info-details{
+        margin-left: 7vw;
+        width: 50vw;
+    }
+    .user-name{
+        font-size: 6vw;
+    }
+    .info-minum{
+        font-size: 3vw;
+    }
+    .mi-num{
+        font-size: 4vw;
+    }
+
+    .progress-container {
+        margin-left: 10vw;
+        margin-top: 3vw;
+        width: 70vw;
+    }
+    
+    .progress-text{
+        display: flex;
+        align-items: center;
+        margin-top: 1vw;
+        font-size: 3.5vw;
+        justify-content: space-evenly;
+    }
+    .progress-dot{
+        width: 1.25vw;
+        height: 1.25vw;
+        background-color: white;
+        border-radius: 1vw;
+        margin-left: 0.75vw;
+        margin-right: 0.75vw;
+    }
+    
+    .progress-bar-container{
+        position: relative;
+        height: 3.5vw;
+        margin-top: 1vw;
+    }
+    .progress-bar{
+        position: absolute;
+        width: 100%;
+        background-color: white;
+        border-radius: 10vw;
+        height: 100%;
+    }
+}

@@ -1,0 +1,136 @@
+<div (click)="toggle_navbar()" class="container">
+    <!-- <div class="heading">
+        <div class="head first">
+            MY MOOD INDIGO
+        </div>
+        <div class="head first">
+            MI STORE
+        </div>
+    </div> -->
+    <div class="scroll-container">
+        <div class="scroll left">
+            <div class="head first">
+                MY MOOD INDIGO
+            </div>
+            <div class="info-container">
+                <img [src]="profile_img" class="avatar">
+                <div class="info-details">
+                    <div class="user-name">
+                        <!-- name -->
+                        {{name}}
+                    </div>
+                    <div class="info-minum">
+                        MI Number
+                    </div>
+                    <div class="mi-num">
+                        {{mi_number}}
+                    </div>
+                </div>
+            </div>
+            <div class="progress-container">
+                <div class="progress-text">
+                    {{curr_level}}
+                    <div [style.opacity]="progress_dot[0]" class="progress-dot"></div>
+                    <div [style.opacity]="progress_dot[1]" class="progress-dot"></div>
+                    <div [style.opacity]="progress_dot[2]" class="progress-dot"></div>
+                    <div [style.opacity]="progress_dot[3]" class="progress-dot"></div>
+                    <div [style.opacity]="progress_dot[4]" class="progress-dot"></div>
+                    <div [style.opacity]="progress_dot[5]" class="progress-dot"></div>
+                    <div [style.opacity]="progress_dot[6]" class="progress-dot"></div>
+                    <div [style.opacity]="progress_dot[7]" class="progress-dot"></div>
+                    <div [style.opacity]="progress_dot[8]" class="progress-dot"></div>
+                    <div [style.opacity]="progress_dot[9]" class="progress-dot"></div>
+                    {{next_level}}
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar background"></div>
+                    <div [style.width]="progress + '%'" class="progress-bar"></div>
+                </div>
+            </div>
+            <div class="points-container">
+                <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                    <div>
+                        <div class="points-text">
+                            CCP POINTS
+                        </div>
+                        <div class="points">
+                            <!-- Points come here --> {{score}}
+                        </div>
+                    </div>
+                    <!-- <div>
+                        <div class="points-text">
+                            MI Coins
+                        </div>
+                        <div class="points">
+                            {{coins}}
+                        </div>
+                    </div> -->
+                </div>
+                <!-- <div class="weekly-target-container">
+                    <div class="target-heading">
+                        Your Activity
+                    </div>
+                    <div class="weekly-targets">
+                        <div class="target-head">
+                            Your referrals
+                        </div>
+                        <div class="target-count">
+                            {{activity.referrals}}
+                        </div>
+                    </div>
+                    <div class="weekly-targets">
+                        <div class="target-head">
+                            Blogs posted
+                        </div>
+                        <div class="target-count">
+                            {{activity.blogs}}
+                        </div>
+                    </div>
+                    <div class="weekly-targets">
+                        <div class="target-head">
+                            Weekly questions
+                        </div>
+                        <div class="target-count">
+                            {{activity.weekly_questions}}
+                        </div>
+                    </div>
+                    <div class="weekly-targets">
+                        <div class="target-head">
+                            Weekly tasks completed
+                        </div>
+                        <div class="target-count">
+                            {{activity.weekly_tasks}}
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="leaderboard-container">
+                <div *ngIf="users_overall" class="leaderboard-list">
+                    <app-table [table]="users_overall"></app-table>
+                </div>
+            </div>
+        </div>
+        <div class="scroll right">            
+            <div class="leaderboard-container">
+                <div *ngIf="users_city" class="leaderboard-list">
+                    <app-table [table]="users_city"></app-table>
+                </div>
+            </div>
+            <div class="leaderboard-container">
+                <div *ngIf="college_overall" class="leaderboard-list">
+                    <app-table [table]="college_overall"></app-table>
+                </div>
+            </div>
+            <div class="leaderboard-container">
+                <div *ngIf="college_state" class="leaderboard-list">
+                    <app-table [table]="college_state"></app-table>
+                </div>
+            </div>
+            <div class="leaderboard-container">
+                <div *ngIf="city_overall" class="leaderboard-list">
+                    <app-table [table]="city_overall"></app-table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="72" height="72" viewBox="0 0 72 72">
+  <defs>
+    <filter id="Ellipse_70" x="0" y="0" width="72" height="72" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Exclaim" transform="translate(-715 -624)">
+    <g transform="matrix(1, 0, 0, 1, 715, 624)" filter="url(#Ellipse_70)">
+      <circle id="Ellipse_70-2" data-name="Ellipse 70" cx="27" cy="27" r="27" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <rect id="Rectangle_31" data-name="Rectangle 31" width="6" height="22" rx="2" transform="translate(748 642)" fill="#ff7e7e"/>
+    <circle id="Ellipse_71" data-name="Ellipse 71" cx="3" cy="3" r="3" transform="translate(748 666)" fill="#ff7e7e"/>
+  </g>
+</svg>

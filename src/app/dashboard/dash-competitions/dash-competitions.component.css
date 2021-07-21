@@ -1,0 +1,568 @@
+.black-cover {
+    position: fixed;
+    width: 110vw;
+    height: 110vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 5000;
+}
+
+.blog-upload-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+}
+
+.post-form {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5vw;
+  background-color: #29B6F6;
+  border: solid;
+  border-radius: 7vw;
+  width: 40vw;
+}
+
+.blog-button-container {
+  display: flex;
+  justify-content: left;
+}
+
+.blog-button {
+  border-radius: 0.5vw;
+  cursor: pointer;
+  background: white;
+  display: table;
+  padding: 0.5vw;
+  margin: 0.5vw;
+  width: 5vw;
+  color: #29B6F6;
+  text-align: center;
+}
+
+.blog-post-heading {
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+.contact-input {
+  width: 37vw;
+  height: 2.2vw;
+  margin-top: 0.78vw;
+  border-radius: 1vw;
+  font-size: 1vw;
+  padding: 10px;
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 1);
+  padding-left: 1vw;
+  color: #29B6F6;
+}
+
+
+.container {
+    margin-left: 20vw;
+    padding-left: 7vw;
+    margin-top: 3vw;
+    padding-top: 2vw;
+    height: 100vh;
+    background-color: #29B6F6;
+    width: 75vw;
+    padding-bottom: 3vw;
+    position: fixed;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    width: 68vw;
+}
+
+.head {
+    font-size: 2.5vw;
+}
+
+.scroll-container {
+    display: flex;
+    width: 68vw;
+    justify-content: space-between;
+    margin-top: 1vw;
+}
+
+.scroll {
+    flex: 0 0 30vw;
+}
+
+.info-container {
+    display: flex;
+}
+
+.avatar {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 100%;
+    border: solid 5px;
+}
+
+.info-details {
+    margin-left: 2vw;
+}
+
+.user-name {
+    font-size: 1.5vw;
+}
+
+.info-minum {
+    font-size: 0.8vw;
+}
+
+.mi-num {
+    font-size: 1.8vw;
+}
+
+.progress-text {
+    display: flex;
+    align-items: center;
+    margin-top: 1vw;
+    font-size: 1vw;
+    justify-content: space-evenly;
+}
+
+.progress-dot {
+    width: 0.5vw;
+    height: 0.5vw;
+    background-color: white;
+    border-radius: 1vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+
+.progress-bar-container {
+    position: relative;
+    height: 2vw;
+    margin-top: 1vw;
+}
+
+.progress-bar {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    border-radius: 10vw;
+    height: 100%;
+}
+
+.background {
+    opacity: 0.4;
+}
+
+.foreground {
+    width: 50%;
+}
+
+.weekly-target-container {
+    border: solid;
+    border-radius: 2vw;
+    display: flex;
+    padding: 1vw;
+    flex-direction: column;
+    margin-top: 2vw;
+}
+
+.target-heading {
+    font-size: 2.5vw;
+    margin-bottom: 1vw;
+}
+
+.weekly-targets {
+    display: flex;
+    font-size: 1.5vw;
+    justify-content: space-between;
+}
+
+.refer-div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.feed-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feed-text {
+    font-size: 2.5vw;
+}
+
+.feed-container {
+    height: 100%;
+    width: 35vw;
+}
+
+.feed-list {
+    height: 43vw;
+    overflow-y: scroll;
+    margin-top: 1vw;
+}
+
+.cg-link {
+    color: unset;
+}
+
+.genre-heading {
+    font-size: 2vw;
+    font-weight: 900;
+    opacity: 0.8;
+}
+
+.genre-list {
+    overflow-y: scroll;
+    margin-top: 1vw;
+    height: 24.5vw;
+}
+
+.assignment-container {
+    margin-top: 1vw;
+    font-size: 1.5vw;
+}
+
+.zone-text {
+    font-size: 3vw;
+    font-weight: 900;
+}
+
+.genre-container {
+    padding: 1vw;
+    border: solid white;
+    border-radius: 30px;
+    font-size: 2vw;
+    font-weight: bold;
+    margin: 1vw 0vw;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.compi-tab:hover {
+    background-color: white;
+    color: #29B6F6;
+}
+
+.selected {
+    background-color: white;
+    color: #29B6F6;
+}
+
+.genre-icon {
+    width: 4vw;
+    height: auto;
+    color: white;
+    margin-right: 1vw;
+}
+
+/* .genre-container:hover{
+    color: #29B6F6;
+    background-color: white;
+} */
+
+.compi-img {
+    width: 98%;
+    height: 11vw;
+    border-radius: 30px;
+    border: white solid;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.img0 {
+    background-image: url("../../../assets/Compi/Compi Images/group.webp");
+    background-position: center -9vw !important;
+}
+
+.img1 {
+    background-image: url("../../../assets/Compi/Compi Images/Dance_img.jpg");
+    background-position: center -6vw !important;
+}
+
+.img2 {
+    background-image: url("../../../assets/Compi/Compi Images/Design_img.jpg");
+    background-position: center -6vw !important;
+}
+
+.img3 {
+    background-image: url("../../../assets/Compi/Compi Images/Drama_img.jpg");
+    background-position: center -6vw !important;
+}
+
+.img4 {
+    background-image: url("../../../assets/Compi/Compi Images/FineArts_img.jpg");
+    background-position: center -6vw !important;
+}
+
+.img5 {
+    background-image: url("../../../assets/Compi/Compi Images/Journalism_img.jpg");
+    background-position: center -6vw !important;
+}
+
+.img6 {
+    background-image: url("../../../assets/Compi/Compi Images/Literary_arts_img.jpg");
+    background-position: center -6vw !important;
+}
+
+.img7 {
+    background-image: url("../../../assets/Compi/Compi Images/Literary_arts_img.jpg");
+    background-position: center -6vw !important;
+}
+
+.img8 {
+    background-image: url("../../../assets/Compi/Compi Images/Magic_Lifestyle_img.jpg");
+    background-position: center -6vw !important;
+}
+
+.img9 {
+    background-image: url("../../../assets/Compi/Compi Images/Music_img.jpg");
+    background-position: center -6vw !important;
+}
+
+.compi-tabs-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.compi-tab {
+    width: auto;
+    border: solid white;
+    border-radius: 30px;
+    padding: 0.5vw 1vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin: 0.5vw 1vw 0vw 0vw;
+    cursor: pointer;
+}
+
+.subs{
+    font-weight: normal;
+    font-size: 1vw;
+}
+
+.compi-queries-heading {
+    font-size: 1.9vw;
+    font-weight: 900;
+    opacity: 0.8;
+}
+
+.compi-name {
+    font-size: 2vw;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5vw;
+}
+
+.reg-button {
+    color: #29B6F6;
+    background: white;
+    padding: 0.5vw 1vw 0vw 1vw;
+    font-size: 1.2vw;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.registered {
+    color: #66bb6a !important;
+}
+
+.compi-rules-heading {
+    font-size: 1.5vw;
+    font-weight: 900;
+    opacity: 0.8;
+    margin-top: 1vw;
+}
+
+.compi-rules {
+    font-size: 1.2vw;
+}
+
+.leaderboard-text {
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin-top: 2vw;
+}
+
+.reg-button-long {
+    font-size: 1.5vw;
+    text-align: center;
+    color: #29B6F6;
+    background: white;
+    border-radius: 30px;
+    margin: 2vw;
+    padding: 0.5vw;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .subs{
+        font-size: 3.5vw;
+    }
+    .container {
+        margin-top: 0vh;
+        width: 100vw;
+        margin-left: 0vw;
+        padding-left: 7vw;
+        padding-top: 5vw;
+        padding-bottom: 3vw;
+        position: relative;
+        height: auto;
+    }
+    .heading {
+        justify-content: space-around;
+        width: 100vw;
+        margin-top: 3vh;
+    }
+    .head {
+        font-size: 5vw;
+        margin-top: 5vw;
+        margin-left: 25vw;
+    }
+    .scroll-container {
+        display: block;
+    }
+    .scroll {
+        flex: 0 0 100vw;
+    }
+    .info-container {
+        margin-left: 12vw;
+        margin-top: 5vw;
+        width: 80vw;
+    }
+    .avatar {
+        width: 15vw;
+        height: 15vw;
+    }
+    .info-details {
+        margin-left: 7vw;
+        width: 50vw;
+    }
+    .user-name {
+        font-size: 6vw;
+    }
+    .info-minum {
+        font-size: 3vw;
+    }
+    .mi-num {
+        font-size: 4vw;
+    }
+    .progress-container {
+        margin-left: 10vw;
+        margin-top: 3vw;
+        width: 70vw;
+    }
+    .progress-text {
+        display: flex;
+        align-items: center;
+        margin-top: 1vw;
+        font-size: 3.5vw;
+        justify-content: space-evenly;
+    }
+    .progress-dot {
+        width: 1.25vw;
+        height: 1.25vw;
+        background-color: white;
+        border-radius: 1vw;
+        margin-left: 0.75vw;
+        margin-right: 0.75vw;
+    }
+    .progress-bar-container {
+        position: relative;
+        height: 3.5vw;
+        margin-top: 1vw;
+    }
+    .progress-bar {
+        position: absolute;
+        width: 100%;
+        background-color: white;
+        border-radius: 10vw;
+        height: 100%;
+    }
+    .background {
+        opacity: 0.4;
+    }
+    .foreground {
+        width: 50%;
+    }
+    .fa-3x {
+        font-size: 2em;
+    }
+    .feed-container {
+        margin-top: 5vw;
+        margin-left: 8vw;
+        width: 80vw;
+    }
+    .feed-text {
+        font-size: 6vw;
+    }
+    .feed-list {
+        height: auto;
+    }
+    .assignment-container {
+        margin-left: 10vw;
+        margin-top: 6vw;
+    }
+    .genre-heading {
+        font-size: 6vw;
+    }
+    .genre-list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80vw;
+        height: unset;
+    }
+    .genre-container {
+        padding: 2vw;
+        font-size: 3vw;
+    }
+    .genre-icon {
+        width: 7vw;
+    }
+    .compi-img {
+        height: 25vw;
+    }
+    .img0 {
+        background-position: center -19vw !important;
+    }
+    .img1 {
+        background-position: center -19vw !important;
+    }
+    .compi-tab {
+        padding: 2.5vw 3vw;
+        font-size: 4vw;
+        margin: 1vw auto;
+    }
+    .compi-queries-heading {
+        font-size: 6vw;
+    }
+    .compi-name {
+        font-size: 5.5vw;
+    }
+    .reg-button {
+        padding: 1.2vw 3vw 0vw 3vw;
+        font-size: 4vw;
+    }
+    .compi-rules-heading {
+        font-size: 4.5vw;
+    }
+    .compi-rules {
+        font-size: 4vw;
+    }
+    .leaderboard-text {
+        font-size: 4.5vw;
+    }
+    .reg-button-long {
+        font-size: 4.5vw;
+        padding: 2vw;
+    }
+}

@@ -1,0 +1,55 @@
+<body (click)="nav_click()">
+ <div class="ham"> 
+  <i class="fa fa-ellipsis-h fa-4x" (click)="menu=!menu"></i>
+</div>
+ <div class="sidenav" *ngIf="menu" > 
+    <div class="my-logo">
+    <a class="logo" href="/"><img class="filter-green" src="../assets/Icon/my_icon_blue.svg"></a>
+    </div>
+    <div class="links">
+      <a class="something" (click)="navigate('home')"><i class="fa fa-circle" style="font-size:1vw"></i> MY MOOD INDIGO</a>
+      <a class="something" (click)="navigate('blog')"><i class="fa fa-circle" style="font-size:1vw"></i> BLOG</a>
+      <!-- <a class="something" (click)="navigate('competitions')"><i class="fa fa-circle" style="font-size:1vw"></i> COMPETITIONS</a>
+      <a class="something" (click)="navigate('influencer')"><i class="fa fa-circle" style="font-size:1vw"></i> INFLUENCER</a> -->
+      <!-- <a (click)="navigate('assignments')"><i class="fa fa-circle" style="font-size:1vw"></i> ASSIGNMENTS</a> -->
+      <a class="something" (click)="changeState()"><i class="fa fa-circle" style="font-size:1vw"></i> SCOREBOARD <i class="fa fa-caret-down mob-view" *ngIf='hover2'></i></a>
+      <div [@expand]=currentState class="leader-drop">
+        <a (click)="navigate('leaderboard')" class="some" ><i class="fa fa-circle"></i> CCP</a>
+        <!-- <a (click)="navigate('compi-leaderboard')" class="some" ><i class="fa fa-circle"></i> COMPETITIONS</a>   
+        <a (click)="navigate('influencer-leaderboard')" class="some" ><i class="fa fa-circle"></i> INFLUENCER</a>     -->
+        </div>
+      <a class="something" (click)="navigate('profile')"><i class="fa fa-circle" style="font-size:1vw"></i> EDIT PROFILE</a>     
+      <a class="something"(click)="changeState2()"><i class="fa fa-circle" style="font-size:1vw"></i> GUIDELINES<i class="fa fa-caret-down" *ngIf='hover'></i></a>
+      <div [@expand]=currentState2 class="detail-drop" >
+      <a (click)="navigate('guidelines')" class="some" ><i class="fa fa-circle"></i> CCP</a>
+      <!-- <a (click)="navigate('championship-guidelines')" class="some" ><i class="fa fa-circle"></i> COMPETITIONS</a>  
+      <a (click)="navigate('influencer-guidlines')" class="some" ><i class="fa fa-circle"></i> INFLUENCER</a>     -->
+      </div>
+   
+    <!-- <div class="dropdown">
+        <a class="dropbtn"><i class="fa fa-circle" style="font-size:1vw"></i> DETAILS</a>
+        <div class="dropdown-content">
+          <a href="#">INDIGO ART PROJECT</a>
+          <a href="#">MULTICITY</a>
+          <a href="#">COLLEGE AMBASSADOR</a>
+          <a href="#">INFLUENCER</a>
+        </div>
+      </div> -->
+      <a [style.padding-top]="hover ? '1vw' : '1vw'" class="something" (click)="navigate('contact')"><i class="fa fa-circle" style="font-size:1vw"></i> CONTACT US</a>
+      <a *ngIf="show_ipl" class="something" (click)="navigate('ipl/team')"><i class="fa fa-circle" style="font-size:1vw"></i> MoodI Fantasy League</a>
+    </div>
+    <div class="fontawesome">
+    <!-- <i class="fa fa-circle social" style="font-size:1.5vw"></i> LOGOUT<br><br> -->
+    <a class="social" href="https://instagram.com/iitbombay.moodi/" target="_blank"><i class="fa fa-3x fa-instagram social"></i></a>
+    <a class="social" href="https://www.facebook.com/iitbombay.moodi" target="_blank"><i class="fa fa-3x fa-facebook social"></i></a>
+    <a class="social" href="https://twitter.com/iitb_moodi/" target="_blank"><i class="fa fa-3x fa-twitter social"></i></a>
+    <a class="social" href="https://www.linkedin.com/company/mood-indigo/" target="_blank"><i class="fa fa-3x fa-linkedin social"></i></a>
+    <a class="social" href="https://www.youtube.com/user/iitbmoodindigo" target="_blank"><i class="fa fa-3x fa-youtube-play social"></i></a>
+    <!-- <i class="fa fa-3x fa-facebook social"></i>
+    <i class="fa fa-3x fa-twitter social"></i>
+    <i class="fa fa-3x fa-linkedin social"></i>
+    <i class="fa fa-youtube-play social"></i> -->
+    </div>
+    </div>   
+    
+  </body>

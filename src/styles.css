@@ -1,0 +1,94 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import './assets/js/indigo-pink.css';
+@import './assets/Raleway/stylesheet.css';
+@import './assets/Libre_Baskerville/stylesheet.css';
+@import './assets/Poppins/stylesheet.css';
+@import './assets/font2021/transfonter/stylesheet.css';
+/* @import './assets/font2021/Avenir/stylesheet.css';
+@import './assets/font2021/Gotham/stylesheet.css'; */
+
+
+body {
+    /* background-color: rgba(255, 255, 0, 0.5); */
+    /* background-image: url("./assets/Textures/film_texture.png"), url("./assets/Textures/paper_texture.jpg"); */
+    background-size: cover auto, cover auto;
+    margin: -20px;
+    /* overflow-x: hidden !important; */
+    max-width: 107vw !important;
+    /* z-index: 100; */
+    /* mix-blend-mode: screen; */
+    scroll-behavior: smooth;
+    color: white;
+    font-family: "Avenir";
+    top: -2vw;
+    position: relative;
+    /* opacity: 0.99; */
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: rbga(0, 0, 0, 0);
+        background-image: unset;
+        /* background-repeat: repeat repeat; */
+        mix-blend-mode: unset;
+        background-size: unset;
+    }
+}
+
+*, *:focus, *:hover {
+    outline: none;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html {
+    background-color: rgba(0, 0, 0, 1);
+    overflow-x: hidden !important;
+    max-width: 107vw !important;
+}
+
+button {
+    border: none;
+    font-family: "Poppins" !important;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+}
+
+button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:active {
+    box-shadow: 0 5px #666;
+}
+
+.social-logo {
+    font-family: "Poppins" !important;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+* {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+a{
+    color: unset;
+}

@@ -1,0 +1,218 @@
+/* body {
+    font-family: "Lato", sans-serif;
+    height: 50vw;
+  } */
+
+.sidenav {
+  /* width: 20vw; */
+  position: fixed;
+  z-index: 1;
+  top: 00px;
+  left: 0px;
+  background: #2A0645;
+  overflow-x: hidden;
+  padding-top: 0vw;
+  width: 20vw;
+  height: 100vh;
+}
+
+.links {
+  padding-top: 5vw;
+}
+
+.something {
+  padding-top: 1vw;
+  padding-left: 3vw;
+  text-decoration: none;
+  font-size: 1.1vw;
+  color: #FFFFFF;
+  display: block;
+  font-family: Poppins;
+  font-weight: bold;
+  cursor: pointer;
+  background: #2A0645;
+  z-index: 5;
+  position: relative;
+}
+
+.some {
+  padding-top: 1vw;
+  padding-left: 5vw;
+  text-decoration: none;
+  font-size: 0.7vw;
+  color: #FFFFFF;
+  font-family: Poppins;
+  font-weight: bold;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+}
+
+.some > .fa{
+  font-size: 0.7vw;
+}
+
+.leader-drop {
+  z-index: 0;
+}
+
+.logo {
+  width: 5vw;
+  padding: 0 !important;
+}
+
+.something:hover {
+  color: #29B6F6;
+}
+
+.some:hover {
+  color: #29B6F6;
+}
+
+.my-logo {
+  position: relative;
+  width: 4vw;
+  height: 4vw;
+  margin-left: 7vw;
+  margin-top: 4vw;
+}
+
+button {
+  color: #FFFFFF;
+}
+
+.activate {
+  color: black;
+}
+
+.fa {
+  font-size: 1.5vw;
+  color: #FFFFFF;
+  margin-left: 1.5vw;
+  margin-right: 0.5vw;
+}
+
+.fontawesome {
+  font-family: Poppins;
+  font-weight: bold;
+  position: absolute;
+  bottom: 10px;
+  margin-left: 3vw;
+  color: #29B6F6;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.ham {
+  width: 100vw;
+  /* background-color: rgb(158, 149, 149); */
+  background-color: transparent;
+  z-index: 10;
+  position: fixed;
+  top: 0vw;
+  left: 0vw;
+  display: none;
+}
+
+.fa-2x {
+  font-size: 1.2em !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .some{
+    font-size: 4.5vw;
+  }
+  .logo {
+    width: 13vw;
+  }
+  .sidenav {
+    width: 70vw;
+  }
+  .ham {
+    display: block;
+  }
+  .something {
+    padding-top: 5vw;
+    padding-left: 4vw;
+    text-decoration: none;
+    font-size: 6.1vw;
+    color: #29B6F6;
+    display: block;
+    font-family: Poppins;
+    font-weight: bold;
+  }
+  .something:hover {
+    color: #064579;
+  }
+  .my-logo {
+    position: relative;
+    width: 4vw;
+    height: 4vw;
+    margin-left: 7vw;
+    margin-top: 4vw;
+  }
+  button {
+    color: #29B6F6;
+  }
+  .activate {
+    color: black;
+  }
+  .ham .fa {
+    font-size: 15vw;
+    color: white;
+    margin-left: 1.5vw;
+  }
+  .fontawesome {
+    font-family: Poppins;
+    font-weight: bold;
+    position: relative;
+    margin-left: 1vw;
+    margin-top: 10vw;
+    color: #29B6F6;
+    font-size: 6.1vw;
+  }
+  .social {
+    font-size: 7vw;
+    padding: 1.5vw;
+  }
+  .fa-circle {
+    font-size: 3vw !important
+  }
+  .my-logo {
+    position: relative;
+    width: 10vw;
+    height: 10vw;
+    margin-left: 25vw;
+    margin-top: 25vw;
+  }
+  .mob-view{
+    margin-left: 0vw;
+  }
+}

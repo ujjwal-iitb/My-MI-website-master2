@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="heading">
+        Mood Indigo Premier League
+    </div>
+    <div class="sub-heading">
+        Leaderboard
+    </div>
+    <div class="table-container">
+        <div class="column">
+            <div class="title">
+                Name
+            </div>
+            <div *ngFor="let p of participants" class="name">
+                {{p.rank}} {{p.user__name}}
+            </div>
+        </div>
+        <div class="column">
+            <div class="title">
+                College
+            </div>
+            <div *ngFor="let p of participants" class="name">
+                {{p.user__college__name}}
+            </div>
+        </div>
+        <div class="column">
+            <div class="title">
+                Points
+            </div>
+            <div *ngFor="let p of participants" class="name">
+                {{p.points}}
+            </div>
+        </div>
+        <!-- <div class="column">
+            <div class="title">
+                Mobile Number
+            </div>
+            <div *ngFor="let p of participants" class="name">
+                {{p.user__mobile_number}}
+            </div>
+        </div> -->
+    </div>
+</div>
+<!-- <div class="container">
+    <div class="heading">
+        Mood Indigo Premier League
+    </div>
+    <div class="sub-heading">
+        Leaderboard
+    </div>
+    <div class="sub-heading">
+        The Leaderboard will be displayed soon!
+    </div>
+</div> -->

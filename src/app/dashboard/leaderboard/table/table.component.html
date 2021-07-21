@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="table-heading">
+        {{table.heading}}
+    </div>
+    <div class="table-content">
+        {{table.subheading}}
+    </div>
+    <div *ngFor="let position of table" class="table-item">
+        <div [style.border]="position.is_me" class="table-row">
+            <div class="item-name">{{position.rank}} {{position.name}}</div>
+            <div class="line"></div>
+            <div class="score">{{position.score}}</div>
+        </div>
+        <!-- <div class="table-row">
+            <div class="item-college">College name</div>
+        </div> -->
+    </div>
+</div>

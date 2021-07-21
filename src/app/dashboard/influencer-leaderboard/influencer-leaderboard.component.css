@@ -1,0 +1,25 @@
+.container {
+    margin-left: 20vw;
+    padding-left: 3vw;
+    padding-top: 6vw;
+    /* padding-top: 5vw; */
+    height: auto;
+    background-color: #29B6F6;
+    width: 80vw;
+    padding-bottom: 3vw;
+    position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        margin-left: 5vw;
+        padding-left: 0;
+        margin-top: 5vw;
+        /* padding-top: 5vw; */
+        height: auto;
+        background-color: #29B6F6;
+        width: 100%;
+        padding-bottom: 3vw;
+        position: relative;
+    }
+}

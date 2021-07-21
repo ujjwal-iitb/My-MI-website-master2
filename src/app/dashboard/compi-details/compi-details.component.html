@@ -1,0 +1,78 @@
+<div *ngIf="selected_compi" class="container">
+    
+    <div class="compi-queries-heading">
+        CHECK OUT ANY QUERIES UNDER THE <a href="dashboard/championship-guidelines">QUERIES</a> TAB.
+    </div>
+    <div class="compi-name">
+        {{selected_compi.name}}
+        <div *ngIf="!selected_compi.registered && (selected_compi.name != 'Vogue')" class="reg-button">
+            REGISTRATION CLOSED
+        </div>
+        <div (click)="register()" *ngIf="!selected_compi.registered && (selected_compi.name == 'Vogue')"class="reg-button">
+            REGISTER
+        </div>
+        <div *ngIf="selected_compi.registered" class="reg-button registered">
+            REGISTERED
+        </div>
+    </div>
+    <div class="compi-subs">
+        {{selected_compi.subtitles}}
+    </div>
+    <div *ngIf="selected_compi.is_group && selected_compi.registered" class="team-container">
+        <div class="compi-rules-heading">
+            ADD YOUR TEAM MEMBERS
+        </div>
+        <div *ngIf="self_member" class="team-heading">
+            <div *ngFor="let t of team" class="team-member">
+                <input class="member-name" placeholder="MI-Number" disabled="true" [value]="t.user_name">
+                <span *ngIf="t.is_leader">(LEADER)</span>
+                <button (click)="remove(t)" class="team-button" *ngIf="self_member.is_leader && (t.user_name !== getname())">REMOVE</button>
+                <button (click)="change(t.id)" class="team-button" *ngIf="self_member.is_leader && (t.user_name !== getname())">MAKE LEADER</button>
+            </div>
+            <div *ngIf="self_member.is_leader">
+                <div class="new-member" *ngIf="team.length < selected_compi.max_participants">Add new members</div>
+                <div *ngIf="team.length < selected_compi.max_participants" class="team-member">
+                    <input type="text" class="member-name" [(ngModel)]="new_member" *ngIf="self_member.is_leader" placeholder="MI-Number">
+                    <button (click)="add()" class="team-button">Add</button>
+                </div>
+            </div>
+            <div *ngIf="team.length < selected_compi.min_participants" class="warning">
+                You need a team of atleast {{selected_compi.min_participants}} people to participate in this competition.
+            </div><br>
+            <button class="team-button" (click)="leave()">LEAVE TEAM</button>
+        </div>
+    </div>
+    <br>
+    <div *ngIf="selected_compi.is_group">
+        Team Limit: {{selected_compi.max_participants}}<br>
+        - Team Leader can add Team Members only when the team members have made their MI numbers<br>
+        - No other Team Member should register themselves as the Team Leader
+    </div>
+    <div class="compi-rules-heading">
+        RULES AND REGULATIONS
+    </div>
+    <div [innerHTML]="selected_compi.rules" class="compi-rules">
+    </div>
+    <div class="leaderboard-text">
+        Check out how your college is doing on the leaderboard <a href="dashboard/compi-leaderboard">here</a>
+    </div>
+    <div class="compi-rules-heading">
+        PRIZES AND LYP
+    </div>
+    <div [innerHTML]="selected_compi.prizes_lyp" class="compi-rules">
+    </div>
+    <div *ngIf="!selected_compi.registered && (selected_compi.name != 'Vogue')" class="reg-button-long">
+        REGISTRATION CLOSED
+    </div>
+    <div (click)="register()" *ngIf="!selected_compi.registered && (selected_compi.name == 'Vogue')"class="reg-button-long">
+        REGISTER
+    </div>
+    <div *ngIf="selected_compi.registered" class="reg-button-long registered">
+        REGISTERED SUCCESSFULLY!
+    </div>
+    <div class="compi-rules-heading">
+        PREVIOUS WINNERS
+    </div>
+    <div [innerHTML]="selected_compi.previous_winners" class="compi-rules">
+    </div>
+</div>

@@ -1,0 +1,142 @@
+.container {
+    margin-left: 20vw;
+    padding-left: 3vw;
+    padding-top: 6vw;
+    /* padding-top: 5vw; */
+    height: auto;
+    background-color: #29B6F6;
+    width: 70vw;
+    padding-bottom: 3vw;
+    position: relative;
+    font-size: 1vw;
+}
+
+.compi-rules {
+    font-size: 1.2vw;
+}
+
+.compi-queries-heading {
+    font-size: 1.9vw;
+    font-weight: 900;
+    opacity: 0.8;
+}
+
+.compi-name {
+    font-size: 2vw;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5vw;
+}
+
+.compi-rules-heading {
+    font-size: 1.5vw;
+    font-weight: 900;
+    opacity: 0.8;
+    margin-top: 1vw;
+}
+
+.reg-button {
+    color: #29B6F6;
+    background: white;
+    padding: 0.5vw 1vw 0vw 1vw;
+    font-size: 1.2vw;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.reg-button-long {
+    font-size: 1.5vw;
+    text-align: center;
+    color: #29B6F6;
+    background: white;
+    border-radius: 30px;
+    margin: 2vw;
+    padding: 0.5vw;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.registered {
+    color: #66bb6a !important;
+}
+
+.team-heading{
+    margin-top: 1vw;
+}
+
+.team-member{
+    display: flex;
+    align-items: center;
+    margin-top: 0.5vw;
+}
+
+.team-button{
+    padding: 0.5vw 1vw;
+    font-size: 1vw;
+    background: white;
+    color: #29B6F6;
+    border-radius: 1vw;
+    margin-left: 1vw;
+}
+
+.member-name{
+    padding: 0.5vw 1vw;
+    border-radius: 0.5vw;
+    background: white;
+    color: #29B6F6;
+    font-size: 1vw;
+    margin: 0vw 1vw;
+}
+
+.new-member{
+    margin-top: 1vw;
+    margin-left: 1vw;
+}
+
+.warning{
+    margin: 1vw 0vw 1vw 1vw;
+    /* color: red; */
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        margin-left: 5vw;
+        padding-left: 5vw;
+        margin-top: 5vw;
+        padding-top: 15vw;
+        height: auto;
+        background-color: #29B6F6;
+        width: 87%;
+        padding-bottom: 3vw;
+        position: relative;
+        font-size: 3.5vw;
+    }
+    .compi-rules {
+        font-size: 4vw;
+    }
+    .compi-queries-heading {
+        font-size: 6vw;
+    }
+    .compi-name {
+        font-size: 5.5vw;
+    }
+    .compi-rules-heading {
+        font-size: 4.5vw;
+    }
+    .reg-button {
+        padding: 1.2vw 3vw 0vw 3vw;
+        font-size: 4vw;
+    }
+    .reg-button-long {
+        font-size: 4.5vw;
+        padding: 2vw;
+    }
+    .member-name{
+        padding: 2.5vw 3vw;
+        font-size: 4vw;
+    }
+    .team-button{
+        font-size: 4vw;
+    }
+}

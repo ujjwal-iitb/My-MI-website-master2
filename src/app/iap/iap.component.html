@@ -1,0 +1,370 @@
+<div class="loader">
+    <div class="loader-div">
+        <div id="lottie2"></div>
+    </div>
+</div>
+<div class="back">
+    <img class="back-img" src="../../assets/Green Back/green_1.png">
+</div>
+<div class="main">
+    <div class="my-logo">
+        <img (click)="navigate('')" class="logo" src="../assets/Icon/my_icon.svg">
+    </div>
+    <div class="social-container">
+        <div class="social">
+            <div (click)="navigate('ccp')" class="social-logo">
+                CCP
+            </div>
+            <div (click)="navigate('iap')" class="social-logo">
+                IAP
+            </div>
+            <div (click)="navigate('competitions')" class="social-logo">
+                COMPETITIONS
+            </div>
+            <div (click)="navigate('influencer')" class="social-logo">
+                INFLUENCER
+            </div>
+            <div (click)="navigate('shop')" class="social-logo">
+                MI SHOP
+            </div>
+        </div>
+    </div>
+    <div class="signin">
+        <button *ngIf="!registered" class="signin-button" (click)="goto('bottom')">SIGN UP</button>
+        <button *ngIf="registered" class="signin-button" (click)="goto('bottom')">REGISTER</button>
+
+    </div>
+</div>
+
+<div id="ccp" class="ccp-container">
+    <!-- <img src="../../assets/Tiles and Masks/SVG/3.svg"> -->
+    <div class="head content">
+        <div class="content-head">
+            <div class="text normal">
+                Indigo Art Project
+            </div>
+            <!-- <div class="text mask">
+                Indigo Art Project
+            </div> -->
+        </div>
+    </div>
+    <div class="content-quote">
+        Let the art do the talking
+    </div>
+    <div class="iap-intro">
+        The Indigo Art Project is an initiative by Mood Indigo, IIT Bombay, with a motive to provide a platform for you
+        to take your creativity to another dimension and to give voice to your ideas. This is an opportunity for you to
+        present your art to the world and work along artists from around the world. Through this project we’ll together
+        make MI more exciting, interactive and appealing.
+    </div>
+    <!-- <div *ngIf="registered" class="content-quote">
+        Check out the Dashboard to know the rules of each competition!
+    </div> -->
+    <button *ngIf="!registered" (click)="goto('bottom')" class="register">
+        REGISTER
+        <!-- <img class="mright-arrow" src="../../assets/svgs/right.svg"> -->
+    </button>
+    <button *ngIf="registered" (click)="goto('bottom')" class="register">
+        REGISTER
+    </button>
+    <img class="cap" src="../../assets/IAP/IAP.png">
+</div>
+
+<div class="about-container  what-container">
+    <div class="content">
+        <div class="content-head">
+            <div class="text normal">
+                What will you do?
+            </div>
+            <div class="text mask">
+                What will you do?
+            </div>
+        </div>
+    </div>
+    <div class="content-desc">
+        You will create beautiful art pieces and get an opportunity to present your art in Mood Indigo’s own Art
+        Gallery. You will also get to work in the ideation and fabrication of the ambience elements for the fest, and
+        further in the execution of the ambience plan for the fest with experienced artists.
+        There is a range of ambience elements that you could work on such as On-ground installations, Interactive art,
+        Aerial ambience, Stage design and a lot more
+
+    </div>
+    <img class="about-img responsibility-img" src="../../assets/IAP/palette.webp">
+</div>
+
+<div class="about-container">
+    <div class="content">
+        <div class="content-head">
+            <div class="text normal">
+                What will you get?
+            </div>
+            <div class="text mask">
+                What will you get?
+            </div>
+        </div>
+    </div>
+    <div class="content-desc">
+        <p>You’ll get to attend workshops from various artists covering a range of art styles including digital arts,
+            visual arts, fine arts and many more. For completing the project, you will get certificates signed by Dean,
+            IIT Bombay.</p>
+        <p>Your work will be an excellent addition to your portfolio and will be encountered by all the people joining
+            us at the festival.You will also learn skills like Teamwork, Networking, Negotiation and a lot more.</p>
+        <p>Additionally, you will get VIP Concert passes, free accommodation during the IAP and many more exciting
+            rewards.</p>
+    </div>
+    <img class="about-img first-img" src="../../assets/IAP/FreeAccomodation.webp">
+    <img class="about-img second-img" src="../../assets/IAP/VIP passes.webp">
+    <img class="about-img third-img" src="../../assets/IAP/Certificate v2.png">
+</div>
+
+<div class="testimonial-container">
+    <div class="content">
+        <div class="content-head">
+            <div class="text normal">
+                Toasts from our family
+            </div>
+            <div class="text mask">
+                Toasts from our family
+            </div>
+        </div>
+    </div>
+    <div class="testimonial-list">
+        <div class="testimonial-div">
+            <div class="testimonial-img-div">
+                <img class="testimonial-img" src="../../assets/IAP/Anisha.jpeg">
+            </div>
+            <div class="testimonial-text">
+                <div class="testimonial">
+                    Deciding to take part in IAP in spite of having exams around the corner was one of my best decisions
+                    ever. I got insights about what goes on at the backstage when organizing such a large scale event. I
+                    worked on huge projects, networked with foreign artists, got an impressive certificate, and made so
+                    many new friends! 10/10 would recommend this for any artist out there!
+
+                </div>
+                <div class="bold person-details">
+                    <p>Anisha,</p>
+                    <p>Sir parshurambhau college,</p>
+                    <p>Pune</p>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-div">
+            <div class="testimonial-img-div">
+                <img class="testimonial-img" src="../../assets/IAP/Arnav.JPG">
+            </div>
+            <div class="testimonial-text">
+                <div class="testimonial">
+                    <br><br><br><br><br><br><br><br><br><br>
+                    I’m Arnav Agarwal, a UX Design student, I belong to a creative field and my job is to create
+                    meaningful experiences for the users in order to solve their problems. Most of the times it so
+                    happens that you do not get to explore the artist inside you as there’s an end user. Indigo Art
+                    Project was a place where I got to explore a lot more than just creating wonderful interactions and
+                    experiences for the Mood Indigo crowd, here I got to work for creating various interaction zones and
+                    ambiences and got a chance to think creatively about how to keep the audiences engaged without
+                    facing much limitations. For an example, we were to print the registration desk cover and there were
+                    some random hand drawn shapes combined as an artwork and what I did was, I tried seeing the visual
+                    design in terms of user experience and found that since people wait in a queue for getting
+                    themselves registered, I replaced some of the shapes with the MI logo and then the user’s task was
+                    to find the number of logo present in the entire art board, it helped in keeping the users engaged
+                    as well as solved the purpose without extra cost. I truly had an amazing experience while working
+                    for the Indigo Art Project. As I always say, Mood Indigo vibes are magical.
+                </div>
+                <div class="person-details">
+                    <p>Arnav,</p>
+                    <p>MIT Institute of Design,</p>
+                    <p>Pune</p>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-div">
+            <div class="testimonial-img-div">
+                <img class="testimonial-img" src="../../assets/IAP/JYESTHA.jpg">
+            </div>
+            <div class="testimonial-text">
+                <div class="testimonial">
+                    IAP is one such art-driven platform which cherishes art in all forms and artists from all around. A
+                    once in a lifetime experience, IAP not only connects the budding artists of future or even
+                    appreciators of art, but also gives a plethora of room for learning and tons of reminiscing for the
+                    rest of your life. It's appreciative how the students have built the community of artists bridging
+                    the gap between amateurs and professionals, paving the way for new styles and collaborative art.
+                    Doesn't matter if you're a potent artist or highly skilled, if you value art, IAP if the community
+                    you have to be a part of. Winter is coming? Nah!
+                    IAP IS COMING! xD
+                </div>
+                <div class="person-details">
+                    <p>Jyestha,</p>
+                    <p>Birla Institute of Technology, Mesra,</p>
+                    <p>Jaipur</p>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-div">
+            <div class="testimonial-img-div">
+                <img class="testimonial-img" src="../../assets/IAP/masoom.jpeg">
+            </div>
+            <div class="testimonial-text">
+                <div class="testimonial">
+                    IAP is the best way to bring in creativity and feasibility together. Working with the installation
+                    team let us enjoy the pre MI time to the fullest and completing the installation is the utmost
+                    happiness we felt. It helped us to know more and to be connected more with MoodI.
+                </div>
+                <div class="person-details">
+                    <p>Masoom,</p>
+                    <p>Symbiosis Institute of Design,</p>
+                    <p>Pune</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="ngo-img"></div> -->
+</div>
+
+<div id="bottom" class="faq-container">
+    <img class="faq-top" src="../../assets/CAP Landing Page/SVG/Cap3.svg">
+    <div class="content">
+        <div class="content-head">
+            <div class="text normal">
+                Sign up!
+            </div>
+            <div class="text mask">
+                Sign up!
+            </div>
+        </div>
+
+        <div class="content-desc last-text">
+            <p>
+                Anyone can participate! Enthusiasm and zeal to learn are the only prerequisites. Our Workshops will help
+                you
+                learn even if you’re a beginner.
+            </p>
+            <p>
+                Indigo Art Project installations and artworks are aimed to give space to unique ideas and make Mood
+                Indigo
+                more interactive and lively.
+            </p>
+        </div>
+    </div>
+    <!-- <div *ngIf='!registered' class="reg-form"> -->
+    <div class="reg-form">
+        <mat-form-field [style.border]="name_err" appearance="fill">
+            <input [(ngModel)]="name" type="text" placeholder="Name" matInput>
+        </mat-form-field>
+
+        <br>
+
+        <mat-form-field [style.border]="mob_err" appearance="fill">
+            <input [(ngModel)]="mob" type="tel" maxlength="10" placeholder="Mobile Number" matInput>
+        </mat-form-field>
+
+        <br>
+
+        <mat-form-field [style.border]="email_err" appearance="fill">
+            <input [(ngModel)]="email" type="email" placeholder="Email ID" matInput>
+        </mat-form-field>
+
+        <br>
+
+        <mat-form-field [style.border]="college_err" appearance="fill">
+            <input [(ngModel)]="college" type="email" placeholder="College" matInput>
+        </mat-form-field>
+
+        <br>
+
+        <mat-form-field [style.border]="city_err" appearance="fill">
+            <input [(ngModel)]="city" type="email" placeholder="City" matInput>
+        </mat-form-field>
+
+        <br>
+
+        <div class="question">
+            Are you a...
+        </div>
+
+        <div class="radio">
+            <label class="radio">
+                <span class="radio__input">
+                    <input (change)="radio('student')" type="radio" name="radio" checked='checked'>
+                    <span class="radio__control"></span>
+                </span>
+                <span class="radio__label">STUDENT ARTIST/DESIGNER</span>
+            </label>
+            <br>
+            <label class="radio">
+                <span class="radio__input">
+                    <input (change)="radio('professional')" type="radio" name="radio">
+                    <span class="radio__control"></span>
+                </span>
+                <span class="radio__label">PROFESSIONAL ARTIST/DESIGNER</span>
+            </label>
+        </div>
+
+
+        <div class="question">
+            You are interested in...(You can choose multiple)
+        </div>
+
+        <div class="radio">
+
+            <label class="checkbox-container">
+                <input (change)="checkbox('3d-installations')" type="checkbox">
+                <span class="checkmark"></span>
+                3-D INSTALLATIONS
+            </label>
+            <br>
+            <label class="checkbox-container">
+                <input (change)="checkbox('interactive')" type="checkbox">
+                <span class="checkmark"></span>
+                WALL PAINTING
+            </label>
+            <br>
+            <label class="checkbox-container">
+                <input (change)="checkbox('fine-arts')" type="checkbox">
+                <span class="checkmark"></span>
+                FINE ARTS SHOWCASE
+            </label>
+            <br>
+            <label class="checkbox-container">
+                <input (change)="checkbox('aerial-installations')" type="checkbox">
+                <span class="checkmark"></span>
+                DIGITAL ARTS
+            </label>
+        </div>
+
+        <button class="signin-button submit" (click)="submit()">SUBMIT</button>
+
+    </div>
+    <div class="italic faq-text">
+        <div class="faq-sub-text">
+            For further queries feel free to contact us at:
+        </div>
+        <div class="faq-email-text">
+            <a href="mailto:jaya@moodi.org">jaya@moodi.org</a>
+        </div>
+    </div>
+    <div class="cg-flex">
+        <div class="cg-info">
+            <div class="cg-img-container cg1">
+                <!-- <img class="cg-img" src="../../assets/cg-images/Image 2.png"> -->
+            </div>
+            <div class="cg-details">
+                <div class="cg-name">
+                    Jaya Agarwal
+                </div>
+                <div class="cg-pos">
+                    Ambience Head <br> +91 63750 78242
+                </div>
+                <div class="cg-social">
+                    <a class="cg-link" href="https://www.instagram.com/a.chocoholic_/"><i
+                            class="fa fa-3x fa-instagram"></i></a>
+                    <a class="cg-link" href="https://www.facebook.com/jaya.22e"><i class="fa fa-3x fa-facebook"></i></a>
+                    <a class="cg-link" href="https://api.whatsapp.com/send?phone=+916375078242"><i
+                            class="fa fa-3x fa-whatsapp"></i></a>
+                    <!-- <a class="cg-link" href="https://twitter.com/Anshuma14441895"><i class="fa fa-3x fa-twitter"></i></a> -->
+                    <a class="cg-link" href="www.linkedin.com/in/jaya-agarwal-34663217a"><i
+                            class="fa fa-3x fa-linkedin"></i></a>
+                    <a class="cg-link" href="https://twitter.com/Jaya20165032"><i class="fa fa-3x fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+.dashboard-main{
+    height: auto;
+    min-height: 110vh;
+    /* background-color: #29B6F6; */
+    background-image: linear-gradient(to right, #B721FF, #21D4FD);
+    /* overflow-y: hidden !important; */
+}
+@media screen and (max-width: 768px){
+    .dashboard-main{
+        height: auto;
+        min-height: 102vh;
+    }
+}

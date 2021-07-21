@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery limarquee Plugin Demos</title>
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link href="css/liMarquee.css" rel="stylesheet" type="text/css">
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<style>
+.container { margin:150px auto 30px auto; max-width:960px;}
+body { font-family:'roboto'}
+</style>
+</head>
+
+<body>
+<div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/other/Smooth-Marquee-like-Content-Scroller-Plugin-For-jQuery-limarquee.html">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<div class="container">
+<h1>jQuery limarquee Plugin Demos</h1>
+<h3>Basic</h3>
+        <div class="str1 str_wrap">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit odio in est scelerisque congue. Nulla ut mattis neque. </p>
+        </div>
+<h3>Left to right</h3>
+        <div class="str9 str_wrap">
+        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit odio in est scelerisque congue. Nulla ut mattis neque. </p>
+        </div>
+<h3>Runshort: true</h3>
+        <div class="str1 str_wrap">
+        	<p>short text &nbsp;</p>
+        </div>
+    
+        <h3>Disable drag functionality</h3>
+        <div class="str2 str_wrap">
+            <p>text content and text content and text content and text content and text content and text content and text content and text content and text content and text content</p>
+        </div>
+
+    
+        <h3>Image scroller</h3>
+        <style>
+            .str3 .str_item {
+                font-size:0;
+                line-height:0
+            }
+            .str3 img { opacity:0.8}
+            .str3 img:hover { opacity:1}
+            .str3.str_wrap.str_active {
+                background:#fff;
+            }
+        </style>
+        <div class="str3 str_wrap">
+            <a href="#">
+                <img src="https://unsplash.it/150/150/?random">
+            </a>
+            <a href="#">
+                <img src="https://unsplash.it/150/150/?random">
+            </a><a href="#">
+                <img src="https://unsplash.it/150/150/?random">
+            </a><a href="#">
+                <img src="https://unsplash.it/150/150/?random">
+            </a><a href="#">
+                <img src="https://unsplash.it/150/150/?random">
+            </a><a href="#">
+                <img src="https://unsplash.it/150/150/?random">
+            </a><a href="#">
+                <img src="https://unsplash.it/150/150/?random">
+            </a><a href="#">
+                <img src="https://unsplash.it/150/150/?random">
+            </a>
+        </div>
+        
+<h3>Content scroller</h3>
+		<style>
+			.str3 { font-size:0 !important}
+			.str3-2 { background:none !important;}
+			.str3-2 span { border:5px solid #ccc; background:#f1f1f1; color:#999; margin:0 5px; text-align:center; font:40px/100px Arial, Helvetica, sans-serif; width:100px; height:100px; display:inline-block; vertical-align:top;}
+		</style>
+		<div class="str3-2 str_wrap">
+            <span>1</span>
+            <span>2</span>
+			<span>3</span>
+			<span>4</span>
+			<span>5</span>
+			<span>6</span>
+			<span>7</span>
+			<span>8</span>
+			<span>9</span>
+			<span>0</span>
+        </div>        
+    
+        <h3>Vertical scroller</h3>
+        <div class="str4 str_wrap" style="height:200px;">
+            <p>
+            1 text content and text content and text content and text content and text content and text content and text content and text content and text content
+            </p>
+            <p>
+            2 text content and text content and text content and text content and text content and text content and text content and text content and text content
+            </p>
+            <p>
+            3 text content and text content and text content and text content and text content and text content and text content and text content and text content
+            </p>
+            <p>
+            4 text content and text content and text content and text content and text content and text content and text content and text content and text content
+            </p>
+        </div>
+	
+    
+    
+
+    
+        <div class="str5 str_wrap" style="height:200px;">
+            <p>
+            1 text content and text content and text content and text content and text content and text content and text content and text content and text content
+            </p>
+            <p>
+            2 text content and text content and text content and text content and text content and text content and text content and text content and text content
+            </p>
+            <p>
+            3 text content and text content and text content and text content and text content and text content and text content and text content and text content
+            </p>
+            
+        </div>
+		
+		<div class="str8 str_wrap" style="height:200px;">
+            <p>
+            1 text content and text content and text content and text content and text content and text content and text content and text content and text content
+            </p>
+            <p>
+            2 text content and text content and text content and text content and text content and text content and text content and text content and text content
+            </p>
+            <p>
+            3 text content and text content and text content and text content and text content and text content and text content and text content and text content
+            </p>
+            <p>
+            4 text content and text content and text content and text content and text content and text content and text content and text content and text content
+            </p>
+        </div>
+
+    	
+        <div class="str6 str_wrap" style="height:200px;">
+            <p>short text does not move</p>
+        </div>
+                  
+                
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.liMarquee.js"></script>
+<script>
+$(window).load(function() { 
+        
+    /* basic - default settings */
+		$('.str1').liMarquee();
+		
+		/* some custom settings */
+		$('.str2').liMarquee({
+			direction: 'left',	
+			loop:-1,			
+			scrolldelay: 500,	
+			scrollamount:90,	
+			circular: false,
+            hoverstop:false,	
+			drag: false			
+		});
+		
+		$('.str3').liMarquee({
+			direction: 'left',	
+			loop:-1,			
+			scrolldelay: 0,		
+			scrollamount:100,	
+			circular: true,		
+			drag: true			
+		});
+		
+		$('.str3-2').liMarquee({
+			direction: 'left',	
+			loop:-1,			
+			scrolldelay: 0,		
+			scrollamount:120,	
+			circular: true,		
+			drag: true			
+		});
+		
+		$('.str4').liMarquee({
+			direction: 'up',	
+			loop:-1,			
+			scrolldelay: 0,		
+			scrollamount:30,	
+			circular: true,		
+			drag: true			
+		});
+		
+		$('.str5').liMarquee({
+			direction: 'down',	
+			loop:-1,			
+			scrolldelay: 0,		
+			scrollamount:30,	
+			circular: true	,	
+			drag: false			
+		});
+		
+		$('.str6').liMarquee({
+			direction: 'up',	
+			loop:-1,			
+			scrolldelay: 0,		
+			scrollamount:30,	
+			circular: false	,	
+			drag: true,			
+			runshort:false		
+		});
+		
+		
+		$('.str8').liMarquee({
+			direction: 'down',	
+			loop:-1,			
+			scrolldelay: 0,		
+			scrollamount:30,	
+			circular: false	,	
+			drag: true			
+		});
+		
+		$('.str9').liMarquee({
+			direction: 'right'	
+		});
+        
+    })
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</div>
+</body>
+</html>
